@@ -118,4 +118,8 @@ class Rentals implements Serializable {
         Rentals rentals = (Rentals) o;
         return this.rentalBase.equals(rentals.rentalBase);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 }

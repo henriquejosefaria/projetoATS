@@ -123,4 +123,8 @@ public class Parser {
         Parser parser = (Parser) o;
         return this.file.equals(parser.file);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 }

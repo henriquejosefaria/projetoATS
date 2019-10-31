@@ -136,6 +136,10 @@ public class Cars implements Serializable {
         Cars cars = (Cars) o;
         return this.carBase.equals(cars.carBase);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 
     Car getCar(Point dest, double range, Car.CarType a) throws NoCarAvaliableException {
         try {

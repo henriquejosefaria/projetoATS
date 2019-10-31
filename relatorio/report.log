@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  31 OCT 2019 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  31 OCT 2019 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,7 +200,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `fig05' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -215,7 +219,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
-(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen128
@@ -284,14 +288,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 11.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 
-Overfull \hbox (8.09528pt too wide) in paragraph at lines 23--25
+Overfull \hbox (8.09528pt too wide) in paragraph at lines 24--26
 \T1/cmr/m/n/10 tanto es-tes in-di-cam fra-que-zas no de-sign de uma apli-ca-ção
  que po-dem comprometer-
  []
@@ -317,7 +321,77 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: Reference `fig:fig01' on page 2 undefined on input line 18.
 
 [2 <./images/sonarEvaluation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+<./images/preWriteTryCatch.png, id=20, 425.59pt x 191.71625pt>
+File: ./images/preWriteTryCatch.png Graphic file (type png)
+<use ./images/preWriteTryCatch.png>
+Package pdftex.def Info: ./images/preWriteTryCatch.png  used on input line 35.
+(pdftex.def)             Requested size: 212.79446pt x 95.85788pt.
+<./images/posWriteTryCatch.png, id=21, 428.60126pt x 111.41624pt>
+File: ./images/posWriteTryCatch.png Graphic file (type png)
+<use ./images/posWriteTryCatch.png>
+Package pdftex.def Info: ./images/posWriteTryCatch.png  used on input line 47.
+(pdftex.def)             Requested size: 214.3001pt x 55.70798pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+<./images/preReadTryCatch.png, id=22, 646.415pt x 102.3825pt>
+File: ./images/preReadTryCatch.png Graphic file (type png)
+<use ./images/preReadTryCatch.png>
+Package pdftex.def Info: ./images/preReadTryCatch.png  used on input line 65.
+(pdftex.def)             Requested size: 323.20671pt x 51.19112pt.
+<./images/posReadTryCatch.png, id=23, 655.44875pt x 203.76125pt>
+File: ./images/posReadTryCatch.png Graphic file (type png)
+<use ./images/posReadTryCatch.png>
+Package pdftex.def Info: ./images/posReadTryCatch.png  used on input line 77.
+(pdftex.def)             Requested size: 327.72357pt x 101.88037pt.
+
+Underfull \vbox (badness 2237) has occurred while \output is active []
+
+ [3 <./images/preWriteTryCatch.png> <./images/posWriteTryCatch.png> <./images/p
+reReadTryCatch.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+<./images/randomGeneration.png, id=31, 445.665pt x 188.705pt>
+File: ./images/randomGeneration.png Graphic file (type png)
+<use ./images/randomGeneration.png>
+Package pdftex.def Info: ./images/randomGeneration.png  used on input line 98.
+(pdftex.def)             Requested size: 222.83195pt x 94.35226pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+<./images/isEqualFunction.png, id=32, 297.11pt x 49.18375pt>
+File: ./images/isEqualFunction.png Graphic file (type png)
+<use ./images/isEqualFunction.png>
+Package pdftex.def Info: ./images/isEqualFunction.png  used on input line 119.
+(pdftex.def)             Requested size: 148.55463pt x 24.5918pt.
+[4 <./images/posReadTryCatch.png> <./images/randomGeneration.png> <./images/isE
+qualFunction.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+<./images/hashCode.png, id=40, 228.855pt x 60.225pt>
+File: ./images/hashCode.png Graphic file (type png)
+<use ./images/hashCode.png>
+Package pdftex.def Info: ./images/hashCode.png  used on input line 140.
+(pdftex.def)             Requested size: 137.31404pt x 36.13527pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
@@ -325,19 +399,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
 LaTeX Warning: Empty `thebibliography' environment on input line 26.
 
-[3] (./report.aux)
+[5 <./images/hashCode.png>] (./report.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 2828 strings out of 492616
- 37938 string characters out of 6129481
- 119162 words of memory out of 5000000
- 6694 multiletter control sequences out of 15000+600000
+ 2870 strings out of 492616
+ 39017 string characters out of 6129481
+ 119249 words of memory out of 5000000
+ 6729 multiletter control sequences out of 15000+600000
  11430 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,423b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,25p,423b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
@@ -349,10 +426,10 @@ al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
 exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (3 pages, 195564 bytes).
+Output written on report.pdf (5 pages, 325617 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

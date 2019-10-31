@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Random;
 
 class Traffic {
+	Random b = new Random();
     public double getTraficDelay(double delay) {
         int a = LocalDateTime.now().getHour();
         Random b = new Random();

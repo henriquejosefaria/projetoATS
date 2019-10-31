@@ -242,17 +242,30 @@ public class UMCarroJa implements Serializable {
 
     public void save(String fName) throws IOException {
         FileOutputStream a = new FileOutputStream(fName);
-        ObjectOutputStream r = new ObjectOutputStream(a);
-        r.writeObject(this);
-        r.flush();
-        r.close();
+        ObjectOutputStream r = null;
+        try{
+        	r = new ObjectOutputStream(a);
+        	r.writeObject(this);
+        	r.flush();
+        }catch(Exception e) {
+        	System.out.println("Can't write to file!!\n");
+        } finally {
+        	r.close();
+        }
     }
 
     public static UMCarroJa read(String fName) throws IOException, ClassNotFoundException {
         FileInputStream r = new FileInputStream(fName);
-        ObjectInputStream a = new ObjectInputStream(r);
-        UMCarroJa u = (UMCarroJa) a.readObject();
-        a.close();
+        ObjectInputStream a = null;
+        UMCarroJa u = null;
+        try{
+        	a = new ObjectInputStream(r);
+        	u = (UMCarroJa) a.readObject();
+        } catch(Exception e) {
+        	System.out.println("Can't read the specified file!!\n");
+        } finally {
+        	a.close();
+        }
         return u;
     }
 }

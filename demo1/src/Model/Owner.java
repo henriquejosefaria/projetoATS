@@ -77,5 +77,9 @@ public class Owner extends User {
                 && this.pending.equals(owner.pending)
                 && this.historic.equals(owner.historic);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 }
 

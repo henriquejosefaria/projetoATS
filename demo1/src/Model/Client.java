@@ -57,4 +57,8 @@ public class Client extends User {
         return this.pos.equals(client.pos)
                 && this.pendingRates.equals(client.pendingRates);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 }

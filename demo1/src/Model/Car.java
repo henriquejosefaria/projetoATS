@@ -220,6 +220,10 @@ public class Car implements Serializable {
                 && this.position.equals(car.position)
                 && this.historic.equals(car.historic);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 
     @Override
     public String toString() {
