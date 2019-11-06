@@ -13,6 +13,7 @@ public class Controller {
     private User user;
     private final Menu menu;
     private String errorParam = "Parametros Inválidos";
+    private String errorCars = "No cars availables";
     
     
     public Controller(UMCarroJa model) {
@@ -83,9 +84,9 @@ public class Controller {
                     error = caseHistoryClient();
                     break;
 
-                    default:
-                        this.menu.parser();
-                        break;
+                default:
+                    this.menu.parser();
+                    break;
             }
         }
     }
@@ -158,11 +159,11 @@ public class Controller {
             error = "";
         }
         catch (UnknownCompareTypeException ignored) {}
-        catch (NoCarAvaliableException e) { error = "No cars availables"; }
+        catch (NoCarAvaliableException e) { error = errorCars; }
         catch (InvalidNewRentalException e){error = "Novo Rental inválido"; }
 		return error;
 	}
-	
+
 	public String caseCheapest() {
 		String error = "";
 		try{
@@ -176,7 +177,7 @@ public class Controller {
             menu.back();
         }
         catch (UnknownCompareTypeException ignored) {}
-        catch (NoCarAvaliableException e) { error = "No cars availables"; }
+        catch (NoCarAvaliableException e) { error = errorCars; }
         catch (InvalidNewRentalException e){error = "Novo Rental inválido"; }
 		return error;
 	}
@@ -210,7 +211,7 @@ public class Controller {
         			case 'r':
         				this.model.refuse(owner, lR.get(Integer.parseInt(v.substring(1)) - 1));
         				break;
-        			case 'b':
+        			default: // 'b'
         				this.menu.back();
         				break;
         		}
@@ -237,7 +238,7 @@ public class Controller {
             this.menu.back();
         }
         catch (InvalidNewRentalException e){error = "New rental inválido";}
-        catch (NoCarAvaliableException e)  {error = "No cars availables"; }
+        catch (NoCarAvaliableException e)  {error = errorCars; }
 		return error;
 	}
 	
@@ -256,7 +257,7 @@ public class Controller {
             this.menu.back();
         }
         catch (InvalidNewRentalException e){error = "New rental inválido";}
-        catch (NoCarAvaliableException e) { error = "No cars availables"; }
+        catch (NoCarAvaliableException e) { error = errorCars; }
 		return error;
 	}
 	
@@ -367,8 +368,8 @@ public class Controller {
                     this.menu.back();
                     break;
 
-                    default:
-                        throw new InvalidNumberOfArgumentsException();
+                default:
+                    throw new InvalidNumberOfArgumentsException();
             }
             error = "";
         }

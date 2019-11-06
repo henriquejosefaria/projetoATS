@@ -99,7 +99,7 @@ public class Parser {
                     } catch (NoCarAvaliableException ignored) {
                     }
                     break;
-                case "Classificar":
+                default: // "Classificar"
                     if (content.length != 2)
                         break;
                     model.rate(content[0], Integer.parseInt(content[1]));
