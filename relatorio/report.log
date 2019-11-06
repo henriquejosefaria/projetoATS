@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  31 OCT 2019 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  4 NOV 2019 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,11 +200,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
-) (./report.aux
-
-LaTeX Warning: Label `fig05' multiply defined.
-
-)
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -219,7 +215,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
- (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen128
@@ -305,9 +301,9 @@ Overfull \hbox (8.09528pt too wide) in paragraph at lines 24--26
 File: ./images/sonarEvaluation.png Graphic file (type png)
 <use ./images/sonarEvaluation.png>
 Package pdftex.def Info: ./images/sonarEvaluation.png  used on input line 9.
-(pdftex.def)             Requested size: 393.97092pt x 319.69359pt.
+(pdftex.def)             Requested size: 354.57141pt x 287.72227pt.
 
-Overfull \hbox (46.84738pt too wide) in paragraph at lines 9--10
+Overfull \hbox (7.44788pt too wide) in paragraph at lines 9--10
  [][] 
  []
 
@@ -317,24 +313,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Reference `fig:fig01' on page 2 undefined on input line 18.
-
-[2 <./images/sonarEvaluation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<./images/preWriteTryCatch.png, id=20, 425.59pt x 191.71625pt>
+[2 <./images/sonarEvaluation.png>]
+<./images/preWriteTryCatch.png, id=20, 428.60126pt x 111.41624pt>
 File: ./images/preWriteTryCatch.png Graphic file (type png)
 <use ./images/preWriteTryCatch.png>
 Package pdftex.def Info: ./images/preWriteTryCatch.png  used on input line 35.
-(pdftex.def)             Requested size: 212.79446pt x 95.85788pt.
-<./images/posWriteTryCatch.png, id=21, 428.60126pt x 111.41624pt>
+(pdftex.def)             Requested size: 214.3001pt x 55.70798pt.
+<./images/posWriteTryCatch.png, id=21, 425.59pt x 191.71625pt>
 File: ./images/posWriteTryCatch.png Graphic file (type png)
 <use ./images/posWriteTryCatch.png>
 Package pdftex.def Info: ./images/posWriteTryCatch.png  used on input line 47.
-(pdftex.def)             Requested size: 214.3001pt x 55.70798pt.
+(pdftex.def)             Requested size: 212.79446pt x 95.85788pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
@@ -355,43 +348,42 @@ Underfull \vbox (badness 2237) has occurred while \output is active []
 
  [3 <./images/preWriteTryCatch.png> <./images/posWriteTryCatch.png> <./images/p
 reReadTryCatch.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 <./images/randomGeneration.png, id=31, 445.665pt x 188.705pt>
 File: ./images/randomGeneration.png Graphic file (type png)
 <use ./images/randomGeneration.png>
-Package pdftex.def Info: ./images/randomGeneration.png  used on input line 98.
+Package pdftex.def Info: ./images/randomGeneration.png  used on input line 99.
 (pdftex.def)             Requested size: 222.83195pt x 94.35226pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 <./images/isEqualFunction.png, id=32, 297.11pt x 49.18375pt>
 File: ./images/isEqualFunction.png Graphic file (type png)
 <use ./images/isEqualFunction.png>
-Package pdftex.def Info: ./images/isEqualFunction.png  used on input line 119.
+Package pdftex.def Info: ./images/isEqualFunction.png  used on input line 120.
 (pdftex.def)             Requested size: 148.55463pt x 24.5918pt.
-[4 <./images/posReadTryCatch.png> <./images/randomGeneration.png> <./images/isE
-qualFunction.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+[4 <./images/posReadTryCatch.png> <./images/randomGeneration.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-<./images/hashCode.png, id=40, 228.855pt x 60.225pt>
+<./images/hashCode.png, id=39, 228.855pt x 60.225pt>
 File: ./images/hashCode.png Graphic file (type png)
 <use ./images/hashCode.png>
-Package pdftex.def Info: ./images/hashCode.png  used on input line 140.
+Package pdftex.def Info: ./images/hashCode.png  used on input line 141.
 (pdftex.def)             Requested size: 137.31404pt x 36.13527pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
@@ -399,22 +391,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
 LaTeX Warning: Empty `thebibliography' environment on input line 26.
 
-[5 <./images/hashCode.png>] (./report.aux)
+[5 <./images/isEqualFunction.png> <./images/hashCode.png>] (./report.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2870 strings out of 492616
- 39017 string characters out of 6129481
- 119249 words of memory out of 5000000
- 6729 multiletter control sequences out of 15000+600000
+ 2869 strings out of 492616
+ 39006 string characters out of 6129481
+ 119218 words of memory out of 5000000
+ 6728 multiletter control sequences out of 15000+600000
  11430 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,423b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,25p,423b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
@@ -426,7 +415,7 @@ al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
 exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (5 pages, 325617 bytes).
+Output written on report.pdf (5 pages, 327314 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
