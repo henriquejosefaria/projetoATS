@@ -12,7 +12,9 @@ public class Controller {
     private final UMCarroJa model;
     private User user;
     private final Menu menu;
-
+    private String errorParam = "Parametros Inválidos";
+    
+    
     public Controller(UMCarroJa model) {
         this.menu = new Menu();
         this.model = model;
@@ -88,7 +90,6 @@ public class Controller {
         }
     }
 
-
 	public String caseLogin() {
     	String error = "";
     	try {
@@ -118,7 +119,7 @@ public class Controller {
             menu.back();
             error = "";
         }
-        catch (InvalidNewRegisterException e){ error = "Parametros Inválidos"; }
+        catch (InvalidNewRegisterException e){ error = errorParam; }
         catch (UserExistsException e){ error = "Utilizador já existe"; }
 		return error;
 	}
@@ -138,7 +139,7 @@ public class Controller {
             menu.back();
             error = "";
         }
-        catch (InvalidNewRegisterException e){ error = "Parametros Inválidos"; }
+        catch (InvalidNewRegisterException e){ error = errorParam; }
         catch (UserExistsException e){ error = "Utilizador já existe"; }
 		return error;
 	}
@@ -293,7 +294,7 @@ public class Controller {
             menu.back();
             error = "";
         }
-        catch (InvalidNewRegisterException e){ error = "Parametros Inválidos"; }
+        catch (InvalidNewRegisterException e){ error = errorParam; }
         catch (CarExistsException e){ error = "Carro já existe"; }
         catch (InvalidUserException ignored) {}
 		return error;

@@ -168,8 +168,28 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \item Possuir um método complexo com cerca de de 290 linhas, é muito dificil manter e até mesmo perceber um código tão extenso.\newline
  Ficheiro: Controller.java\newline
 
-\par Para resolver o problema cada case do switch foi dividido em 1 função de complexidade inferior de média 15 linhas.
+\par Para resolver o problema cada case do switch foi dividido em 1 função de complexidade inferior de média 15 linhas. podemos ver nas duas figuras em baixo, um dos cases e a função para o qual foi passado o código correspondente.
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.6]{newSmallerCase.png}
+  \includegraphics[scale = 0.6]{newSmallerFunction.png}
+
+  \caption {Solução do problema complexidade extrema do método run()}
+
+  \label {fig10}
+
+\end{figure}
 \end{itemize}
+
+\begin{itemize}
+\item Repetir várias vezes a atribuição da mesma string pode tornar o código confuso. \newline
+\par Para ultrapassar essa dificuldade essa string passou a ser criada e guardade numa variável quando um objeto da classe é inicializado e essa variável é depois atribuida quando necessário. \newline
+ Ficheiro: Controller.java\newline
+\end{itemize}
+
 
 
 
@@ -199,7 +219,6 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \end{figure}
 
 \end{itemize}
-\begin{itemize}
 
 \begin{itemize}
 \item Utilização de métodos ineficientemente.\newline
