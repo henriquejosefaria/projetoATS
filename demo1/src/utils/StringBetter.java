@@ -15,11 +15,6 @@ public class StringBetter{
         return str;
     }
 
-    private StringBetter setStr(String str) {
-        this.str = str;
-        return this;
-    }
-
     public StringBetter repeat(int n){
         StringBuilder s = new StringBuilder();
         for(int i = 0; i < n; i++)
