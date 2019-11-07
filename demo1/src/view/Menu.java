@@ -2,7 +2,6 @@ package view;
 
 import utils.Point;
 import utils.StringBetter;
-import view.viewmodel.*;
 import view.viewmodel.AutonomyCar;
 import view.viewmodel.CheapestNearCar;
 import view.viewmodel.NewLogin;
@@ -22,15 +21,17 @@ import exceptions.InvalidNewRegisterException;
 import exceptions.InvalidNewRentalException;
 import exceptions.InvalidRatingException;
 import exceptions.InvalidTimeIntervalException;
+import main.java.Main;
 
-import static java.lang.System.out;
+import java.util.logging.Logger;
 
 public class Menu{
-    private MenuInd menu;
-    private final Stack<MenuInd> prev;
+    private MenuInd myMenu;
+    private final Deque<MenuInd> prev;
     private final ArrayList<MenuInd> options;
     private boolean run;
     private String offset = "\033\143";
+    private final static Logger LOGGER = Logger.getLogger(Main.class.getName());
 
     public enum MenuInd {
         INITIAL,
@@ -58,23 +59,22 @@ public class Menu{
     }
 
     public Menu() {
-        this.menu = MenuInd.INITIAL;
-        this.prev = new Stack<>();
+        this.myMenu = MenuInd.INITIAL;
+        this.prev = new ArrayDeque<>();
         this.options = new ArrayList<>();
         this.run = true;
         this.pickChildMenus();
     }
 
     public MenuInd getMenu() {
-        return this.menu;
+        return this.myMenu;
     }
 
     public void showString(String rental) {
         Scanner scanner = new Scanner(System.in);
-        out.print(offset);
-        out.println(this.createHeader());
-        out.println();
-        out.println(rental);
+        LOGGER.info(offset);
+        LOGGER.info(this.createHeader());
+        LOGGER.info(rental);
         scanner.nextLine();
     }
 
@@ -83,8 +83,8 @@ public class Menu{
         String error = "";
         while(true) {
             this.displayMenuHeader(error);
-            out.println(rental);
-            out.println("Client rating:");
+            LOGGER.info(rental);
+            LOGGER.info("Client rating:");
             try {
                 return scanner.nextInt();
             }
@@ -103,7 +103,7 @@ public class Menu{
 
         this.tableDefault(valTab, colLabl);
 
-        out.println("\tR[pos] -> Refill car\n\tC[pos] [price] -> Change Price\n\tD[pos] -> Toggle Availability\n\tT[pos] -> total faturado");
+        LOGGER.info("\tR[pos] -> Refill car\n\tC[pos] [price] -> Change Price\n\tD[pos] -> Toggle Availability\n\tT[pos] -> total faturado");
 
         return new Scanner(System.in).nextLine().toLowerCase();
     }
@@ -119,7 +119,7 @@ public class Menu{
         colLabl.add("Preço Final");
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        out.println(ti.getInicio().format(formatter) + " -> " + ti.getFim().format(formatter));
+        LOGGER.info(ti.getInicio().format(formatter) + " -> " + ti.getFim().format(formatter));
 
         tableDefault(valTab, colLabl);
 
@@ -129,10 +129,10 @@ public class Menu{
     public AutonomyCar autonomyCarRent(String error) throws InvalidNewRentalException {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        out.println("Tipo do Carro: [electric, gas, hybrid or any]");
+        LOGGER.info("Tipo do Carro: [electric, gas, hybrid or any]");
         String carType = scanner.nextLine();
         try {
-            out.println("Alcance:");
+        	LOGGER.info("Alcance:");
             int range = scanner.nextInt();
             return new AutonomyCar(this.getDest(), range, carType);
         } catch (InputMismatchException e) {
@@ -143,10 +143,10 @@ public class Menu{
     public CheapestNearCar walkingDistanceRent(String error) throws InvalidNewRentalException {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        out.println("Tipo do Carro: [electric, gas, hybrid or any]");
+        LOGGER.info("Tipo do Carro: [electric, gas, hybrid or any]");
         String carType = scanner.nextLine();
         try {
-            out.println("Distância a andar a pé:");
+        	LOGGER.info("Distância a andar a pé:");
             int walk = scanner.nextInt();
             return new CheapestNearCar(this.getDest(), walk, carType);
         } catch (InputMismatchException e) {
@@ -167,11 +167,11 @@ public class Menu{
         colLabl.add("Custo Estimado");
         colLabl.add("Client Rating");
 
-        out.println("Rating pessoal: " + ownerRating);
+        LOGGER.info("Rating pessoal: " + ownerRating);
 
         this.tableDefault(lR, colLabl);
 
-        out.println("\tA[pos] -> aprove rental\n\tR[pos] -> refuse rental");
+        LOGGER.info("\tA[pos] -> aprove rental\n\tR[pos] -> refuse rental");
 
         return scanner.nextLine().toLowerCase();
     }
@@ -188,7 +188,7 @@ public class Menu{
     public SpecificCar specificCarRent(String error) throws InvalidNewRentalException {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        out.println("Matricula:");
+        LOGGER.info("Matricula:");
         String carType = scanner.nextLine();
         try {
             return new SpecificCar(this.getDest(), carType);
@@ -200,7 +200,7 @@ public class Menu{
     public RentCarSimple simpleCarRent(String error) throws InvalidNewRentalException {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        out.println("Tipo do Carro: [electric, gas, hybrid or any]");
+        LOGGER.info("Tipo do Carro: [electric, gas, hybrid or any]");
         String carType = scanner.nextLine();
         try {
             return new RentCarSimple(this.getDest(), carType);
@@ -212,9 +212,9 @@ public class Menu{
     public NewLogin newLogin(String error) {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        out.println("User:");
+        LOGGER.info("User:");
         String user = scanner.nextLine();
-        out.println("Password:");
+        LOGGER.info("Password:");
         String password = scanner.nextLine();
 
         return new NewLogin(user, password);
@@ -223,20 +223,20 @@ public class Menu{
     public RegisterCar newRegisterCar(String error) throws InvalidNewRegisterException {
         this.displayMenuHeader(error);
         Scanner scanner = new Scanner(System.in);
-        out.println("Matricula:");
+        LOGGER.info("Matricula:");
         String matricula = scanner.nextLine();
-        out.println("Marca:");
+        LOGGER.info("Marca:");
         String marca = scanner.nextLine();
-        out.println("Tipo do Carro: [electric, gas or hybrid]");
+        LOGGER.info("Tipo do Carro: [electric, gas or hybrid]");
         String carType = scanner.nextLine();
         try {
-            out.println("Velocidade Média:");
+        	LOGGER.info("Velocidade Média:");
             double avgSpeed = scanner.nextDouble();
-            out.println("Preço base:");
+            LOGGER.info("Preço base:");
             double basePrice = scanner.nextDouble();
-            out.println("Consumo médio:");
+            LOGGER.info("Consumo médio:");
             double gasMileage = scanner.nextDouble();
-            out.println("Alcance:");
+            LOGGER.info("Alcance:");
             int range = scanner.nextInt();
 
             return new RegisterCar(
@@ -256,23 +256,23 @@ public class Menu{
     public RegisterUser newRegisterUser(String error) throws InvalidNewRegisterException {
         displayMenuHeader(error);
         Scanner scanner = new Scanner(System.in);
-        out.println("Nome de Utilizador:");
+        LOGGER.info("Nome de Utilizador:");
         String user = scanner.nextLine();
-        out.println("Email:");
+        LOGGER.info("Email:");
         String email = scanner.nextLine();
-        out.println("Password:");
+        LOGGER.info("Password:");
         String pass = scanner.nextLine();
-        out.println("Morada:");
+        LOGGER.info("Morada:");
         String adress = scanner.nextLine();
         int nif;
         try {
-            out.println("Nif:");
+        	LOGGER.info("Nif:");
             nif = scanner.nextInt();
         }
         catch (InputMismatchException e) {
             throw new InvalidNewRegisterException();
         }
-        if (this.menu.equals(MenuInd.REGISTERCLIENT)) {
+        if (this.myMenu.equals(MenuInd.REGISTERCLIENT)) {
             try {
                 return new RegisterUser(user, email, pass, adress, nif, this.getLoc());
             }
@@ -288,13 +288,13 @@ public class Menu{
     }
 
     public Menu parser() {
-        out.println(this);
+        System.out.println(this);
         String str = new Scanner(System.in).nextLine();
         if (str.matches("^[+-]?\\d{1,8}$")) {
             int i = Integer.parseInt(str);
             if (this.options.size() > i - 1 && i > 0) {
-                this.prev.push(this.menu);
-                this.menu = this.options.get(i - 1);
+                this.prev.push(this.myMenu);
+                this.myMenu = this.options.get(i - 1);
                 this.pickChildMenus();
             }
         }
@@ -307,13 +307,12 @@ public class Menu{
                 this.run = false;
                 break;
         }
-
         return this;
     }
 
     public Menu selectOption(MenuInd i) {
-        this.prev.push(this.menu);
-        this.menu = i;
+        this.prev.push(this.myMenu);
+        this.myMenu = i;
         this.pickChildMenus();
         return this;
     }
@@ -324,10 +323,10 @@ public class Menu{
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
-            out.println("Inicio de Intervalo (yyyy-MM-dd HH:mm):");
+            LOGGER.info("Inicio de Intervalo (yyyy-MM-dd HH:mm):");
             LocalDateTime inicio = LocalDateTime.parse(scanner.nextLine(), formatter);
 
-            out.println("Fim de Intervalo (yyyy-MM-dd HH:mm):");
+            LOGGER.info("Fim de Intervalo (yyyy-MM-dd HH:mm):");
             LocalDateTime fim = LocalDateTime.parse(scanner.nextLine(), formatter);
 
             return new TimeInterval(inicio, fim);
@@ -340,15 +339,14 @@ public class Menu{
     public RateOwnerCar pendingRateShow(String error, String pending, int total) throws InvalidRatingException {
         Scanner scanner = new Scanner(System.in);
         displayMenuHeader(error);
-        out.println(total + ".");
-        out.println(pending);
-        out.println();
+        LOGGER.info(total + ".");
+        LOGGER.info(pending);
         try {
-            out.println("Rating de Owner");
+        	LOGGER.info("Rating de Owner");
             int owner = scanner.nextInt();
             if (owner < 0 || owner > 100)
                 throw new InvalidRatingException();
-            out.println("Rating de Carro");
+            LOGGER.info("Rating de Carro");
             int carro = scanner.nextInt();
             if (carro < 0 || carro > 100)
                 throw new InvalidRatingException();
@@ -366,26 +364,26 @@ public class Menu{
         if (this.prev.isEmpty()) {
             this.run = false;
         } else {
-        	this.menu = this.prev.pop();
+        	this.myMenu = this.prev.pop();
             this.pickChildMenus();
         }
-        if (this.menu.equals(MenuInd.LOGIN) || this.menu.equals(MenuInd.REGISTER))
+        if (this.myMenu.equals(MenuInd.LOGIN) || this.myMenu.equals(MenuInd.REGISTER))
             this.back();
         return this;
     }
 
     private void displayMenuHeader(String error) {
-        out.print(offset);
-        out.println(this.createHeader());
-        out.println(new StringBetter(error).under().toString());
+    	LOGGER.info(offset);
+        LOGGER.info(this.createHeader());
+        LOGGER.info(new StringBetter(error).under().toString());
     }
 
     private Point getDest(){
         Scanner scanner = new Scanner(System.in);
-        out.println("UMCarroJa wants to know your destination!");
-        out.println("x:");
+        LOGGER.info("UMCarroJa wants to know your destination!");
+        LOGGER.info("x:");
         double x = scanner.nextDouble();
-        out.println("y:");
+        LOGGER.info("y:");
         double y = scanner.nextDouble();
 
         return new Point(x, y);
@@ -393,10 +391,10 @@ public class Menu{
 
     private Point getLoc(){
         Scanner scanner = new Scanner(System.in);
-        out.println("UMCarroJa wants to know your location!");
-        out.println("x:");
+        LOGGER.info("UMCarroJa wants to know your location!");
+        LOGGER.info("x:");
         double x = scanner.nextDouble();
-        out.println("y:");
+        LOGGER.info("y:");
         double y = scanner.nextDouble();
 
         return new Point(x, y);
@@ -407,7 +405,7 @@ public class Menu{
         for (MenuInd val : this.prev)
             strHeader.append(val.name()).append("/");
 
-        return strHeader.append(this.menu.name()).append("--\n").red().toString();
+        return strHeader.append(this.myMenu.name()).append("--\n").red().toString();
     }
 
     private void tableDefault(List<List<String>> valTab, List<String> colLabl){
@@ -416,7 +414,7 @@ public class Menu{
             linLabl.add(String.format("%dº", i + 1));
 
         Table<String> tab = new Table<>(valTab,linLabl,colLabl);
-        out.println(tab);
+        System.out.println(tab);
     }
 
     private String menuOptionText(int i) {
@@ -468,7 +466,7 @@ public class Menu{
 
     private void pickChildMenus() {
         this.options.clear();
-        switch (this.menu) {
+        switch (this.myMenu) {
             case INITIAL:
                 this.options.add(MenuInd.LOGIN);
                 this.options.add(MenuInd.REGISTER);

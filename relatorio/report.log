@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  6 NOV 2019 15:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  7 NOV 2019 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -200,7 +200,29 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `fig10' multiply defined.
+
+
+LaTeX Warning: Label `fig10' multiply defined.
+
+
+LaTeX Warning: Label `fig10' multiply defined.
+
+
+LaTeX Warning: Label `fig10' multiply defined.
+
+
+LaTeX Warning: Label `fig10' multiply defined.
+
+
+LaTeX Warning: Label `fig10' multiply defined.
+
+
+LaTeX Warning: Label `fig19' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -215,7 +237,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
-(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen128
@@ -388,104 +410,338 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 <./images/newSmallerCase.png, id=40, 204.765pt x 43.16125pt>
 File: ./images/newSmallerCase.png Graphic file (type png)
 <use ./images/newSmallerCase.png>
-Package pdftex.def Info: ./images/newSmallerCase.png  used on input line 177.
-(pdftex.def)             Requested size: 122.85992pt x 25.89694pt.
+Package pdftex.def Info: ./images/newSmallerCase.png  used on input line 175.
+(pdftex.def)             Requested size: 102.38223pt x 21.58057pt.
 <./images/newSmallerFunction.png, id=41, 720.6925pt x 180.675pt>
 File: ./images/newSmallerFunction.png Graphic file (type png)
 <use ./images/newSmallerFunction.png>
 Package pdftex.def Info: ./images/newSmallerFunction.png  used on input line 17
-8.
-(pdftex.def)             Requested size: 432.41884pt x 108.40582pt.
-
-Overfull \hbox (85.2953pt too wide) in paragraph at lines 177--179
- [] 
- []
-
+7.
+(pdftex.def)             Requested size: 324.30862pt x 81.303pt.
 [5 <./images/isEqualFunction.png> <./images/hashCode.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
+Overfull \hbox (3.906pt too wide) in paragraph at lines 197--199
+[]\T1/cmr/m/n/10 Ter cons-tan-tes numa enu-me-ra-ção es-cri-tas em le-tras mi-n
+us-cu-las. Basta escreve-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--214
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
-<./images/packageRename.png, id=47, 151.56625pt x 35.13126pt>
+[6 <./images/newSmallerCase.png> <./images/newSmallerFunction.png>]
+<./images/catchBlockFill.png, id=52, 425.59pt x 17.06375pt>
+File: ./images/catchBlockFill.png Graphic file (type png)
+<use ./images/catchBlockFill.png>
+Package pdftex.def Info: ./images/catchBlockFill.png  used on input line 220.
+(pdftex.def)             Requested size: 255.35596pt x 10.23831pt.
+
+Overfull \hbox (3.60052pt too wide) in paragraph at lines 230--232
+\T1/cmr/m/n/10 Ficheiros: In-va-lid-Ne-wRen-ta-lEx-cep-tion.java e In-va-lid-Nu
+m-be-rO-fAr-gu-ment-sEx-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+
+ []
+
+<./images/exceptionCorrection.png, id=53, 540.0175pt x 52.195pt>
+File: ./images/exceptionCorrection.png Graphic file (type png)
+<use ./images/exceptionCorrection.png>
+Package pdftex.def Info: ./images/exceptionCorrection.png  used on input line 2
+39.
+(pdftex.def)             Requested size: 324.013pt x 31.31723pt.
+
+Overfull \hbox (3.60052pt too wide) in paragraph at lines 249--251
+\T1/cmr/m/n/10 Ficheiros: In-va-lid-Ne-wRen-ta-lEx-cep-tion.java e In-va-lid-Nu
+m-be-rO-fAr-gu-ment-sEx-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+
+ []
+
+File: ./images/exceptionCorrection.png Graphic file (type png)
+<use ./images/exceptionCorrection.png>
+Package pdftex.def Info: ./images/exceptionCorrection.png  used on input line 2
+58.
+(pdftex.def)             Requested size: 324.013pt x 31.31723pt.
+
+Overfull \hbox (1.62878pt too wide) in paragraph at lines 268--269
+[]\T1/cmr/m/n/10 Ao re-por-tar algo o uti-li-za-dor deve ser ca-paz de ace-der 
+aos logs fa-cil-mente,estes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+[7 <./images/catchBlockFill.png> <./images/exceptionCorrection.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+<./images/logger.png, id=60, 583.17876pt x 328.22626pt>
+File: ./images/logger.png Graphic file (type png)
+<use ./images/logger.png>
+Package pdftex.def Info: ./images/logger.png  used on input line 278.
+(pdftex.def)             Requested size: 349.90996pt x 196.93727pt.
+
+Overfull \hbox (2.78642pt too wide) in paragraph at lines 278--279
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+<./images/removedMethods.png, id=61, 256.96pt x 110.4125pt>
+File: ./images/removedMethods.png Graphic file (type png)
+<use ./images/removedMethods.png>
+Package pdftex.def Info: ./images/removedMethods.png  used on input line 305.
+(pdftex.def)             Requested size: 154.17719pt x 66.248pt.
+[8 <./images/logger.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+
+ []
+
+<./images/packageRename.png, id=66, 151.56625pt x 35.13126pt>
 File: ./images/packageRename.png Graphic file (type png)
 <use ./images/packageRename.png>
-Package pdftex.def Info: ./images/packageRename.png  used on input line 222.
+Package pdftex.def Info: ./images/packageRename.png  used on input line 332.
 (pdftex.def)             Requested size: 90.94044pt x 21.0789pt.
-[6 <./images/newSmallerCase.png> <./images/newSmallerFunction.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
-<./images/sizeForIsEmpty.png, id=53, 156.585pt x 18.0675pt>
+<./images/sizeForIsEmpty.png, id=67, 156.585pt x 18.0675pt>
 File: ./images/sizeForIsEmpty.png Graphic file (type png)
 <use ./images/sizeForIsEmpty.png>
-Package pdftex.def Info: ./images/sizeForIsEmpty.png  used on input line 243.
+Package pdftex.def Info: ./images/sizeForIsEmpty.png  used on input line 353.
 (pdftex.def)             Requested size: 93.95172pt x 10.84058pt.
-<./images/ifElseChangePre.png, id=54, 243.91125pt x 87.32625pt>
+<./images/ifElseChangePre.png, id=68, 243.91125pt x 87.32625pt>
 File: ./images/ifElseChangePre.png Graphic file (type png)
 <use ./images/ifElseChangePre.png>
-Package pdftex.def Info: ./images/ifElseChangePre.png  used on input line 258.
+Package pdftex.def Info: ./images/ifElseChangePre.png  used on input line 368.
 (pdftex.def)             Requested size: 146.34787pt x 52.39615pt.
-<./images/ifElseChangePos.png, id=55, 258.9675pt x 89.33376pt>
+<./images/ifElseChangePos.png, id=69, 258.9675pt x 89.33376pt>
 File: ./images/ifElseChangePos.png Graphic file (type png)
 <use ./images/ifElseChangePos.png>
-Package pdftex.def Info: ./images/ifElseChangePos.png  used on input line 259.
+Package pdftex.def Info: ./images/ifElseChangePos.png  used on input line 369.
 (pdftex.def)             Requested size: 155.38168pt x 53.60065pt.
+[9 <./images/removedMethods.png> <./images/packageRename.png> <./images/sizeFor
+IsEmpty.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 380--382
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 \begin{itemize}
-                     
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.270 \begin{itemize}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
- 
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+
+ []
+
+<./images/packageMainJava.png, id=76, 134.5025pt x 21.07875pt>
+File: ./images/packageMainJava.png Graphic file (type png)
+<use ./images/packageMainJava.png>
+Package pdftex.def Info: ./images/packageMainJava.png  used on input line 390.
+(pdftex.def)             Requested size: 80.7021pt x 12.64732pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+<./images/returnMinorEqual.png, id=77, 544.0325pt x 34.1275pt>
+File: ./images/returnMinorEqual.png Graphic file (type png)
+<use ./images/returnMinorEqual.png>
+Package pdftex.def Info: ./images/returnMinorEqual.png  used on input line 411.
+
+(pdftex.def)             Requested size: 326.42201pt x 20.47664pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+<./images/overrideCloneCar.png, id=78, 210.7875pt x 58.2175pt>
+File: ./images/overrideCloneCar.png Graphic file (type png)
+<use ./images/overrideCloneCar.png>
+Package pdftex.def Info: ./images/overrideCloneCar.png  used on input line 432.
+
+(pdftex.def)             Requested size: 126.47346pt x 34.93076pt.
+[10 <./images/ifElseChangePre.png> <./images/ifElseChangePos.png> <./images/pac
+kageMainJava.png> <./images/returnMinorEqual.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+
+ []
+
+<./images/returningArrayList.png, id=86, 396.48125pt x 19.07124pt>
+File: ./images/returningArrayList.png Graphic file (type png)
+<use ./images/returningArrayList.png>
+Package pdftex.def Info: ./images/returningArrayList.png  used on input line 45
+6.
+(pdftex.def)             Requested size: 237.89058pt x 11.44283pt.
+<./images/returningList.png, id=87, 366.36874pt x 15.05624pt>
+File: ./images/returningList.png Graphic file (type png)
+<use ./images/returningList.png>
+Package pdftex.def Info: ./images/returningList.png  used on input line 457.
+(pdftex.def)             Requested size: 219.82294pt x 9.0338pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--470
+
+ []
+
+<./images/filterEpre.png, id=88, 293.095pt x 15.05624pt>
+File: ./images/filterEpre.png Graphic file (type png)
+<use ./images/filterEpre.png>
+Package pdftex.def Info: ./images/filterEpre.png  used on input line 476.
+(pdftex.def)             Requested size: 175.85834pt x 9.0338pt.
+<./images/filterEpos.png, id=89, 257.96375pt x 17.06375pt>
+File: ./images/filterEpos.png Graphic file (type png)
+<use ./images/filterEpos.png>
+Package pdftex.def Info: ./images/filterEpos.png  used on input line 477.
+(pdftex.def)             Requested size: 154.77943pt x 10.23831pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--491
+
+ []
+
+<./images/reorderDeclarations.png, id=90, 532.99126pt x 90.3375pt>
+File: ./images/reorderDeclarations.png Graphic file (type png)
+<use ./images/reorderDeclarations.png>
+Package pdftex.def Info: ./images/reorderDeclarations.png  used on input line 4
+97.
+(pdftex.def)             Requested size: 319.79723pt x 54.2029pt.
+
+Underfull \vbox (badness 1178) has occurred while \output is active []
+
+ [11 <./images/overrideCloneCar.png> <./images/returningArrayList.png> <./image
+s/returningList.png> <./images/filterEpre.png> <./images/filterEpos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 508--510
+
+ []
+
+<./images/resetFunction.png, id=99, 403.5075pt x 50.1875pt>
+File: ./images/resetFunction.png Graphic file (type png)
+<use ./images/resetFunction.png>
+Package pdftex.def Info: ./images/resetFunction.png  used on input line 516.
+(pdftex.def)             Requested size: 242.10637pt x 30.11272pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
+
+ []
+
+<./images/renameFunction.png, id=100, 400.49625pt x 52.195pt>
+File: ./images/renameFunction.png Graphic file (type png)
+<use ./images/renameFunction.png>
+Package pdftex.def Info: ./images/renameFunction.png  used on input line 535.
+(pdftex.def)             Requested size: 240.29959pt x 31.31723pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--548
+
+ []
+
+<./images/varsMaiusculas.png, id=101, 234.8775pt x 37.13875pt>
+File: ./images/varsMaiusculas.png Graphic file (type png)
+<use ./images/varsMaiusculas.png>
+Package pdftex.def Info: ./images/varsMaiusculas.png  used on input line 555.
+(pdftex.def)             Requested size: 140.92758pt x 22.28342pt.
+) (./tarefa2.tex) (./tarefa3.tex) (./tarefa4.tex)
+
+LaTeX Warning: Empty `thebibliography' environment on input line 26.
+
+[12 <./images/reorderDeclarations.png> <./images/resetFunction.png> <./images/r
+enameFunction.png> <./images/varsMaiusculas.png>] [13] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2896 strings out of 492616
- 40033 string characters out of 6129481
- 120218 words of memory out of 5000000
- 6759 multiletter control sequences out of 15000+600000
+ 3000 strings out of 492616
+ 42309 string characters out of 6129481
+ 120365 words of memory out of 5000000
+ 6838 multiletter control sequences out of 15000+600000
  11430 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,423b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 41i,7n,25p,482b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on report.pdf (13 pages, 546368 bytes).
+PDF statistics:
+ 147 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+

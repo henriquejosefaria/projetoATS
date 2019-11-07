@@ -114,8 +114,54 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
  Ficheiro: Car.java\newline
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .................Rever...............
+
+
 \par Para resolver este problema fo preciso renomear o método equals para o método isEqual, visto que usando um \textit{@Override} este método obrigaria a implementar um método de super tipo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{figure}[H]
 
@@ -172,14 +218,12 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \begin{figure}[H]
 
+  \hbox{\hspace{+1em}  \includegraphics[scale = 0.5]{newSmallerCase.png}}
   \centering
+  \includegraphics[scale = 0.45]{newSmallerFunction.png}
+  \caption {Solução do problema de complexidade extrema do método run()}
 
-  \includegraphics[scale = 0.6]{newSmallerCase.png}
-  \includegraphics[scale = 0.6]{newSmallerFunction.png}
-
-  \caption {Solução do problema complexidade extrema do método run()}
-
-  \label {fig10}
+  \label {fig9}
 
 \end{figure}
 \end{itemize}
@@ -187,12 +231,12 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \begin{itemize}
 \item Repetir várias vezes a atribuição da mesma string pode tornar o código confuso e ineficiente. \newline
 \par Para ultrapassar essa dificuldade essa string passou a ser criada e guardade numa constante quando um objeto da classe é inicializado e essa constante é depois atribuida quando necessário. \newline
- Ficheiro: Controller.java, Rental.java, Weather.java e Menu.java\newline
+ Ficheiros: Controller.java, Rental.java, Weather.java e Menu.java\newline
 \end{itemize}
 
 \begin{itemize}
 \item Usar switch sem caso \textit{default:}. Bastou substituir o ultimo \textit{case "...":} por \textit{default:} para cumprir o mesmo objetivo do código anterior. No caso do ficheiro Menu.java o default foi adicionado após todos os cases existentes para garantir que o programa corria da forma correta.
- Ficheiro: Controller.java, Car.java, Parser.java e Menu.java\newline
+ Ficheiros: Controller.java, Car.java, Parser.java e Menu.java\newline
 \end{itemize}
 
 \begin{itemize}
@@ -213,7 +257,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \begin{itemize}
 \item A existencia de blocos try/catch vazios não afeta o desempenho da aplicação mas pode ser um erro de falta de código, neste caso, assumimos que foi deixado propositadamente vazio, logo para nã alterar o código restante preencheu-se o bloco com a atribuição de uma String vazia á variavel error.\newline
- Ficheiro: Controller.java e Main.java\newline
+ Ficheiros: Controller.java e Main.java\newline
 
  \begin{figure}[H]
 
@@ -242,7 +286,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \caption {Troca de Throwable por Exception}
 
-  \label {fig10}
+  \label {fig11}
 
 \end{figure}
 \end{itemize}
@@ -261,7 +305,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \caption {Troca de Throwable por Exception}
 
-  \label {fig10}
+  \label {fig12}
 
 \end{figure}
 \end{itemize}
@@ -269,7 +313,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \begin{itemize}
 \item Ao reportar algo o utilizador deve ser capaz de aceder aos logs facilmente,estes logs têm de ter um formato uniforme, devem ser guardados e dados sensiveis devem ser guardados de forma segura. A utilização de System.out.println() pode comprometer um destes aspetos. Portanto tivemos de importar a biblioteca -textit{java.util.logging.Logger} e criar um \textit{Logger} para guardar o output disponibilizado ao utilizador.\newline
 
- Ficheiros: Main.java\newline
+ Ficheiros: Main.java e  Menu.java\newline
 
 \par O código com o Logger é apresentado na seguinte imagem.
 
@@ -281,13 +325,15 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \caption {Uso de Logger para seguir requerimentos dos outputs}
 
-  \label {fig10}
+  \label {fig13}
 
 \end{figure}
 \end{itemize}
 
 \begin{itemize}
-\item A utilização de muito parâmetros pode significar que esta classe está a fazer muitas coisas. 
+\item A utilização de muito parâmetros pode significar que esta classe está a fazer muitas coisas. \newline
+
+Ficheiros: Car.java e RegisterCar.java
 
 \par Achamos por bem para já não alterar este codeSmell, pois a função recebe 9 argumentos quando só devia receber no máximo 7. O excesso de parâmetros não prejudica o desempenho de forma alguma.
 
@@ -295,7 +341,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \begin{itemize}
 \item A presença de métodos que não são utilizados (dead code) deve ser removida. \newline
-Ficheiro: Point.java e StringBetter.java \newline
+Ficheiros: Point.java e StringBetter.java \newline
 
 \par Na figura em baixo podemos ver um exemplo dos métodos removidos. Na classe StringBetter.java removeu-se o método setStr().
  \begin{figure}[H]
@@ -306,26 +352,16 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Métodos removidos da classe Point.java}
 
-  \label {fig10}
+  \label {fig14}
 
 \end{figure}
 \end{itemize}
 
+\begin{itemize}
+\item A presença de uma variavel com o mesmo nome da classe em que se insere pode confundir, as boas práticas indicam que devem ser nomes distintos. Portanto a variável \textit{menu} foi renomeada para \textit{mymenu}. \newline
+Ficheiro: Menu.java \newline
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\end{itemize}
 
 \subsubsection{Minor CodeSmells:}
 \begin{itemize}
@@ -343,7 +379,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Solução do problema de renomeação de packages}
 
-  \label {fig09}
+  \label {fig15}
 
 \end{figure}
 
@@ -364,7 +400,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Solução do problema de inefeciência no uso de funções de Coleções na classe Controller}
 
-  \label {fig10}
+  \label {fig16}
 
 \end{figure}
 
@@ -380,13 +416,12 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Solução do problema de inefeciência no uso de funções de Coleções na classe Menu}
 
-  \label {fig11}
+  \label {fig17}
 
 \end{figure}
 
 \end{itemize}
 
-\begin{itemize}
 \begin{itemize}
 \item Classe sem package.\newline
  Ficheiro: main.java.\newline
@@ -402,7 +437,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Declaração do package a que a classe main.java pertence}
 
-  \label {fig12}
+  \label {fig18}
 
 \end{figure}
 
@@ -423,7 +458,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Solução do problema de inefeciência do return}
 
-  \label {fig13}
+  \label {fig19}
 
 \end{figure}
 
@@ -431,7 +466,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
 \begin{itemize}
 \item Declaração de um clone() sem \textit{@Override}.\newline
- Ficheiro: Car.java, Cars.java, Cliente.java, Owner.java e Point.java.\newline
+ Ficheiros: Car.java, Cars.java, Cliente.java, Owner.java e Point.java.\newline
 
 
 \par Para resolver o problema basta adicionar o \textit{@Override} no método, como se pode ver na seguinte figura.\newline
@@ -445,7 +480,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Implementação do método clone() da classe Car}
 
-  \label {fig14}
+  \label {fig20}
 
 \end{figure}
 
@@ -454,7 +489,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
 \begin{itemize}
 \item Método devolve ArrayList em vez de List, dando informação sobre a implementação do método.\newline
- Ficheiro: Cars.java, Owner.java.\newline
+ Ficheiros: Cars.java e Owner.java.\newline
 
 
 \par Para resolver o problema basta por o método a devolver uma interface genérica.\newline
@@ -469,7 +504,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Exemplo da mudança do tipo de interface retornada por um método}
 
-  \label {fig15}
+  \label {fig21}
 
 \end{figure}
 
@@ -477,7 +512,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
 \begin{itemize}
 \item Utilização desnecessária de parentesis num filter.\newline
- Ficheiro: Cars.java e UmCarroJa.java.\newline
+ Ficheiros: Cars.java e UmCarroJa.java.\newline
 
 
 \begin{figure}[H]
@@ -489,7 +524,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {filter sem paretesis}
 
-  \label {fig16}
+  \label {fig22}
 
 \end{figure}
 
@@ -509,7 +544,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Ordenação correta das declarações de variáveis}
 
-  \label {fig17}
+  \label {fig23}
 
 \end{figure}
 
@@ -528,7 +563,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Declaração correta do método, usando letra minúscula no início}
 
-  \label {fig18}
+  \label {fig24}
 
 \end{figure}
 
@@ -547,7 +582,7 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Declaração correta do método retirando o underscore e substituindo letra seguinte por maiúscula}
 
-  \label {fig19}
+  \label {fig25}
 
 \end{figure}
 
@@ -567,13 +602,22 @@ Ficheiro: Point.java e StringBetter.java \newline
 
   \caption {Declaração correta das variáveis user e password}
 
-  \label {fig19}
+  \label {fig26}
 
 \end{figure}
 
 \end{itemize}
 
+\subsection{Security Hotspot}
 
+\begin{itemize}
 
+\item A utilização da class \textit{Random} não é segura por permitir que um atacante consiga prever o próximo random gerado e conseguir fazer-se passar por quem não deve.\newline
+
+\par para corrigir este problema bastou substituir a utilização de \textit{Random} por \textit{SecureRandom}.
+
+Ficheiros: Traffic.java e Weather.java
+
+\end{itemize}
 
 

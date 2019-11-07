@@ -1,7 +1,7 @@
 package model;
 
 import java.time.LocalDateTime;
-import java.util.Random;
+import java.security.SecureRandom;
 
 class Weather {
 	private static String winter = "Winter";
@@ -21,7 +21,7 @@ class Weather {
     }
 
     public double getSeasonDelay() {
-        Random a = new Random();
+        SecureRandom a = new SecureRandom();
         switch (getSeason()){
             case "Summer":
                 return a.nextDouble() % 0.1;
