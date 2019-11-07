@@ -25,62 +25,62 @@ public class Controller {
         String error = "";
         while(this.menu.getRun()) {
             switch (menu.getMenu()) {
-                case Login:
+                case LOGIN:
                 	error = caseLogin();
                     break;
-                case RegisterClient:
+                case REGISTERCLIENT:
                     error = caseRegisterClient();
                     break;
-                case RegisterOwner:
+                case REGISTEROWNER:
                     error = caseRegisterOwner();
                     break;
-                case Closest:
+                case CLOSEST:
                     error = caseClosest();
                     break;
-                case Cheapest:
+                case CHEAPEST:
                     error = caseCheapest();
                     break;
-                case ReviewRental:
+                case REVIEWRENTAL:
                     error = caseReviewRental();
                     break;
 
-                case CheapestNear:
+                case CHEAPESTNEAR:
                     error = caseCheapestNear();
                     break;
 
-                case Autonomy:
+                case AUTONOMY:
                 	error = caseAutonomy();
                     break;
 
-                case Specific:
+                case SPECIFIC:
                     error = caseSpecific();
                     break;
 
-                case AddCar:
+                case ADDCAR:
                     error = caseAddCar();
                     break;
 
-                case NUses:
+                case NUSES:
                     error = caseNUses();
                     break;
 
-                case Distance:
+                case DISTANCE:
                     error = caseDistance();
                     break;
 
-                case CarOverview:
+                case CAROVERVIEW:
                     error = caseCarOverview();
                     break;
 
-                case Pending:
+                case PENDING:
                     error = casePending();
                     break;
 
-                case HistoryOwner:
+                case HISTORYOWNER:
                     error = caseHistoryOwner();
                     break;
 
-                case HistoryClient:
+                case HISTORYCLIENT:
                     error = caseHistoryClient();
                     break;
 
@@ -96,7 +96,7 @@ public class Controller {
     	try {
     		NewLogin r = menu.newLogin(error);
     		user = model.logIn(r.getUser(), r.getPassword());
-    		menu.selectOption((user instanceof Client)? Menu.MenuInd.Client : Menu.MenuInd.Owner);
+    		menu.selectOption((user instanceof Client)? Menu.MenuInd.CLIENT : Menu.MenuInd.OWNER);
     		error = "";
     	}
     	catch (InvalidUserException e){ error = "Invalid Username"; }
@@ -158,7 +158,7 @@ public class Controller {
             menu.back();
             error = "";
         }
-        catch (UnknownCompareTypeException ignored) {}
+        catch (UnknownCompareTypeException ignored) {error = "";}
         catch (NoCarAvaliableException e) { error = errorCars; }
         catch (InvalidNewRentalException e){error = "Novo Rental inválido"; }
 		return error;
@@ -176,7 +176,7 @@ public class Controller {
             menu.showString(rental.toString());
             menu.back();
         }
-        catch (UnknownCompareTypeException ignored) {}
+        catch (UnknownCompareTypeException ignored) {error = "";}
         catch (NoCarAvaliableException e) { error = errorCars; }
         catch (InvalidNewRentalException e){error = "Novo Rental inválido"; }
 		return error;
@@ -297,7 +297,7 @@ public class Controller {
         }
         catch (InvalidNewRegisterException e){ error = errorParam; }
         catch (CarExistsException e){ error = "Carro já existe"; }
-        catch (InvalidUserException ignored) {}
+        catch (InvalidUserException ignored) {error = "";}
 		return error;
 	}
 	
@@ -438,14 +438,6 @@ public class Controller {
         catch (InvalidTimeIntervalException e){error = "Intervalo Inválido";}
 		return error;
 	}
-
-
-
-
-
-
-
-
 
 }
 	

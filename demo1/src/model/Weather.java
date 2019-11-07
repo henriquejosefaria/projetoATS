@@ -4,12 +4,16 @@ import java.time.LocalDateTime;
 import java.util.Random;
 
 class Weather {
+	private static String winter = "Winter";
+	private static String spring = "Spring";
+	private static String summer = "Summer";
+	private static String fall = "Fall";
     private static final String[] seasons = {
-            "Winter", "Winter",
-            "Spring", "Spring", "Spring",
-            "Summer", "Summer", "Summer",
-            "Fall", "Fall", "Fall",
-            "Winter"
+            winter, winter,
+            spring, spring, spring,
+            summer, summer, summer,
+            fall, fall, fall,
+            winter
     };
 
     private String getSeason() {

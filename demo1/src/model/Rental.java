@@ -18,6 +18,7 @@ public class Rental implements Serializable {
     private final LocalDateTime date;
     private final double expectedTime;
     private double realTime;
+    private String time = "%.2f Horas";
 
     Rental(Car car, Client client, Point dest) {
         this.client = client;
@@ -123,16 +124,16 @@ public class Rental implements Serializable {
         str.append("Viagem:         ").append(this.start).append(" -> ").append(this.end).append("\n");
         str.append("Tempo a pé      ").append(
                 String.format(
-                        "%.2f Horas",
+                        time,
                         this.client.getPos().distanceBetweenPoints(this.start)/4)).append("\n");
-        str.append("Tempo Estimado: ").append(String.format("%.2f Horas", this.expectedTime)).append("\n");
+        str.append("Tempo Estimado: ").append(String.format(time, this.expectedTime)).append("\n");
         str.append("Custo Estimado: ").append(String.format("%.2f", this.expectedPrice));
         return str.toString();
     }
 
     public String toFinalString() {
         StringBuilder str = new StringBuilder();
-        str.append("Tempo Total: ").append(String.format("%.2f Horas", this.realTime)).append("\n");
+        str.append("Tempo Total: ").append(String.format(time, this.realTime)).append("\n");
         str.append("Custo Total: ").append(String.format("%.2f", this.realPrice)).append("\n\n");
         str.append(new StringBetter(this.car.warnings()).under());
         return str.toString();

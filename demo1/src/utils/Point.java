@@ -11,14 +11,6 @@ public class Point implements Serializable {
         this.x = x;
         this.y = y;
     }
-
-    private Double getX() {
-        return this.x;
-    }
-
-    private Double getY() {
-        return y;
-    }
     @Override
     public Point clone() {
         return new Point(this.x, this.y);

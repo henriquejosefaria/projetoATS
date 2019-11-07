@@ -185,25 +185,145 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \end{itemize}
 
 \begin{itemize}
-\item Repetir várias vezes a atribuição da mesma string pode tornar o código confuso. \newline
-\par Para ultrapassar essa dificuldade essa string passou a ser criada e guardade numa variável quando um objeto da classe é inicializado e essa variável é depois atribuida quando necessário. \newline
- Ficheiro: Controller.java\newline
+\item Repetir várias vezes a atribuição da mesma string pode tornar o código confuso e ineficiente. \newline
+\par Para ultrapassar essa dificuldade essa string passou a ser criada e guardade numa constante quando um objeto da classe é inicializado e essa constante é depois atribuida quando necessário. \newline
+ Ficheiro: Controller.java, Rental.java, Weather.java e Menu.java\newline
 \end{itemize}
 
 \begin{itemize}
-\item Usar switch sem caso \textit{default:}. Bastou substituir o ultimo \textit{case "...":} por \textit{default:} para cumprir o mesmo objetivo do código anterior.
- Ficheiro: Controller.java, Car.java e Parser.java\newline
+\item Usar switch sem caso \textit{default:}. Bastou substituir o ultimo \textit{case "...":} por \textit{default:} para cumprir o mesmo objetivo do código anterior. No caso do ficheiro Menu.java o default foi adicionado após todos os cases existentes para garantir que o programa corria da forma correta.
+ Ficheiro: Controller.java, Car.java, Parser.java e Menu.java\newline
 \end{itemize}
 
 \begin{itemize}
-\item Ter constantes num enum escritas em letras minusculas. Basta escreve-las em maiúsculas para as escrever segundo a convenção.
- Ficheiro: Car.java\newline
+\item Ter constantes numa enumeração escritas em letras minusculas. Basta escreve-las em maiúsculas para que passem a seguir a convenção. Para além disso todas as ocorrencias destas palavras sofrerão a mesma modificação.
+ Ficheiros: Car.java e Menu.java\newline
+\end{itemize}
+
+\begin{itemize}
+\item Atualizar uma variável static através de um método não estático.\newline
+ Ficheiro: Rentals.java\newline
+\par Para contornar este problema, transformou-se a variável \textit{static private int id} em \textit{private int id}.
 \end{itemize}
 
 
 
 
 \subsubsection{Major CodeSmells:}
+
+\begin{itemize}
+\item A existencia de blocos try/catch vazios não afeta o desempenho da aplicação mas pode ser um erro de falta de código, neste caso, assumimos que foi deixado propositadamente vazio, logo para nã alterar o código restante preencheu-se o bloco com a atribuição de uma String vazia á variavel error.\newline
+ Ficheiro: Controller.java e Main.java\newline
+
+ \begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.6]{catchBlockFill.png}
+
+  \caption {Preenchimento do bloco vazio com uma linha de código que não afete a aplicação}
+
+  \label {fig10}
+
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+\item A utilização de uma classe que reporta uma exceção e não extende a class \textit{Exception} viola a convenção, para corrigir o erro mudou-se a expressão \textit{extends Throwable} para \textit{ extends Exception}.\newline
+ Ficheiros: InvalidNewRentalException.java e InvalidNumberOfArgumentsException.java\newline
+
+\par O código corrigido é apresentado na seguinte figura.
+
+ \begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.6]{exceptionCorrection.png}
+
+  \caption {Troca de Throwable por Exception}
+
+  \label {fig10}
+
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+\item A utilização de uma classe que reporta uma exceção e não extende a class \textit{Exception} viola a convenção, para corrigir o erro mudou-se a expressão \textit{extends Throwable} para \textit{ extends Exception}.\newline
+ Ficheiros: InvalidNewRentalException.java e InvalidNumberOfArgumentsException.java\newline
+
+\par O código corrigido é apresentado na seguinte imagem.
+
+ \begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.6]{exceptionCorrection.png}
+
+  \caption {Troca de Throwable por Exception}
+
+  \label {fig10}
+
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+\item Ao reportar algo o utilizador deve ser capaz de aceder aos logs facilmente,estes logs têm de ter um formato uniforme, devem ser guardados e dados sensiveis devem ser guardados de forma segura. A utilização de System.out.println() pode comprometer um destes aspetos. Portanto tivemos de importar a biblioteca -textit{java.util.logging.Logger} e criar um \textit{Logger} para guardar o output disponibilizado ao utilizador.\newline
+
+ Ficheiros: Main.java\newline
+
+\par O código com o Logger é apresentado na seguinte imagem.
+
+ \begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.6]{logger.png}
+
+  \caption {Uso de Logger para seguir requerimentos dos outputs}
+
+  \label {fig10}
+
+\end{figure}
+\end{itemize}
+
+\begin{itemize}
+\item A utilização de muito parâmetros pode significar que esta classe está a fazer muitas coisas. 
+
+\par Achamos por bem para já não alterar este codeSmell, pois a função recebe 9 argumentos quando só devia receber no máximo 7. O excesso de parâmetros não prejudica o desempenho de forma alguma.
+
+\end{itemize}
+
+\begin{itemize}
+\item A presença de métodos que não são utilizados (dead code) deve ser removida. \newline
+Ficheiro: Point.java \newline
+
+\par Na figura em baixo podemos ver os métodos removidos.
+ \begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.6]{removedMethods.png}
+
+  \caption {Métodos removidos da classe Point.java}
+
+  \label {fig10}
+
+\end{figure}
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

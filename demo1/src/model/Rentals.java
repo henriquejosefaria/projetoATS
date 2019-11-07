@@ -8,9 +8,10 @@ import java.util.stream.Collectors;
 
 class Rentals implements Serializable {
 	
-	static private int id;
+	
     private static final long serialVersionUID = 1526373866446179937L;
     private final List<Rental> rentalBase;
+    private int id;
 
 
     Rentals() {
@@ -19,7 +20,7 @@ class Rentals implements Serializable {
     }
 
     void addRental(Rental r) {
-        id++;
+        this.id++;
         this.rentalBase.add(r);
     }
 
