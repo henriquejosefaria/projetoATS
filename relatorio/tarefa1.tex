@@ -622,13 +622,13 @@ Ficheiros: Traffic.java e Weather.java
 
 \end{itemize}
 
-\par Adicionalmente foram tratados dois problemas referidos pelo IDE Eclipse.
+\par Adicionalmente foram tratados três problemas referidos pelo IDE Eclipse.
 
 \par O primeiro problema diz respeito ao uso de uma variavel error na classe Controller.java. Esta era usada para guardar uma mensagem explicativa do erro ocorrido durante a execução do programa, mas este nunca era mostrado ao utilizador caso ocorre-se. Para isso bastou imprimir caso ocorra, com recurso ao System.out.println(), o erro obtido após um ciclo.\newline
 
 \par No segundo problema existe uma variável "privare int id" no ficheiro Rentals.java que nunca é utilizada para nada, apenas é incrementada quando é adicionado um novo objeto rental mas não tem um propósito no código. Para resolver esta dependência bastou remover esta variável.\newline 
 
-
+\par Por fim, na classe Menu.java em todos os métodos em que se criava um Scanner este nunca era fechado. Para resolver isto basta fechar o mesmo em todos esses métodos com a adição do código: "scanner.close();" no fim do mesmo.\newline
 
 
 

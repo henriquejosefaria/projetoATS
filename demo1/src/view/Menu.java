@@ -76,6 +76,7 @@ public class Menu{
         LOGGER.info(this.createHeader());
         LOGGER.info(rental);
         scanner.nextLine();
+        scanner.close();
     }
 
     public int showRentalRate(String rental) {
@@ -88,7 +89,11 @@ public class Menu{
             try {
                 return scanner.nextInt();
             }
-            catch (InputMismatchException e) {error = "Invalid rating";}
+            catch (InputMismatchException e) {
+            	error = "Invalid rating";
+            } finally {
+            	scanner.close();
+            }
         }
     }
 
@@ -104,8 +109,10 @@ public class Menu{
         this.tableDefault(valTab, colLabl);
 
         LOGGER.info("\tR[pos] -> Refill car\n\tC[pos] [price] -> Change Price\n\tD[pos] -> Toggle Availability\n\tT[pos] -> total faturado");
-
-        return new Scanner(System.in).nextLine().toLowerCase();
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine().toLowerCase();
+        scanner.close();
+        return s;
     }
 
     public void rentalHistoryShow (TimeInterval ti, List<List<String>> valTab){
@@ -122,8 +129,9 @@ public class Menu{
         LOGGER.info(ti.getInicio().format(formatter) + " -> " + ti.getFim().format(formatter));
 
         tableDefault(valTab, colLabl);
-
-        new Scanner(System.in).nextLine();
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+        scanner.close();
     }
 
     public AutonomyCar autonomyCarRent(String error) throws InvalidNewRentalException {
@@ -137,6 +145,8 @@ public class Menu{
             return new AutonomyCar(this.getDest(), range, carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
+        } finally {
+        	 scanner.close();
         }
     }
 
@@ -151,6 +161,8 @@ public class Menu{
             return new CheapestNearCar(this.getDest(), walk, carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
+        } finally {
+        	 scanner.close();
         }
     }
 
@@ -172,8 +184,9 @@ public class Menu{
         this.tableDefault(lR, colLabl);
 
         LOGGER.info("\tA[pos] -> aprove rental\n\tR[pos] -> refuse rental");
-
-        return scanner.nextLine().toLowerCase();
+        String s = scanner.nextLine().toLowerCase();
+        scanner.close();
+        return s;
     }
 
     public void top10ClientsShow (List<List<String>> valTab, String colum){
@@ -182,7 +195,10 @@ public class Menu{
         colLabl.add(colum);
         this.displayMenuHeader("");
         this.tableDefault(valTab, colLabl);
-        new Scanner(System.in).nextLine();
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+        scanner.close();
+        
     }
 
     public SpecificCar specificCarRent(String error) throws InvalidNewRentalException {
@@ -194,6 +210,8 @@ public class Menu{
             return new SpecificCar(this.getDest(), carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
+        } finally {
+        	scanner.close();
         }
     }
 
@@ -206,6 +224,8 @@ public class Menu{
             return new RentCarSimple(this.getDest(), carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
+        } finally {
+        	scanner.close();
         }
     }
 
@@ -216,7 +236,7 @@ public class Menu{
         String user = scanner.nextLine();
         LOGGER.info("Password:");
         String password = scanner.nextLine();
-
+        scanner.close();
         return new NewLogin(user, password);
     }
 
@@ -250,6 +270,8 @@ public class Menu{
                     marca);
         } catch (InputMismatchException e) {
             throw new InvalidNewRegisterException();
+        } finally {
+        	scanner.close();
         }
     }
 
@@ -268,20 +290,23 @@ public class Menu{
         try {
         	LOGGER.info("Nif:");
             nif = scanner.nextInt();
+            
+            if (this.myMenu.equals(MenuInd.REGISTERCLIENT)) {
+                try {
+                    return new RegisterUser(user, email, pass, adress, nif, this.getLoc());
+                }
+                catch (InputMismatchException e) {
+                    throw new InvalidNewRegisterException();
+                }
+            }
+            else {
+                return new RegisterUser(user, email, pass, adress, nif);
+            }
         }
         catch (InputMismatchException e) {
             throw new InvalidNewRegisterException();
-        }
-        if (this.myMenu.equals(MenuInd.REGISTERCLIENT)) {
-            try {
-                return new RegisterUser(user, email, pass, adress, nif, this.getLoc());
-            }
-            catch (InputMismatchException e) {
-                throw new InvalidNewRegisterException();
-            }
-        }
-        else {
-            return new RegisterUser(user, email, pass, adress, nif);
+        } finally {
+        	scanner.close();
         }
 
 
@@ -289,7 +314,8 @@ public class Menu{
 
     public Menu parser() {
         System.out.println(this);
-        String str = new Scanner(System.in).nextLine();
+        Scanner scanner = new Scanner(System.in);
+		String str = scanner.nextLine();
         if (str.matches("^[+-]?\\d{1,8}$")) {
             int i = Integer.parseInt(str);
             if (this.options.size() > i - 1 && i > 0) {
@@ -307,6 +333,7 @@ public class Menu{
                 this.run = false;
                 break;
         }
+        scanner.close();
         return this;
     }
 
@@ -333,6 +360,8 @@ public class Menu{
         }
         catch (DateTimeParseException e){
             throw new InvalidTimeIntervalException();
+        } finally {
+        	scanner.close();
         }
     }
 
@@ -354,6 +383,8 @@ public class Menu{
         }
         catch (InputMismatchException e){
             throw new InvalidRatingException();
+        } finally {
+        	scanner.close();
         }
 
     }
@@ -385,7 +416,7 @@ public class Menu{
         double x = scanner.nextDouble();
         LOGGER.info("y:");
         double y = scanner.nextDouble();
-
+        scanner.close();
         return new Point(x, y);
     }
 
@@ -396,7 +427,7 @@ public class Menu{
         double x = scanner.nextDouble();
         LOGGER.info("y:");
         double y = scanner.nextDouble();
-
+        scanner.close();
         return new Point(x, y);
     }
 
