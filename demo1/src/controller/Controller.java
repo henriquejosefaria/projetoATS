@@ -83,11 +83,11 @@ public class Controller {
                 case HISTORYCLIENT:
                     error = caseHistoryClient();
                     break;
-
                 default:
                     this.menu.parser();
                     break;
             }
+            System.out.println(error);
         }
     }
 

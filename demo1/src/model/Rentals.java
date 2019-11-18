@@ -50,6 +50,8 @@ class Rentals implements Serializable {
                 .map(Rental::getPrice)
                 .reduce(0.0, Double::sum);
     }
+    
+    
 
     /**
      * Calcula a lista de alugueres que um cliente fez num intervalo de tempo
