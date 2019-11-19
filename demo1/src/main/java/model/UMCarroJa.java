@@ -20,7 +20,7 @@ public class UMCarroJa implements Serializable {
     private final Cars cars;
     private final Users users;
     private final Rentals rentals;
-    private final static Logger LOGGER = Logger.getLogger(UMCarroJa.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(UMCarroJa.class.getName());
 
     public UMCarroJa() {
         this.cars = new Cars();
