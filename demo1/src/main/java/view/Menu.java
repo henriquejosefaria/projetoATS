@@ -73,8 +73,9 @@ public class Menu{
 
     public void showString(String rental) {
         Scanner scanner = new Scanner(System.in);
+        String str  = this.createHeader();
         LOGGER.info(offset);
-        LOGGER.info(this.createHeader());
+        LOGGER.info(str);
         LOGGER.info(rental);
         scanner.nextLine();
         scanner.close();
@@ -111,9 +112,9 @@ public class Menu{
 
         LOGGER.info("\tR[pos] -> Refill car\n\tC[pos] [price] -> Change Price\n\tD[pos] -> Toggle Availability\n\tT[pos] -> total faturado");
         Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine().toLowerCase();
+        String sc = scanner.nextLine().toLowerCase();
         scanner.close();
-        return s;
+        return sc;
     }
 
     public void rentalHistoryShow (TimeInterval ti, List<List<String>> valTab){
@@ -127,7 +128,8 @@ public class Menu{
         colLabl.add("Preço Final");
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-        LOGGER.info(ti.getInicio().format(formatter) + " -> " + ti.getFim().format(formatter));
+        String response = ti.getInicio().format(formatter) + " -> " + ti.getFim().format(formatter);
+        LOGGER.info(response);
 
         tableDefault(valTab, colLabl);
         Scanner scanner = new Scanner(System.in);
@@ -179,15 +181,15 @@ public class Menu{
         colLabl.add("Tempo Estimado");
         colLabl.add("Custo Estimado");
         colLabl.add("Client Rating");
-
-        LOGGER.info("Rating pessoal: " + ownerRating);
+        String response = "Rating pessoal: " + ownerRating;
+        LOGGER.info(response);
 
         this.tableDefault(lR, colLabl);
 
         LOGGER.info("\tA[pos] -> aprove rental\n\tR[pos] -> refuse rental");
-        String s = scanner.nextLine().toLowerCase();
+        String sc = scanner.nextLine().toLowerCase();
         scanner.close();
-        return s;
+        return sc;
     }
 
     public void top10ClientsShow (List<List<String>> valTab, String colum){
@@ -293,12 +295,7 @@ public class Menu{
             nif = scanner.nextInt();
             
             if (this.myMenu.equals(MenuInd.REGISTERCLIENT)) {
-                try {
-                    return new RegisterUser(user, email, pass, adress, nif, this.getLoc());
-                }
-                catch (InputMismatchException e) {
-                    throw new InvalidNewRegisterException();
-                }
+                return newRegisterUserAux(user, email, pass, adress, nif);
             }
             else {
                 return new RegisterUser(user, email, pass, adress, nif);
@@ -312,12 +309,21 @@ public class Menu{
 
 
     }
+    public  RegisterUser newRegisterUserAux(String user,String email, String pass,String adress, int nif) throws InvalidNewRegisterException {
+    	try {
+            return new RegisterUser(user, email, pass, adress, nif, this.getLoc());
+        }
+        catch (InputMismatchException e) {
+            throw new InvalidNewRegisterException();
+        }
+    }
 
     public Menu parser() {
-        System.out.println(this);
+    	String str = this.toString();
+    	LOGGER.info(str);
         Scanner scanner = new Scanner(System.in);
-		String str = scanner.nextLine();
-        if (str.matches("^[+-]?\\d{1,8}$")) {
+		String str2 = scanner.nextLine();
+        if (str2.matches("^[+-]?\\d{1,8}$")) {
             int i = Integer.parseInt(str);
             if (this.options.size() > i - 1 && i > 0) {
                 this.prev.push(this.myMenu);
@@ -369,7 +375,8 @@ public class Menu{
     public RateOwnerCar pendingRateShow(String error, String pending, int total) throws InvalidRatingException {
         Scanner scanner = new Scanner(System.in);
         displayMenuHeader(error);
-        LOGGER.info(total + ".");
+        String str = total + ".";
+        LOGGER.info(str);
         LOGGER.info(pending);
         try {
         	LOGGER.info("Rating de Owner");
@@ -406,8 +413,10 @@ public class Menu{
 
     private void displayMenuHeader(String error) {
     	LOGGER.info(offset);
-        LOGGER.info(this.createHeader());
-        LOGGER.info(new StringBetter(error).under().toString());
+    	String one = this.createHeader();
+    	String two = new StringBetter(error).under().toString();
+        LOGGER.info(one);
+        LOGGER.info(two);
     }
 
     private Point getDest(){
@@ -446,7 +455,8 @@ public class Menu{
             linLabl.add(String.format("%dº", i + 1));
 
         Table<String> tab = new Table<>(valTab,linLabl,colLabl);
-        System.out.println(tab);
+        String str = tab.toString();
+        LOGGER.info(str);
     }
 
     private String menuOptionText(int i) {
@@ -537,12 +547,12 @@ public class Menu{
 
     @Override
     public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(offset);
-        s.append(this.createHeader()).append("\n\n");
+        StringBuilder str = new StringBuilder();
+        str.append(offset);
+        str.append(this.createHeader()).append("\n\n");
 
         for (int i = 0; i < this.options.size(); i++)
-            s.append(i + 1).append("- ").append(this.menuOptionText(i)).append("\n");
+            str.append(i + 1).append("- ").append(this.menuOptionText(i)).append("\n");
         return s.toString();
     }
 }

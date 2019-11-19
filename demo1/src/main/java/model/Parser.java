@@ -91,7 +91,7 @@ public class Parser {
                 case "Aluguer":
                     if (content.length != 5)
                         break;
-                    model = extra(content,model);
+                    extra(content,model);
                     break;
                 default: // "Classificar"
                     if (content.length != 2)
@@ -108,7 +108,7 @@ public class Parser {
         return l;
     }
     
-    public UMCarroJa extra (String[] content, UMCarroJa model) {
+    public void extra (String[] content, UMCarroJa model) {
     	try {
             model.rental(new StringBuilder()
                             .append(content[0])
@@ -126,7 +126,6 @@ public class Parser {
         		| UnknownCarTypeException ignored) {
 			    LOGGER.info(error);
 		}
-    	return model;
     }
 
     @Override

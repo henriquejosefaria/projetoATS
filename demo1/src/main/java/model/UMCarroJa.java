@@ -254,7 +254,7 @@ public class UMCarroJa implements Serializable {
         }catch(Exception e) {
         	LOGGER.info("Can't write to file!!\n");
         } finally {
-        	if(r != null)r.close();
+        	r.close();
         }
     }
 
@@ -268,7 +268,7 @@ public class UMCarroJa implements Serializable {
         } catch(Exception e) {
         	LOGGER.info("Can't read the specified file!!\n");
         } finally {
-        	if(a != null) a.close();
+        	a.close();
         }
         return u;
     }
