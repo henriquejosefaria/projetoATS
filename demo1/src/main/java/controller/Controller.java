@@ -3,7 +3,6 @@ package main.java.controller;
 import main.java.model.*;
 import main.java.view.Menu;
 import main.java.view.viewmodel.*;
-import main.java.Main;
 import main.java.exceptions.*;
 
 import java.util.*;
@@ -16,7 +15,7 @@ public class Controller {
     private final Menu menu;
     private String errorParam = "Parametros Inválidos";
     private String errorCars = "No cars availables";
-    private final static Logger LOGGER = Logger.getLogger(Main.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(Controller.class.getName());
     
     
     public Controller(UMCarroJa model) {

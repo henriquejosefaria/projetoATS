@@ -13,7 +13,6 @@ import java.util.function.Function;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import main.java.Main;
 import main.java.exceptions.*;
 
 public class UMCarroJa implements Serializable {
@@ -21,7 +20,7 @@ public class UMCarroJa implements Serializable {
     private final Cars cars;
     private final Users users;
     private final Rentals rentals;
-    private final static Logger LOGGER = Logger.getLogger(Main.class.getName());
+    private final static Logger LOGGER = Logger.getLogger(UMCarroJa.class.getName());
 
     public UMCarroJa() {
         this.cars = new Cars();

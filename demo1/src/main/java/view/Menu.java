@@ -21,8 +21,6 @@ import main.java.exceptions.InvalidNewRegisterException;
 import main.java.exceptions.InvalidNewRentalException;
 import main.java.exceptions.InvalidRatingException;
 import main.java.exceptions.InvalidTimeIntervalException;
-import main.java.Main;
-
 import java.util.logging.Logger;
 
 public class Menu{
@@ -31,8 +29,8 @@ public class Menu{
     private final ArrayList<MenuInd> options;
     private boolean run;
     private String offset = "\033\143";
-    private final static Logger LOGGER = Logger.getLogger(Main.class.getName());
-    private final static String s = "Tipo do Carro: [electric, gas, hybrid or any]";
+    private static final Logger LOGGER = Logger.getLogger(Menu.class.getName());
+    private static final String Str = "Tipo do Carro: [electric, gas, hybrid or any]";
 
     public enum MenuInd {
         INITIAL,
@@ -140,7 +138,7 @@ public class Menu{
     public AutonomyCar autonomyCarRent(String error) throws InvalidNewRentalException {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        LOGGER.info(s);
+        LOGGER.info(Str);
         String carType = scanner.nextLine();
         try {
         	LOGGER.info("Alcance:");
@@ -156,7 +154,7 @@ public class Menu{
     public CheapestNearCar walkingDistanceRent(String error) throws InvalidNewRentalException {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        LOGGER.info(s);
+        LOGGER.info(Str);
         String carType = scanner.nextLine();
         try {
         	LOGGER.info("Distância a andar a pé:");
@@ -221,7 +219,7 @@ public class Menu{
     public RentCarSimple simpleCarRent(String error) throws InvalidNewRentalException {
         Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        LOGGER.info(s);
+        LOGGER.info(Str);
         String carType = scanner.nextLine();
         try {
             return new RentCarSimple(this.getDest(), carType);
@@ -553,6 +551,6 @@ public class Menu{
 
         for (int i = 0; i < this.options.size(); i++)
             str.append(i + 1).append("- ").append(this.menuOptionText(i)).append("\n");
-        return s.toString();
+        return str.toString();
     }
 }

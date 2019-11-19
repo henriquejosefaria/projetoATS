@@ -86,4 +86,8 @@ public abstract class User implements Serializable {
                 && this.name.equals(user.name)
                 && this.address.equals(user.address);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 }

@@ -11,13 +11,12 @@ import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import main.java.Main;
 import main.java.exceptions.*;
 
 public class Parser {
     private List<String> file;
     private String error = "error";
-    private final static Logger LOGGER = Logger.getLogger(Main.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(Parser.class.getName());
     
 
     public Parser() {
@@ -35,7 +34,8 @@ public class Parser {
                     .map(e -> this.parseLine(e, model))
                     .collect(Collectors.toList());
         } catch (IOException e) {
-            e.printStackTrace();
+        	String msg = "IOException";
+            LOGGER.info(msg);
         }
     }
 

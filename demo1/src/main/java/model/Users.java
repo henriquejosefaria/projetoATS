@@ -45,4 +45,8 @@ class Users implements Serializable {
         Users users = (Users) o;
         return this.userBase.equals(users.userBase);
     }
+    @Override
+    public int hashCode() {
+    	  return super.hashCode();
+    }
 }
