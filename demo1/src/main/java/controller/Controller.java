@@ -9,6 +9,8 @@ import java.util.*;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
+import javax.management.AttributeList;
+
 public class Controller {
     private final UMCarroJa model;
     private User user;
@@ -16,6 +18,7 @@ public class Controller {
     private String errorParam = "Parametros Inválidos";
     private String errorCars = "No cars availables";
     private static final Logger LOGGER = Logger.getLogger(Controller.class.getName());
+	private AttributeList lR;
     
     
     public Controller(UMCarroJa model) {
@@ -187,7 +190,7 @@ public class Controller {
 	public String caseReviewRental() {
 		String error = "";
 		Owner owner = (Owner)this.user;
-        ArrayList<Rental> lR = (ArrayList<Rental>) owner.getPending();
+        lR = (AttributeList) owner.getPending();
         if (lR.isEmpty()){
             this.menu.back();
             
@@ -196,22 +199,22 @@ public class Controller {
         			error,
         			owner.getRates(),
         			lR.stream()
-        					.map(Rental::toParsableUserString)
+        					.map(e ->((Rental) e).toParsableUserString())
         					.map(x -> Arrays.asList(x.split("\n")))
         					.collect(Collectors.toList()));
         	
         	try {
         		switch (v.charAt(0)) {
         			case 'a':
-        				this.model.rent(lR.get(Integer.parseInt(v.substring(1)) - 1));
+        				this.model.rent((Rental)lR.get(Integer.parseInt(v.substring(1)) - 1));
         				this.model.rate(
         						owner,
-        						lR.get(Integer.parseInt(v.substring(1)) - 1),
+        						(Rental)lR.get(Integer.parseInt(v.substring(1)) - 1),
         						this.menu.showRentalRate(
-        								lR.get(Integer.parseInt(v.substring(1)) - 1).toFinalString()));
+        								lR.get(Integer.parseInt(v.substring(1)) - 1).toString()));
         				break;
         			case 'r':
-        				this.model.refuse(owner, lR.get(Integer.parseInt(v.substring(1)) - 1));
+        				this.model.refuse(owner, (Rental)lR.get(Integer.parseInt(v.substring(1)) - 1));
         				break;
         			default: // 'b'
         				this.menu.back();

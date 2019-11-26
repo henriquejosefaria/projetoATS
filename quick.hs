@@ -31,11 +31,7 @@ data Classificar      = ClassificacaoM Matricula Nota
                       | ClassificacaoN NIF Nota
                       deriving Show
 
-data Resultado        = NP NovoProprietario
-                      | NCL Cliente 
-                      | NC NovoCarro
-                      | NA Aluger
-                      | CL Classificar
+data Resultado        = Res [Cliente] [NovoProprietario] [NovoCarro] [Aluger] [Classificar]
                       deriving Show
 
 type Nome            = String
@@ -56,7 +52,7 @@ type Nota            = Int
 
 minNifs = 111111111
 maxNifs = 999999999
-proprios = ["Joao", "Joana", "Manuel"]
+proprios = ["João", "Joana", "Manuel"]
 vogais = ["a","e","i","o","u"]
 consoantes = ["b","c","d","f","g","h","j","l","m","n","p","q","r","s","t","v","x","z"]
 freguesias = ["Alhoes", "Bustelo", "Gralheira e Ramires","Cinfães","Espadanedo","Ferreiros de Tendais","Fornelos","Moimenta","Nespereira","Oliveira do Douro","Santiago de Piães","São Cristóvão de Nogueira","Souselo","Tarouquela","Tendais","Travanca"]
@@ -74,6 +70,8 @@ genNifs xs n = do x <- choose (minNifs,maxNifs)
 
 
 -- É para aproveitar melhor as capacidades do quickCheck
+
+-- Utilizar o frequency com os aplidos mais comuns em Portugal
 genAplido:: [String] -> [String] -> String -> Int -> Gen String
 genAplido xs ys r 1 = return r
 genAplido xs ys r n = do x <- elements xs
@@ -279,61 +277,15 @@ genClassificacoes (x:xs) ys = do a <- genClassificacaoN x
 
 
 
-genInput:: Int -> 
+genInput:: Int -> Gen Resultado 
 genInput n  = do let nrClientes      = n
                  let nrProprietarios = 1000
-                 nifs               <- genNifs [] (nrClientes + nrProprietarios) 
+                 nifs               <- genNifs [] (n + 1000) 
                  clientes           <- genClientes (take nrClientes nifs)
                  proprietarios      <- genProprietarios (drop nrClientes nifs)
                  carros             <- genCarros (drop nrClientes nifs)
                  matriculas         <- getMatriculas carros
-                 alugers            <- genAlugers (take (nrClientes*0.4) nifs)
-                 classificacoes     <- genClassificacoes (take (nrClientes*0.4) nifs) (take 600 matriculas) 
-                 print(clientes)
-                 print(proprietarios)
-                 print(carros)
-                 print(alugers)
-                 print(classificacoes) 
-                 return ( clientes)    
-             --  resultWritter clientes proprietarios carros alugers classificacoes
-
-
-
-
-
-
-{-
-
---tem de se forçar a usar String por ter o isSubsequemceOf
-myrem:: String -> [String] -> [String]
-
-myrem x [] = []
-myrem x (y:ys) | isSubsequenceOf x y = ys
-               | otherwise = y : myrem x ys
-
-
-genCarro :: [NIF] -> Gen [Carro]
-genCarro nifs = 
-    do n         <- elements nifs
-       let nifs' = delete n nifs
-       cs        <- genCarro nifs'
-       tipo      <- genTipo
-       marca     <- genMarca
-       matricula <- genMatricula
-       cpkm      <- genCPKm
-       autonomia <- genAutonomia
-       let car   = Carro tipo marca matricula n cpkm autonomia
-       return (car : cs)
-  -}
-
-
-
-
-
-
-
-
-
-
-
+                 alugers            <- genAlugers (take (1000) nifs)
+                 classificacoes     <- genClassificacoes (take (1000) nifs) (take 600 matriculas) 
+                 return (Res clientes proprietarios carros alugers classificacoes)
 

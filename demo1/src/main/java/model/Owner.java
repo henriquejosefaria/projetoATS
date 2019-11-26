@@ -4,16 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.management.AttributeList;
+
 public class Owner extends User {
     private static final long serialVersionUID = -2511785557930475729L;
     private List<Car> cars;
-    private List<Rental> pending;
+    private List<Object> pending;
     private List<Rental> historic;
 
     public Owner(String email, String name, String address, int nif, String passwd) {
         super(email, name, address, nif, passwd);
         this.cars = new ArrayList<>();
-        this.pending = new ArrayList<>();
+        this.pending = new AttributeList();
         this.historic = new ArrayList<>();
     }
 
@@ -27,8 +29,8 @@ public class Owner extends User {
         }
     }
 
-    public List<Rental> getPending() {
-        return new ArrayList<>(this.pending);
+    public AttributeList getPending() {
+        return new AttributeList((AttributeList)this.pending);
     }
 
     void addPendingRental(Rental r) {
@@ -42,7 +44,7 @@ public class Owner extends User {
     void accept(Rental r) {
         this.refuse(r);
         this.pending = this.pending.stream()
-                .filter(e -> e
+                .filter(e -> ((Rental) e)
                         .getCarID()
                         .equals(r.getCarID()))
                 .collect(Collectors.toList());

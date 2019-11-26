@@ -115,54 +115,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \item Não obrigar a usar o método redifinido usando override.\newline
  Ficheiro: Car.java\newline
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.................Rever...............
-
-
-\par Para resolver este problema fo preciso renomear o método equals para o método isEqual, visto que usando um \textit{@Override} este método obrigaria a implementar um método de super tipo.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\par Para resolver este problema da forma mais simples foi preciso renomear o método equals para o método isEqual, visto que usar um \textit{@Override} sobre este método obrigaria a implementação um método de super tipo e da função \textit{hashCode()}.
 
 
 \begin{figure}[H]
@@ -181,11 +134,11 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \subsubsection{Minor Bugs:}
 \begin{itemize}
-\item Obrigar o override do equals e não o do método hashCode().\newline
+\item Obrigar o override do equals e não o do método \textit{hashCode()}.\newline
  Ficheiros: Car.java, Cars.java, Cliente.java, Owner.java, Parser.java, Rental.java, Rentals.java, User.java, Users.java.\newline
 
 
-\par Para corrigir este problema, basta definir um hashCode() que chame super.hashCode() como se pode ver na figura seguinte.
+\par Para corrigir este problema, basta definir um \textit{hashCode()} que chame o método \textit{super.hashCode()} como se pode ver na figura seguinte.
 
 \begin{figure}[H]
 
@@ -193,7 +146,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \includegraphics[scale = 0.6]{hashCode.png}
 
-  \caption {Solução do problema de Override do método hashCode}
+  \caption {Solução do problema de @Override do método hashCode}
 
   \label {fig08}
 
@@ -204,13 +157,26 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \subsection{Vulnerabilitys}
 \begin{itemize}
-\item Utilizar printStackTrace() pode revelar informação sensivel.\newline
+\item Utilizar printStackTrace() pode revelar informação sensivel sobre o nosso código.\newline
  Ficheiro: Parser.java\newline
+
+ \par Para evitar que tal vulnerabilidade ocorra, o printStackTrace() foi substituido por um LOGGER.info() que imprime uma mensagem de erro pré-determinada que não revela nada sobre a implementação do código que a originou.
+ \begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.6]{Logger_info.png}
+
+  \caption {Solução do problema de Override do método hashCode}
+
+  \label {fig09}
+
+\end{figure}
+
 \end{itemize}
 
 \subsection{CodeSmells}
 
-\subsubsection{Blocker CodeSmells:}
 \subsubsection{Critical CodeSmells:}
 \begin{itemize}
 \item Possuir um método complexo com cerca de de 290 linhas, é muito dificil manter e até mesmo perceber um código tão extenso.\newline
@@ -225,7 +191,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
   \includegraphics[scale = 0.45]{newSmallerFunction.png}
   \caption {Solução do problema de complexidade extrema do método run()}
 
-  \label {fig9}
+  \label {fig10}
 
 \end{figure}
 \end{itemize}
@@ -237,12 +203,12 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \end{itemize}
 
 \begin{itemize}
-\item Usar switch sem caso \textit{default:}. Bastou substituir o ultimo \textit{case "...":} por \textit{default:} para cumprir o mesmo objetivo do código anterior. No caso do ficheiro Menu.java o default foi adicionado após todos os cases existentes para garantir que o programa corria da forma correta.
+\item Usar switch sem caso \textit{default:}. Bastou substituir o ultimo \textit{case "...":} por \textit{default:} para cumprir o mesmo objetivo do código anterior. No caso do ficheiro Menu.java o default foi adicionado após todos os cases existentes para garantir que o programa corria da forma correta.\newline
  Ficheiros: Controller.java, Car.java, Parser.java e Menu.java\newline
 \end{itemize}
 
 \begin{itemize}
-\item Ter constantes numa enumeração escritas em letras minusculas. Basta escreve-las em maiúsculas para que passem a seguir a convenção. Para além disso todas as ocorrencias destas palavras sofrerão a mesma modificação.
+\item Ter constantes numa enumeração escritas em letras minúsculas. Basta escreve-las em maiúsculas para que passem a seguir a convenção. Para além disso todas as ocorrencias destas palavras sofrerão a mesma modificação.
  Ficheiros: Car.java e Menu.java\newline
 \end{itemize}
 
@@ -258,7 +224,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \subsubsection{Major CodeSmells:}
 
 \begin{itemize}
-\item A existencia de blocos try/catch vazios não afeta o desempenho da aplicação mas pode ser um erro de falta de código, neste caso, assumimos que foi deixado propositadamente vazio, logo para nã alterar o código restante preencheu-se o bloco com a atribuição de uma String vazia á variavel error.\newline
+\item A existência de blocos try/catch vazios não afeta o desempenho da aplicação mas pode ser um erro de falta de código, neste caso, assumimos que foi deixado propositadamente vazio, logo para nã alterar o código restante preencheu-se o bloco com a atribuição de uma String vazia á variavel error.\newline
  Ficheiros: Controller.java e Main.java\newline
 
  \begin{figure}[H]
@@ -267,9 +233,9 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \includegraphics[scale = 0.6]{catchBlockFill.png}
 
-  \caption {Preenchimento do bloco vazio com uma linha de código que não afete a aplicação}
+  \caption {Preenchimento do bloco vazio com uma linha de código que não afeta a aplicação}
 
-  \label {fig10}
+  \label {fig11}
 
 \end{figure}
 \end{itemize}
@@ -294,7 +260,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \caption {Troca de Throwable por Exception}
 
-  \label {fig11}
+  \label {fig12}
 
 \end{figure}
 \end{itemize}
@@ -313,14 +279,13 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \caption {Troca de Throwable por Exception}
 
-  \label {fig12}
+  \label {fig13}
 
 \end{figure}
 \end{itemize}
 
 \begin{itemize}
 \item Ao reportar algo o utilizador deve ser capaz de aceder aos logs facilmente,estes logs têm de ter um formato uniforme, devem ser guardados e dados sensiveis devem ser guardados de forma segura. A utilização de System.out.println() pode comprometer um destes aspetos. Portanto tivemos de importar a biblioteca -textit{java.util.logging.Logger} e criar um \textit{Logger} para guardar o output disponibilizado ao utilizador.\newline
-
  Ficheiros: Main.java e  Menu.java\newline
 
 \par O código com o Logger é apresentado na seguinte imagem.
@@ -333,15 +298,15 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \caption {Uso de Logger para seguir requerimentos dos outputs}
 
-  \label {fig13}
+  \label {fig14}
 
 \end{figure}
 \end{itemize}
 
 \begin{itemize}
 \item A utilização de muito parâmetros pode significar que esta classe está a fazer muitas coisas. \newline
+Ficheiros: Car.java e RegisterCar.java\newline
 
-Ficheiros: Car.java e RegisterCar.java
 
 \par Achamos por bem para já não alterar este codeSmell, pois a função recebe 9 argumentos quando só devia receber no máximo 7. O excesso de parâmetros não prejudica o desempenho de forma alguma.
 
@@ -360,7 +325,7 @@ Ficheiros: Point.java e StringBetter.java \newline
 
   \caption {Métodos removidos da classe Point.java}
 
-  \label {fig14}
+  \label {fig15}
 
 \end{figure}
 \end{itemize}
@@ -387,7 +352,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Solução do problema de renomeação de packages}
 
-  \label {fig15}
+  \label {fig16}
 
 \end{figure}
 
@@ -408,7 +373,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Solução do problema de inefeciência no uso de funções de Coleções na classe Controller}
 
-  \label {fig16}
+  \label {fig17}
 
 \end{figure}
 
@@ -424,7 +389,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Solução do problema de inefeciência no uso de funções de Coleções na classe Menu}
 
-  \label {fig17}
+  \label {fig18}
 
 \end{figure}
 
@@ -445,7 +410,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Declaração do package a que a classe main.java pertence}
 
-  \label {fig18}
+  \label {fig19}
 
 \end{figure}
 
@@ -466,7 +431,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Solução do problema de inefeciência do return}
 
-  \label {fig19}
+  \label {fig20}
 
 \end{figure}
 
@@ -488,7 +453,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Implementação do método clone() da classe Car}
 
-  \label {fig20}
+  \label {fig21}
 
 \end{figure}
 
@@ -512,7 +477,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Exemplo da mudança do tipo de interface retornada por um método}
 
-  \label {fig21}
+  \label {fig22}
 
 \end{figure}
 
@@ -532,7 +497,7 @@ Ficheiro: Menu.java \newline
 
   \caption {filter sem paretesis}
 
-  \label {fig22}
+  \label {fig23}
 
 \end{figure}
 
@@ -552,7 +517,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Ordenação correta das declarações de variáveis}
 
-  \label {fig23}
+  \label {fig24}
 
 \end{figure}
 
@@ -571,7 +536,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Declaração correta do método, usando letra minúscula no início}
 
-  \label {fig24}
+  \label {fig25}
 
 \end{figure}
 
@@ -590,7 +555,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Declaração correta do método retirando o underscore e substituindo letra seguinte por maiúscula}
 
-  \label {fig25}
+  \label {fig26}
 
 \end{figure}
 
@@ -610,7 +575,7 @@ Ficheiro: Menu.java \newline
 
   \caption {Declaração correta das variáveis user e password}
 
-  \label {fig26}
+  \label {fig27}
 
 \end{figure}
 
@@ -623,7 +588,6 @@ Ficheiro: Menu.java \newline
 \item A utilização da class \textit{Random} não é segura por permitir que um atacante consiga prever o próximo random gerado e conseguir fazer-se passar por quem não deve.\newline
 
 \par para corrigir este problema bastou substituir a utilização de \textit{Random} por \textit{SecureRandom}.
-
 Ficheiros: Traffic.java e Weather.java
 
 \end{itemize}
@@ -637,11 +601,36 @@ Ficheiros: Traffic.java e Weather.java
 \par Por fim, na classe Menu.java em todos os métodos em que se criava um Scanner este nunca era fechado. Para resolver isto basta fechar o mesmo em todos esses métodos com a adição do código: "scanner.close();" no fim do mesmo.\newline
 
 
-\section{Technical Debts}
+\subsection{Technical Debts}
+
+Ao fazer a análise dos technical debts foram analisadas versões guardadas no github que tenham sido modificadas de tal forma a que podesse ter-se dado uma redução do tempo de execução estimado do programa. Os resultados obtidos pelo JStanley são mostrados na figura abaixo.
+
+\begin{figure}[H]
+
+  \centering
+
+  \hbox{\hspace{-8em} \includegraphics[scale = 0.35]{JStanley'sOutput.png}}
+
+  \caption {Resultados JStanley pré-correção de redSmells}
+
+  \label {fig28}
+
+\end{figure}
+
+\par Como se pode ver pela figura  não se obteve diferença entre as duas versões assinaladas, sendo a 2 a versão com todos os code Smells e bugs originais e a 12 a versão atualmente corrigida (as setas ajudam a visualizar melhor quais os tempos correspondentes). No entanto, convêm atentar que o JStanley detetou formas de melhorar o tempo de resposta da aplicação e/ou de melhorar o custo deste, sendo estas assinaladas por um retângulo. \newline
 
 
+\par A correção escolhida foi a aplicação de um AtributteList em vez do ArrayList. A leitura após a implementação destas sugestões apresenta-se de seguida assinalada por um retangulo vermelho.\newline
 
+\begin{figure}[H]
 
+  \centering
 
+  \hbox{\hspace{-8em} \includegraphics[scale = 0.35]{JStanley'sOutput2.png}}
 
+  \caption {Resultados JStanley pós-correção de redSmells}
 
+  \label {fig29}
+
+\end{figure}
+\newpage

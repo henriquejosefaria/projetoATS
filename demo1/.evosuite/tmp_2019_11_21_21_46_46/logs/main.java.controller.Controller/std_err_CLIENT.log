@@ -1,0 +1,1 @@
+[MASTER] 22:02:28.574 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself

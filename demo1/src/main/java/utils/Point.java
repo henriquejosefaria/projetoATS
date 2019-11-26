@@ -11,6 +11,8 @@ public class Point implements Serializable {
         this.x = x;
         this.y = y;
     }
+    public double getX(){return this.x;}
+    public double getY(){return this.y;}
     
     public Point myclone() {
         return new Point(this.x, this.y);
@@ -23,5 +25,11 @@ public class Point implements Serializable {
     @Override
     public String toString() {
         return "(" + String.format("%.2f", this.x) + ", " + String.format("%.2f", this.y) + ")";
+    }
+    public boolean equals(Object o){
+        if (this == o) return true;
+        if (this.getClass() != o.getClass() || o == null) return false;
+        Point p = (Point)o;
+        return this.x == p.x && this.y == p.y;
     }
 }
