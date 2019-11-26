@@ -13,6 +13,8 @@ import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.junit.runner.RunWith;
 
+import java.lang.ref.WeakReference;
+
 @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
 public class StringBetter_ESTest extends StringBetter_ESTest_scaffolding {
 
@@ -22,9 +24,17 @@ public class StringBetter_ESTest extends StringBetter_ESTest_scaffolding {
       stringBetter0.under();
       stringBetter0.toString();
   }
-
+    public static void gc() {
+        Object obj = new Object();
+        WeakReference ref = new WeakReference<Object>(obj);
+        obj = null;
+        while(ref.get() != null) {
+            System.gc();
+        }
+    }
   @Test(timeout = 4000)
   public void test01()  throws Throwable  {
+      this.gc();
       StringBetter stringBetter0 = new StringBetter();
       StringBetter stringBetter1 = stringBetter0.orange();
       StringBetter stringBetter2 = stringBetter1.blue();

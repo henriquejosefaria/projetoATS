@@ -53,20 +53,168 @@ Nesta classe, criaram-se as seguintes variáveis globais:
 
 \subsection{Evosuite}
 
-\par Para compilar o Evosuite precisei de instalar um plugin chamado Choose Runtime no InteliJ. Este foi usado para escolher a versão do JDK 1.8.0\_231 como a versão a usar para correr o Evosuite.
-\par Após o Evosuite gerar os ficheiros de teste, outro problema surgiu. Os ficheiros de teste não conheciam o jUnit apesar de este estar instalado. A primeira mudança para resolver este problema foi modificar a pasta onde os testes se encontravam para que fosse reconhecida como uma pasta de test resoncs root.
+\subsubsection{Geração de testes}
+\par Para compilar o Evosuite precisei de instalar um plugin chamado Choose Runtime no InteliJ. Este foi usado para escolher a versão do JDK 1.8.0\_231 como a versão a usar para correr o Evosuite. Após correr o Evosuite para gerar os teste o resultado mostra-se nas seguintes figuras.
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{evoMain.png}
+
+  \caption {Testes class Main}
+
+  \includegraphics[scale = 0.45,trim = 0 0 0 -2cm]{evoController.png}
+
+  \caption {Testes package Controller}
+
+  \includegraphics[scale = 0.45,trim = 0 0 0 -2cm]{evoExceptions.png}
+
+  \caption {Testes do package exceptions}
+  \label {fig35}
+
+\end{figure}  
+\begin{figure}[H]
+
+  \centering
+  \includegraphics[scale = 0.45,trim = 0 0 0 -2cm]{evoModel.png}
+
+  \caption {Testes do package model}
+
+  \includegraphics[scale = 0.45,trim = 0 0 0 -2cm]{evoUtils.png}
+
+  \caption {Testes do package utils}
+  \includegraphics[scale = 0.45,trim = 0 0 0 -2cm]{evoView.png}
+
+  \caption {Testes do package view}
+
+  \label {fig36}
+
+\end{figure}
+
+\par Após o Evosuite gerar os ficheiros de teste, outro problema surgiu. Os ficheiros de teste não conheciam o jUnit apesar de este estar instalado. Para resolver este novo problema seguiram-se os seguintes passos:
+\begin{itemize}
+\item A primeira mudança para resolver este problema foi modificar a pasta onde os testes se encontravam para que fosse reconhecida como uma pasta de Sources root.
+\item Em segundo lugar a pasta do Evosuite foi marcada como Test Sources Root.
+\item Finalmente o ficheiro pom.xml foi alterado, adicionando como dependencia o Evosuite bem como adicionar nas propriedades o Evosuite.
+\end{itemize}
+
+\par Após a realização destes passos surgiu aquilo que parecia ser mais um problema. Nos ficheiros de teste gerados pelo Evosuite, este reconhece a class Main do projeto. No entanto, quando o Main é declarado este aparece a vermelho (como se estivesse errado) como se pode ver na figura abaixo.
 
 
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{erroCertoMain_ESTest.png}
+
+  \caption {Excerto do ficheiro Main\_ESTest}
+
+  \label {fig38}
+
+\end{figure}
+
+\par no entanto o erro não se verifica uma vez que podemos correr o ficheiro sem problemas, o que nos leva a pensar que deve ser um erro de identificação do IDE.
+
+\subsubsection{Verificação de classes utilizando os testes}
+
+\par Após se ter confirmado a correta geração dos ficheiros de teste por parte do Evosuite procedeu-se a verificação das classes do nosso projeto com os mesmos.
+\par A titulo de exemplo em seguida apresentam-se os resultados de alguns testes realizados sobre algumas das classes mais importantes do projeto em questão.
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{MainTests.png}
+
+  \caption {Resultados da execução do ficheiro Main\_ESTest.java}
+
+  \label {fig39}
+
+\end{figure}
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{ControllerTests.png}
+  \includegraphics[scale = 0.45]{ControllerTests2.png}
+  \caption {Resultados da execução do ficheiro Controller\_ESTest.java}
+
+  \label {fig40}
+
+\end{figure}
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{ClientTests.png}
+
+  \caption {Resultados da execução do ficheiro Client\_ESTest.java}
+
+  \label {fig41}
+
+\end{figure}
 
 
+\subsection{Tests Coverage using JaCoCo}
 
+\par Para realizar os testes com "coverage" recorremos ao JaCoCo, como se pode ver na imagem abaixo.
 
+\begin{figure}[H]
 
+  \centering
 
+  \includegraphics[scale = 0.45]{jacoco.png}
 
+  \caption {Configuração do Code Coverage para usar o  plugin JaCoCo}
 
+  \label {fig42}
 
+\end{figure}
 
+\par Agora para correr os testes ao nosso programa basta-nos clicar no botão do canto superior direito assinalado na imagem para correr os testes com coverage.
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{runCoverage.png}
+
+  \caption {Execução dos testes usando coverage com o plugin JaCoCo}
+
+  \label {fig43}
+
+\end{figure}
+
+\par Por fim podemos ver os resultados do coverage das classes de cada package, em percentagem, na imagem abaixo.
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{resultsCoverage.png}
+
+  \caption {Resultados do coverage utilizando o plugin JaCoCo}
+
+  \label {fig44}
+
+\end{figure}
+
+\par \textit{Nota3:} Note-se que um dos testes falhou na primeira execução, como se pode ver na seguinte imagem.
+
+\begin{figure}[H]
+
+  \centering
+
+  \includegraphics[scale = 0.45]{falhaTeste01.png}
+
+  \caption {Falha detetada no teste 01 referente a Java Heap Space}
+
+  \label {fig44}
+
+\end{figure}
+
+\par Este problema acontece porque a Máquina virtual do Java tem um tamanho máximo de heap finito, isto leva a um erro como o que se pode verificar na imagem acima.
 
 
 

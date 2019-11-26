@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  26 NOV 2019 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  26 NOV 2019 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -789,38 +789,117 @@ Overfull \hbox (3.61526pt too wide) in paragraph at lines 52--53
 brange o pac-kage main.java.model.
  []
 
-) (./tarefa4.tex)
+<./images/evoMain.png, id=136, 218.8175pt x 182.6825pt>
+File: ./images/evoMain.png Graphic file (type png)
+<use ./images/evoMain.png>
+Package pdftex.def Info: ./images/evoMain.png  used on input line 62.
+(pdftex.def)             Requested size: 98.46695pt x 82.20634pt.
+<./images/evoController.png, id=137, 227.85126pt x 66.2475pt>
+File: ./images/evoController.png Graphic file (type png)
+<use ./images/evoController.png>
+Package pdftex.def Info: ./images/evoController.png  used on input line 66.
+(pdftex.def)             Requested size: 102.5321pt x 55.41832pt.
+<./images/evoExceptions.png, id=138, 403.5075pt x 545.03625pt>
+File: ./images/evoExceptions.png Graphic file (type png)
+<use ./images/evoExceptions.png>
+Package pdftex.def Info: ./images/evoExceptions.png  used on input line 70.
+(pdftex.def)             Requested size: 181.57669pt x 270.87129pt.
+<./images/evoModel.png, id=139, 272.01625pt x 507.8975pt>
+File: ./images/evoModel.png Graphic file (type png)
+<use ./images/evoModel.png>
+Package pdftex.def Info: ./images/evoModel.png  used on input line 79.
+(pdftex.def)             Requested size: 122.40617pt x 254.15901pt.
+<./images/evoUtils.png, id=140, 247.92625pt x 101.37875pt>
+File: ./images/evoUtils.png Graphic file (type png)
+<use ./images/evoUtils.png>
+Package pdftex.def Info: ./images/evoUtils.png  used on input line 83.
+(pdftex.def)             Requested size: 111.56578pt x 71.22725pt.
+<./images/evoView.png, id=141, 310.15875pt x 482.80376pt>
+File: ./images/evoView.png Graphic file (type png)
+<use ./images/evoView.png>
+Package pdftex.def Info: ./images/evoView.png  used on input line 86.
+(pdftex.def)             Requested size: 139.57014pt x 242.86693pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./images/coverageClient.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./images/evoMain.png> <./images/evoController.png> <./images/evoException
+s.png>]
+Overfull \vbox (84.86363pt too high) has occurred while \output is active []
+
+
+[20 <./images/evoModel.png> <./images/evoUtils.png> <./images/evoView.png>]
+<./images/erroCertoMain_ESTest.png, id=159, 871.255pt x 574.145pt>
+File: ./images/erroCertoMain_ESTest.png Graphic file (type png)
+<use ./images/erroCertoMain_ESTest.png>
+Package pdftex.def Info: ./images/erroCertoMain_ESTest.png  used on input line 
+108.
+(pdftex.def)             Requested size: 392.06113pt x 258.36285pt.
+
+Overfull \hbox (44.93759pt too wide) in paragraph at lines 108--109
+ [][] 
+ []
+
+<./images/MainTests.png, id=160, 272.01625pt x 129.48375pt>
+File: ./images/MainTests.png Graphic file (type png)
+<use ./images/MainTests.png>
+Package pdftex.def Info: ./images/MainTests.png  used on input line 123.
+(pdftex.def)             Requested size: 122.40617pt x 58.26714pt.
+<./images/ControllerTests.png, id=161, 419.5675pt x 744.7825pt>
+File: ./images/ControllerTests.png Graphic file (type png)
+<use ./images/ControllerTests.png>
+Package pdftex.def Info: ./images/ControllerTests.png  used on input line 134.
+(pdftex.def)             Requested size: 188.80362pt x 335.14903pt.
+<./images/ControllerTests2.png, id=162, 422.57875pt x 40.15pt>
+File: ./images/ControllerTests2.png Graphic file (type png)
+<use ./images/ControllerTests2.png>
+Package pdftex.def Info: ./images/ControllerTests2.png  used on input line 135.
+
+(pdftex.def)             Requested size: 190.15868pt x 18.06732pt.
+[21 <./images/erroCertoMain_ESTest.png>]
+<./images/ClientTests.png, id=167, 420.57124pt x 479.7925pt>
+File: ./images/ClientTests.png Graphic file (type png)
+<use ./images/ClientTests.png>
+Package pdftex.def Info: ./images/ClientTests.png  used on input line 145.
+(pdftex.def)             Requested size: 189.25531pt x 215.90462pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./images/MainTests.png> <./images/ControllerTests.png> <./images/Controll
+erTests2.png>]) (./tarefa4.tex)
 
 LaTeX Warning: Empty `thebibliography' environment on input line 25.
 
+[23 <./images/ClientTests.png>] (./report.aux)
 
-Underfull \vbox (badness 1377) has occurred while \output is active []
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
- [18 <./images/coverageClient.png>] [19] (./report.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 3034 strings out of 492616
- 43215 string characters out of 6129481
- 120440 words of memory out of 5000000
- 6869 multiletter control sequences out of 15000+600000
+ 3095 strings out of 492616
+ 44717 string characters out of 6129481
+ 120490 words of memory out of 5000000
+ 6919 multiletter control sequences out of 15000+600000
  11430 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,25p,493b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/20
-19/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2019/te
-xmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2019/texm
-f-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2019/texmf-
-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2019/texmf-di
-st/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2019/texmf-dist
-/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2019/texmf-dist/fon
-ts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2019/texmf-dist/fonts
-/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (19 pages, 1001198 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on report.pdf (23 pages, 1178327 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 212 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

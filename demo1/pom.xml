@@ -20,11 +20,18 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.evosuite</groupId>
+            <artifactId>evosuite-standalone-runtime</artifactId>
+            <version>${evosuiteVersion}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <evosuiteVersion>1.0.6</evosuiteVersion>
     </properties>
 
     <build>

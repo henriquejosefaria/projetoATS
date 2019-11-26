@@ -26,10 +26,10 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       SystemInUtil.addInputLine("e>t]$bBO'Q=x0r3[u");
       FileSystemHandling.createFolder((EvoSuiteFile) null);
       String[] stringArray0 = new String[0];
-      Main.main(stringArray0);
+      main.java.Main.main(stringArray0);
       // Undeclared exception!
       try { 
-        Main.main(stringArray0);
+        main.java.Main.main(stringArray0);
         fail("Expecting exception: NoSuchElementException");
       
       } catch(NoSuchElementException e) {
@@ -42,7 +42,7 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
 
   @Test(timeout = 4000)
   public void test1()  throws Throwable  {
-      Main main0 = new Main();
+      main.java.Main main0 = new main.java.Main();
       String[] stringArray0 = new String[6];
       stringArray0[0] = "";
       stringArray0[1] = ".tmp";
@@ -51,8 +51,8 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       stringArray0[4] = "Can't read the specified file!!\n";
       stringArray0[5] = "";
       // Undeclared exception!
-      try { 
-        Main.main(stringArray0);
+      try {
+          main.java.Main.main(stringArray0);
         fail("Expecting exception: NoSuchElementException");
       
       } catch(NoSuchElementException e) {
@@ -77,10 +77,10 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       stringArray0[4] = ":P?k:'ggP|@Rc9s4l{";
       SystemInUtil.addInputLine(":P?k:'ggP|@Rc9s4l{");
       stringArray0[5] = "d&R#u?h<@hJ";
-      Main.main(stringArray0);
+      main.java.Main.main(stringArray0);
       // Undeclared exception!
-      try { 
-        Main.main(stringArray0);
+      try {
+          main.java.Main.main(stringArray0);
         fail("Expecting exception: NoSuchElementException");
       
       } catch(NoSuchElementException e) {
@@ -99,8 +99,8 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
       stringArray0[2] = "";
       stringArray0[3] = "adasdsada2";
       // Undeclared exception!
-      try { 
-        Main.main(stringArray0);
+      try {
+          main.java.Main.main(stringArray0);
         fail("Expecting exception: NoSuchElementException");
       
       } catch(NoSuchElementException e) {
@@ -115,8 +115,8 @@ public class Main_ESTest extends Main_ESTest_scaffolding {
   public void test4()  throws Throwable  {
       String[] stringArray0 = null;
       // Undeclared exception!
-      try { 
-        Main.main((String[]) null);
+      try {
+          main.java.Main.main((String[]) null);
         fail("Expecting exception: NoSuchElementException");
       
       } catch(NoSuchElementException e) {
