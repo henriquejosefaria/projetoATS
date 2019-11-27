@@ -52,7 +52,7 @@ type Nota            = Int
 
 minNifs = 111111111
 maxNifs = 999999999
-proprios = ["João", "Joana", "Manuel"]
+proprios = ["João", "Joana", "Manuel", "André", "Belo", "Carlos", "Carolina", "Diogo", "Diolinda", "Helder", "Henrique", "Filipa", "Gonçalo", "Guilherme", "Leonor", "Matilde", "Nuno", "Nuna", "Olga", "Paulo", "Paula", "Rui", "Rafael", "Rita", "Sofia", "Sandra", "Sebastião", "Tiago", "Vitor", "Zulmira"]
 vogais = ["a","e","i","o","u"]
 consoantes = ["b","c","d","f","g","h","j","l","m","n","p","q","r","s","t","v","x","z"]
 freguesias = ["Alhoes", "Bustelo", "Gralheira e Ramires","Cinfães","Espadanedo","Ferreiros de Tendais","Fornelos","Moimenta","Nespereira","Oliveira do Douro","Santiago de Piães","São Cristóvão de Nogueira","Souselo","Tarouquela","Tendais","Travanca"]
@@ -70,14 +70,16 @@ genNifs xs n = do x <- choose (minNifs,maxNifs)
 
 
 -- É para aproveitar melhor as capacidades do quickCheck
-
--- Utilizar o frequency com os aplidos mais comuns em Portugal
-genAplido:: [String] -> [String] -> String -> Int -> Gen String
-genAplido xs ys r 1 = return r
-genAplido xs ys r n = do x <- elements xs
+--Função para gerar nomes engraçados
+genAplidoFUNNY:: [String] -> [String] -> String -> Int -> Gen String
+genAplidoFUNNY xs ys r 1 = return r
+genAplidoFUNNY xs ys r n = do x <- elements xs
                          y <- elements ys
-                         z <- genAplido xs ys (r ++ x ++ y) (n-2)
+                         z <- genAplidoFUNNY xs ys (r ++ x ++ y) (n-2)
                          return z
+-- Utilizar o frequency com os aplidos mais comuns em Portugal
+genApelido:: Gen [String]
+genAplido = frequency [(944,return "Silva"),(596,return "Santos"),(525,return "Ferreira"),(488,return "Pereira"),(371,return "Oliveira"),(368,return "Costa"),(357,return "Rodrigues"),(323,return "Martins"),(299,return "Jesus"),(295,return "Sousa"),(282,return "Fernandes"),(276,return "Gonçalves"),(257,return "Gomes"),(252,return "Lopes"),(251,return "Marques"),(237,return "Alves"),(227,return "Almeida"),(227,return "Ribeiro"),(209,return "Pinto"),(197,return "Carvalho"),(168,return "Teixeira")]
 
 genProprios::Gen String
 genProprios = elements proprios
