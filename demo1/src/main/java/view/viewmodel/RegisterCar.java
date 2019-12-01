@@ -3,10 +3,11 @@ package main.java.view.viewmodel;
 import main.java.exceptions.InvalidNewRegisterException;
 import main.java.model.Car;
 import main.java.utils.Point;
+import model.CarModel;
 
 public class RegisterCar {
     private final String numberPlate;
-    private final Car.CarType type;
+    private final CarModel.CarType type;
     private double avgSpeed;
     private final double basePrice;
     private final double gasMileage;
@@ -17,7 +18,7 @@ public class RegisterCar {
     public RegisterCar(String numberPlate, String type, double avgSpeed, double basePrice, double gasMileage, int range, Point pos, String brand) throws InvalidNewRegisterException {
         this.numberPlate = numberPlate;
         try {
-            this.type = Car.CarType.valueOf(type.toLowerCase());
+            this.type = CarModel.CarType.valueOf(type.toLowerCase());
         }
         catch (IllegalArgumentException e){
             throw new InvalidNewRegisterException();
@@ -34,7 +35,7 @@ public class RegisterCar {
         return numberPlate;
     }
 
-    public Car.CarType getType() {
+    public CarModel.CarType getType() {
         return type;
     }
 

@@ -1,6 +1,7 @@
 package main.java.model;
 
 import main.java.utils.Point;
+import model.CarModel;
 import org.junit.jupiter.api.Test;
 import main.java.model.Client;
 
@@ -21,7 +22,8 @@ class ClientTest {
 
     @Test
     void addPendingRental() throws Exception{
-        Car c = new Car("AA-11-11",o, Car.CarType.fromString("Electrico"),80.4,3,3,30,p,"InventadaxD");
+        CarModel cm = new CarModel(CarModel.CarType.fromString("Electrico"),80.4,"InventadaxD");
+        Car c = new Car("AA-11-11",o,cm,3,3,30,p);
         Rental r = new Rental(c,u1,dest);
         u1.addPendingRental(r);
         boolean boolean1 = r.equals(u1.getPendingRates().get(0));;
@@ -30,7 +32,8 @@ class ClientTest {
 
     @Test
     void rate() throws Exception{
-        Car c = new Car("AA-11-11",o, Car.CarType.fromString("Electrico"),80.4,3,3,30,p,"InventadaxD");
+        CarModel cm = new CarModel(CarModel.CarType.fromString("Electrico"),80.4,"InventadaxD");
+        Car c = new Car("AA-11-11",o,cm,3,3,30,p);
         Rental r = new Rental(c,u1,dest);
         u1.rate(r,1,1);
         boolean boolean2 = u1.getPendingRates().isEmpty();
@@ -48,7 +51,8 @@ class ClientTest {
 
     @Test
     void getPendingRates() throws Exception{
-        Car c = new Car("AA-11-11",o, Car.CarType.fromString("Electrico"),80.4,3,3,30,p,"InventadaxD");
+        CarModel cm = new CarModel(CarModel.CarType.fromString("Electrico"),80.4,"InventadaxD");
+        Car c = new Car("AA-11-11",o,cm,3,3,30,p);
         Rental r = new Rental(c,u1,dest);
         u1.addPendingRental(r);
         boolean boolean4 = false;

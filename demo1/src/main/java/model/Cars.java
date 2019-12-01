@@ -10,6 +10,7 @@ import main.java.exceptions.CarExistsException;
 import main.java.exceptions.InvalidCarException;
 import main.java.exceptions.NoCarAvaliableException;
 import main.java.exceptions.UnknownCompareTypeException;
+import model.CarModel;
 
 public class Cars implements Serializable {
     private static final long serialVersionUID = 2716582249374370739L;
@@ -64,7 +65,7 @@ public class Cars implements Serializable {
      * @param b Tipo a procurar
      * @return Lista dos carros
      */
-    public List<Car> listOfCarType(Car.CarType b) {
+    public List<Car> listOfCarType(CarModel.CarType b) {
         return this.carBase
                 .values()
                 .stream()
@@ -74,7 +75,7 @@ public class Cars implements Serializable {
                         .toCollection(ArrayList::new));
     }
 
-    Car getCar(String compare, Point dest, Point origin, Car.CarType a) throws UnknownCompareTypeException, NoCarAvaliableException {
+    Car getCar(String compare, Point dest, Point origin, CarModel.CarType a) throws UnknownCompareTypeException, NoCarAvaliableException {
         try {
             if (compare.equals("MaisPerto")) {
                 return this.carBase
@@ -110,7 +111,7 @@ public class Cars implements Serializable {
         throw new UnknownCompareTypeException();
     }
 
-    Car getCar(Point dest, Point origin, double range, Car.CarType a) throws NoCarAvaliableException {
+    Car getCar(Point dest, Point origin, double range, CarModel.CarType a) throws NoCarAvaliableException {
         try {
             return this.carBase
                     .values()
@@ -142,7 +143,7 @@ public class Cars implements Serializable {
     	  return super.hashCode();
     }
 
-    Car getCar(Point dest, double range, Car.CarType a) throws NoCarAvaliableException {
+    Car getCar(Point dest, double range, CarModel.CarType a) throws NoCarAvaliableException {
         try {
             return this.carBase
                     .values()

@@ -7,15 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import main.java.exceptions.UnknownCarTypeException;
+import model.CarModel;
 
 public class Car implements Serializable {
     private static final long serialVersionUID = -1292370800088543472L;
     private final String numberPlate;
     private final Owner owner;
-
-    private final String brand;
-    private final CarType type;
-    private final double avgSpeed;
+    private final CarModel carModel;
     private double basePrice;
     private final double gasMileage;
     private final Point position;
@@ -32,9 +30,7 @@ public class Car implements Serializable {
     private Car(Car car) {
         this.numberPlate = car.getNumberPlate();
         this.owner = car.getOwner();
-        this.brand = car.getBrand();
-        this.type = car.getType();
-        this.avgSpeed = car.getAvgSpeed();
+        this.carModel = new CarModel(car.getType(),car.getAvgSpeed(),car.getBrand());
         this.basePrice = car.getBasePrice();
         this.gasMileage = car.getGasMileage();
         this.position = car.getPosition();
@@ -46,31 +42,7 @@ public class Car implements Serializable {
         this.historic = new ArrayList<>(car.historic);
     }
 
-    public enum CarType {
-        ELECTRIC,
-        GAS,
-        HYBRID,
-        ANY;
-    	
-        public boolean isEqual(CarType a) {
-            return a == this || a == ANY;
-        }
-		
-        public static CarType fromString(String s) throws UnknownCarTypeException {
-            switch (s) {
-                case "Electrico":
-                    return CarType.ELECTRIC;
-                case "Gasolina":
-                    return CarType.GAS;
-                case "Hibrido":
-                    return CarType.HYBRID;
-                case "Todos":
-                    return CarType.ANY;
-                default:
-                	 throw new UnknownCarTypeException();
-                }
-        }
-    }
+
 
     void setPosition(Point position, double delay) {
         this.range -= this
@@ -91,7 +63,7 @@ public class Car implements Serializable {
     }
 
     double getAvgSpeed() {
-        return this.avgSpeed;
+        return this.carModel.getAvgSpeed();
     }
 
     private int getFullTankRange() {
@@ -118,8 +90,8 @@ public class Car implements Serializable {
         return this.range;
     }
 
-    CarType getType() {
-        return this.type;
+    public CarModel.CarType getType() {
+        return this.carModel.getType();
     }
 
     String getNumberPlate() {
@@ -131,24 +103,21 @@ public class Car implements Serializable {
     }
 
     private String getBrand() {
-        return this.brand;
+        return this.carModel.getBrand();
     }
 
     boolean isAvailable() {
         return this.isAvailable;
     }
 
-    Car(String numberPlate, Owner owner, CarType type,
-            double avgSpeed, double basePrice, double gasMileage, int range, Point pos, String brand) {
+    Car(String numberPlate, Owner owner,CarModel carModel, double basePrice, double gasMileage, int range, Point pos) {
         this.numberPlate = numberPlate;
         this.owner = owner;
-        this.type = type;
-        this.avgSpeed = avgSpeed;
+        this.carModel = carModel;
         this.basePrice = basePrice;
         this.gasMileage = gasMileage;
         this.fullTankRange = range;
         this.range = this.fullTankRange;
-        this.brand = brand;
         this.position = pos;
         this.rating = 0;
         this.nRatings = 0;
@@ -205,7 +174,7 @@ public class Car implements Serializable {
         if (o == null || this.getClass() != o.getClass()) return false;
 
         Car car = (Car) o;
-        return this.avgSpeed == car.avgSpeed
+        return this.carModel.equals(car.carModel)
                 && this.basePrice == car.basePrice
                 && this.gasMileage == car.gasMileage
                 && this.fullTankRange == car.fullTankRange
@@ -215,8 +184,6 @@ public class Car implements Serializable {
                 && this.nRatings == car.nRatings
                 && this.numberPlate.equals(car.numberPlate)
                 && this.owner.equals(car.owner)
-                && this.brand.equals(car.brand)
-                && this.type == car.type
                 && this.position.equals(car.position)
                 && this.historic.equals(car.historic);
     }

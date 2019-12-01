@@ -4,15 +4,16 @@ package main.java.view.viewmodel;
 import main.java.exceptions.InvalidNewRentalException;
 import main.java.model.Car;
 import main.java.utils.Point;
+import model.CarModel;
 
 public class CheapestNearCar {
         private final Point point;
         private final int walkDistance;
-        private final Car.CarType type;
+        private final CarModel.CarType type;
 
         public CheapestNearCar(Point point, int walkDistance, String type) throws InvalidNewRentalException {
             try {
-                this.type = Car.CarType.valueOf(type.toLowerCase());
+                this.type = CarModel.CarType.valueOf(type.toLowerCase());
             }
             catch (IllegalArgumentException e){
                 throw new InvalidNewRentalException();
@@ -29,5 +30,5 @@ public class CheapestNearCar {
             return walkDistance;
         }
 
-        public Car.CarType getType() { return type; }
+        public CarModel.CarType getType() { return type; }
     }

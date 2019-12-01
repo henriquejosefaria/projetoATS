@@ -3,16 +3,17 @@ package main.java.view.viewmodel;
 import main.java.exceptions.InvalidNewRentalException;
 import main.java.model.Car;
 import main.java.utils.Point;
+import model.CarModel;
 
 public class RentCarSimple {
     private final Point point;
-    private final Car.CarType type;
+    private final CarModel.CarType type;
 
     public RentCarSimple(Point point, String type) throws InvalidNewRentalException {
 
         this.point = point;
         try {
-            this.type = Car.CarType.valueOf(type.toLowerCase());
+            this.type = CarModel.CarType.valueOf(type.toLowerCase());
         }
         catch (IllegalArgumentException e){
             throw new InvalidNewRentalException();
@@ -23,7 +24,7 @@ public class RentCarSimple {
         return this.point;
     }
 
-    public Car.CarType getCarType() {
+    public CarModel.CarType getCarType() {
         return this.type;
     }
 }

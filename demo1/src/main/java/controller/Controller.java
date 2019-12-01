@@ -4,6 +4,7 @@ import main.java.model.*;
 import main.java.view.Menu;
 import main.java.view.viewmodel.*;
 import main.java.exceptions.*;
+import model.CarModel;
 
 import java.util.*;
 import java.util.logging.Logger;
@@ -286,16 +287,18 @@ public class Controller {
 		try {
             RegisterCar registerCar = menu.newRegisterCar(error);
             Owner ownerCar = (Owner)this.user;
+            CarModel.CarType type = registerCar.getType();
+            double avgSpeed = registerCar.getAvgSpeed();
+            String brand = registerCar.getBrand();
+            CarModel cm = new CarModel(type, avgSpeed, brand);
             model.addCar(
                     ownerCar,
+                    cm,
                     registerCar.getNumberPlate(),
-                    registerCar.getType(),
-                    registerCar.getAvgSpeed(),
                     registerCar.getBasePrice(),
                     registerCar.getGasMileage(),
                     registerCar.getRange(),
-                    registerCar.getPos(),
-                    registerCar.getBrand()
+                    registerCar.getPos()
             );
             menu.back();
             error = "";

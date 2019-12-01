@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import main.java.exceptions.*;
+import model.CarModel;
 
 public class UMCarroJa implements Serializable {
     private static final long serialVersionUID = 8905150170424120902L;
@@ -106,7 +107,7 @@ public class UMCarroJa implements Serializable {
     }
 
 
-    void rental(String username, Point dest, String preference, Car.CarType a)
+    void rental(String username, Point dest, String preference, CarModel.CarType a)
             throws UnknownCompareTypeException, NoCarAvaliableException, InvalidUserException {
         Client c = (Client) users.getUser(username);
         Car car = cars.getCar(preference, dest, c.getPos(), a);
@@ -114,7 +115,7 @@ public class UMCarroJa implements Serializable {
         this.rent(r);
     }
 
-    public Rental rental(Point dest, double range, Car.CarType a, Client c)
+    public Rental rental(Point dest, double range, CarModel.CarType a, Client c)
             throws NoCarAvaliableException {
         Car car = cars.getCar(dest, range, a);
         Rental r = new Rental(car, c, dest);
@@ -134,7 +135,7 @@ public class UMCarroJa implements Serializable {
     }
 
     //Range a pe
-    public Rental rental(Client c, Point dest, double range, Car.CarType a)
+    public Rental rental(Client c, Point dest, double range, CarModel.CarType a)
             throws NoCarAvaliableException{
         Car car = cars.getCar(dest, c.getPos(), range, a);
         Rental r = new Rental(car, c, dest);
@@ -143,7 +144,7 @@ public class UMCarroJa implements Serializable {
     }
 
     //MaisPerto e MaisBarato
-    public Rental rental(Client c, Point dest, String preference, Car.CarType a)
+    public Rental rental(Client c, Point dest, String preference, CarModel.CarType a)
             throws UnknownCompareTypeException, NoCarAvaliableException {
         Car car = cars.getCar(preference, dest, c.getPos(), a);
         Rental r = new Rental(car, c, dest);
@@ -176,17 +177,17 @@ public class UMCarroJa implements Serializable {
         ownerCar.getCars().get(index).swapState();
     }
 
-    void addCar(String numberPlate, String ownerID, Car.CarType type, double avgSpeed, double basePrice,
-                double gasMileage, int range, Point pos, String brand) throws CarExistsException, InvalidUserException {
+    void addCar(String numberPlate, String ownerID, CarModel carModel, double basePrice,
+                double gasMileage, int range, Point pos) throws CarExistsException, InvalidUserException {
         Owner o = (Owner) this.users.getUser(ownerID);
-        Car a = new Car(numberPlate, o, type, avgSpeed, basePrice, gasMileage, range, pos, brand);
+        Car a = new Car(numberPlate, o, carModel, basePrice, gasMileage, range, pos);
         this.cars.addCar(a);
         o.addCar(a);
     }
 
-    public void addCar(Owner os, String numberPlate, Car.CarType type, double avgSpeed, double basePrice, double gasMileage, int range, Point pos, String brand) throws CarExistsException, InvalidUserException {
+    public void addCar(Owner os, CarModel carModel, String numberPlate, double basePrice, double gasMileage, int range, Point pos) throws CarExistsException, InvalidUserException {
         Owner o = (Owner) this.users.getUser(os.getEmail());
-        Car a = new Car(numberPlate, o, type, avgSpeed, basePrice, gasMileage, range, pos, brand);
+        Car a = new Car(numberPlate, o, carModel, basePrice, gasMileage, range, pos);
         this.cars.addCar(a);
         o.addCar(a);
     }

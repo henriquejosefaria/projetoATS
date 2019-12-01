@@ -2,15 +2,16 @@ package main.java.view.viewmodel;
 import main.java.exceptions.InvalidNewRentalException;
 import main.java.model.Car;
 import main.java.utils.Point;
+import model.CarModel;
 
 public class AutonomyCar {
     private final Point point;
     private final int autonomy;
-    private final Car.CarType type;
+    private final CarModel.CarType type;
 
     public AutonomyCar(Point point, int autonomy, String type) throws InvalidNewRentalException {
         try {
-            this.type = Car.CarType.valueOf(type.toLowerCase());
+            this.type = CarModel.CarType.valueOf(type.toLowerCase());
         }
         catch (IllegalArgumentException e){
             throw new InvalidNewRentalException();
@@ -27,5 +28,5 @@ public class AutonomyCar {
         return autonomy;
     }
 
-    public Car.CarType getType() { return type; }
+    public CarModel.CarType getType() { return type; }
 }

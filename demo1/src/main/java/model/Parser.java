@@ -1,5 +1,6 @@
 package main.java.model;
 
+import main.java.exceptions.UnknownCarTypeException;
 import main.java.utils.Point;
 
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import main.java.exceptions.*;
+import model.CarModel;
 
 public class Parser {
     private List<String> file;
@@ -72,20 +74,26 @@ public class Parser {
                     if (content.length != 10) {
                         break;
                     }
+                    //String numberPlate, String ownerID,
+
+                    // Car.CarType type, double avgSpeed, <-
+                    //
+                    // double basePrice, double gasMileage, int range, Point pos,
+                    //
+                    //                String brand <-
+                    CarModel cm = new CarModel( CarModel.CarType.fromString(content[0]),Double.parseDouble(content[4]),content[1]);
                     model.addCar(
                             content[2],
                             new StringBuilder()
                                     .append(content[3])
                                     .append("@gmail.com")
                                     .toString(),
-                            Car.CarType.fromString(content[0]),
-                            Double.parseDouble(content[4]),
+                            cm,
                             Double.parseDouble(content[5]),
                             Double.parseDouble(content[6]),
                             Integer.parseInt(content[7]),
                             new Point(Double.parseDouble(content[8])
-                                    , Double.parseDouble(content[9])),
-                            content[1]
+                                    , Double.parseDouble(content[9]))
                     );
                     break;
                 case "Aluguer":
@@ -100,11 +108,7 @@ public class Parser {
                     break;
             }
         }
-        catch (InvalidUserException
-                | UserExistsException
-                | CarExistsException
-                | UnknownCarTypeException
-                | InvalidCarException ignored) {LOGGER.info(error);}
+        catch (InvalidUserException | UserExistsException | CarExistsException | UnknownCarTypeException | InvalidCarException ignored) {LOGGER.info(error);}
         return l;
     }
     
@@ -116,7 +120,7 @@ public class Parser {
                             .toString(),
                     new Point(Double.parseDouble(content[1])
                             , Double.parseDouble(content[2])),
-                    content[4], Car
+                    content[4], CarModel
                             .CarType
                             .fromString(content[3]));
         } catch (NoCarAvaliableException
