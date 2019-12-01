@@ -53,8 +53,6 @@ type Nota            = Int
 minNifs = 111111111
 maxNifs = 999999999
 proprios = ["João", "Joana", "Manuel", "André", "Belo", "Carlos", "Carolina", "Diogo", "Diolinda", "Helder", "Henrique", "Filipa", "Gonçalo", "Guilherme", "Leonor", "Matilde", "Nuno", "Nuna", "Olga", "Paulo", "Paula", "Rui", "Rafael", "Rita", "Sofia", "Sandra", "Sebastião", "Tiago", "Vitor", "Zulmira"]
-vogais = ["a","e","i","o","u"]
-consoantes = ["b","c","d","f","g","h","j","l","m","n","p","q","r","s","t","v","x","z"]
 freguesias = ["Alhoes", "Bustelo", "Gralheira e Ramires","Cinfães","Espadanedo","Ferreiros de Tendais","Fornelos","Moimenta","Nespereira","Oliveira do Douro","Santiago de Piães","São Cristóvão de Nogueira","Souselo","Tarouquela","Tendais","Travanca"]
 marcas = ["Abarth","Adria","Aixam","Alfa Romeo","Aston Martin","Audi","Austin","Austin Morris","Benimar","Bentley","Bertone","BMW","Cadillac","Challenger","Chevrolet","Chrysler","Citroen","Corvette" ,"Dacia","Daewoo" ,"Daihatsu" ,"Datsun","Dodge" ,"DS","Ferrari" ,"Fiat" ,"Ford","Hobby" ,"Honda","Hyundai","Isuzu" ,"Jaguar","JDM" ,"Jeep","Kia","Lamborghini" ,"Lancia","Land Rover","Lexus","Ligier","Lincoln","Lotu","Maserati","Maybach","Mazda","Mercedes-Benz" ,"MG","Microcar","MINI"]
 letters = ["AA","AB","AC","AD"]
@@ -69,26 +67,17 @@ genNifs xs n = do x <- choose (minNifs,maxNifs)
                   if elem x xs then genNifs xs n else genNifs (x:xs) (n-1)
 
 
--- É para aproveitar melhor as capacidades do quickCheck
---Função para gerar nomes engraçados
-genAplidoFUNNY:: [String] -> [String] -> String -> Int -> Gen String
-genAplidoFUNNY xs ys r 1 = return r
-genAplidoFUNNY xs ys r n = do x <- elements xs
-                         y <- elements ys
-                         z <- genAplidoFUNNY xs ys (r ++ x ++ y) (n-2)
-                         return z
+
 -- Utilizar o frequency com os aplidos mais comuns em Portugal
-genApelido:: Gen [String]
-genAplido = frequency [(944,return "Silva"),(596,return "Santos"),(525,return "Ferreira"),(488,return "Pereira"),(371,return "Oliveira"),(368,return "Costa"),(357,return "Rodrigues"),(323,return "Martins"),(299,return "Jesus"),(295,return "Sousa"),(282,return "Fernandes"),(276,return "Gonçalves"),(257,return "Gomes"),(252,return "Lopes"),(251,return "Marques"),(237,return "Alves"),(227,return "Almeida"),(227,return "Ribeiro"),(209,return "Pinto"),(197,return "Carvalho"),(168,return "Teixeira")]
+genApelido:: Gen String
+genApelido = frequency [(944,return "Silva"),(596,return "Santos"),(525,return "Ferreira"),(488,return "Pereira"),(371,return "Oliveira"),(368,return "Costa"),(357,return "Rodrigues"),(323,return "Martins"),(299,return "Jesus"),(295,return "Sousa"),(282,return "Fernandes"),(276,return "Gonçalves"),(257,return "Gomes"),(252,return "Lopes"),(251,return "Marques"),(237,return "Alves"),(227,return "Almeida"),(227,return "Ribeiro"),(209,return "Pinto"),(197,return "Carvalho"),(168,return "Teixeira")]
 
 genProprios::Gen String
 genProprios = elements proprios
 
 genNome:: Gen String
 genNome = do x <- genProprios
-             nr <- elements [5,7,9]
-             first <- elements consoantes
-             y <- genAplido vogais consoantes (map toUpper first) nr
+             y <- genApelido
              let nome = x ++ " " ++ y
              return nome
 
@@ -277,17 +266,90 @@ genClassificacoes (x:xs) ys = do a <- genClassificacaoN x
 --resultWritter a b c d e = do handle <- openFile "girlfriend.txt" WriteMode
 --                             map (print) a
 
+gen2IOCliente:: [Cliente] -> String
 
+gen2IOCliente [] = []
+gen2IOCliente ((NovoCliente nome nif email morada x y):xs) = "NovoCliente:" ++ nome
+                                                           ++ "," ++ (show nif) ++ ","
+                                                           ++ email ++ "," ++ morada 
+                                                           ++ "," ++ (show x) ++ ","
+                                                           ++ (show y) ++"\n" ++ gen2IOCliente xs
+
+gen2IOProp:: [NovoProprietario] -> String
+gen2IOProp [] = []
+gen2IOProp ((NovoProprietario nome nif email morada):xs) = "NovoProp:" ++ nome 
+                                                         ++ "," ++ (show nif) ++ ","
+                                                         ++ email ++ "," ++ morada ++
+                                                         "\n" ++ gen2IOProp xs
+
+gen2IOCarros:: [NovoCarro] -> String
+gen2IOCarros [] = []
+gen2IOCarros ((Novocarro tipo marca matricula nif velocidadeMedia precoKm consumo autonomia x y):xs) = 
+              "NovoCarro:" ++ tipo ++ "," ++ marca ++ "," ++ matricula ++ "," ++ (show nif) 
+              ++ "," ++ (show velocidadeMedia) ++ "," ++ (show precoKm) ++ "," ++ (show consumo) ++ ","
+              ++ (show autonomia) ++ "," ++ (show x) ++ "," ++ (show y) ++ "\n" ++ gen2IOCarros xs
+
+gen2IOAlugers:: [Aluger] -> String
+gen2IOAlugers [] = []
+gen2IOAlugers ((Aluger nif x y tipo preferencia):xs) = "Aluguer:" ++ (show nif) ++ "," 
+                                                       ++ (show x) ++ "," ++ (show y) 
+                                                       ++ "," ++ tipo ++ "," ++ 
+                                                       preferencia ++ "\n" ++ gen2IOAlugers xs
+
+gen2IOClassificacoes:: [Classificar] -> String
+gen2IOClassificacoes [] = []
+gen2IOClassificacoes ((ClassificacaoM matricula nota):xs) = "Classificar:" ++ matricula
+                                                          ++ "," ++ (show nota) ++ "\n"
+                                                          ++ gen2IOClassificacoes xs
+gen2IOClassificacoes ((ClassificacaoN nif nota):xs)       = "Classificar:" ++ (show nif)
+                                                          ++ "," ++ (show nota) ++ "\n"
+                                                          ++ gen2IOClassificacoes xs
+
+gen2IO:: Resultado -> [String]
+
+gen2IO (Res clientes proprietarios carros alugers classificacoes) = return 
+       ((gen2IOCliente clientes) ++ (gen2IOProp proprietarios) 
+        ++ (gen2IOCarros carros) ++ (gen2IOAlugers alugers) 
+        ++ gen2IOClassificacoes classificacoes) 
 
 genInput:: Int -> Gen Resultado 
-genInput n  = do let nrClientes      = n
-                 let nrProprietarios = 1000
-                 nifs               <- genNifs [] (n + 1000) 
-                 clientes           <- genClientes (take nrClientes nifs)
-                 proprietarios      <- genProprietarios (drop nrClientes nifs)
-                 carros             <- genCarros (drop nrClientes nifs)
-                 matriculas         <- getMatriculas carros
-                 alugers            <- genAlugers (take (1000) nifs)
-                 classificacoes     <- genClassificacoes (take (1000) nifs) (take 600 matriculas) 
-                 return (Res clientes proprietarios carros alugers classificacoes)
+genInput n = do let nrClientes      = n
+                let nrProprietarios = 1000
+                nifs               <- genNifs [] (n + 1000) 
+                clientes           <- genClientes (take nrClientes nifs)
+                proprietarios      <- genProprietarios (drop nrClientes nifs)
+                carros             <- genCarros (drop nrClientes nifs)
+                matriculas         <- getMatriculas carros
+                alugers            <- genAlugers (take (1000) nifs)
+                classificacoes     <- genClassificacoes (take (1000) nifs) (take 600 matriculas)
+                return (Res clientes proprietarios carros alugers classificacoes)
+
+
+conc:: [String] -> String
+conc [] = []
+conc (x:xs) = x ++ conc xs
+
+strGen:: Int -> IO()
+strGen n = do res <- generate (genInput n)
+              let output = gen2IO res
+              let out = conc output
+              writeFile "generatedOutput.bak" out 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

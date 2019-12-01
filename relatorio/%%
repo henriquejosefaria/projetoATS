@@ -1,4 +1,0 @@
-%%
-"Row"   {return;}
-.|\n	{print("%s",yytext[0]);}
-%%
