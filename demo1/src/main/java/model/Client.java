@@ -54,10 +54,6 @@ public class Client extends User{
         return this.pos.equals(client.pos)
                 && this.pendingRates.equals(client.pendingRates);
     }
-    public boolean wrongEquals(Object o) {
-        if (this == o) return false;
-        return true;
-    }
     @Override
     public int hashCode() {
     	  return super.hashCode();

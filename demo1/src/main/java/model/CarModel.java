@@ -2,7 +2,9 @@ package main.java.model;
 
 import main.java.exceptions.UnknownCarTypeException;
 
-public class CarModel {
+import java.io.Serializable;
+
+public class CarModel implements Serializable {
     private final String brand;
     private final CarType type;
     private final double avgSpeed;

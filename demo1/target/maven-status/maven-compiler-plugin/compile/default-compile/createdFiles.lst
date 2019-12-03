@@ -25,7 +25,6 @@ main/java/exceptions/NoCarAvaliableException.class
 main/java/view/viewmodel/RegisterUser.class
 main/java/exceptions/UnknownCarTypeException.class
 main/java/view/viewmodel/CheapestNearCar.class
-main/java/model/ClientTest.class
 main/java/model/UMCarroJa.class
 main/java/exceptions/CarExistsException.class
 main/java/model/Weather.class
