@@ -53,7 +53,7 @@ type Nota            = Int
 minNifs = 111111111
 maxNifs = 999999999
 proprios = ["João", "Joana", "Manuel", "André", "Belo", "Carlos", "Carolina", "Diogo", "Diolinda", "Helder", "Henrique", "Filipa", "Gonçalo", "Guilherme", "Leonor", "Matilde", "Nuno", "Nuna", "Olga", "Paulo", "Paula", "Rui", "Rafael", "Rita", "Sofia", "Sandra", "Sebastião", "Tiago", "Vitor", "Zulmira"]
-freguesias = ["Alhoes", "Bustelo", "Gralheira e Ramires","Cinfães","Espadanedo","Ferreiros de Tendais","Fornelos","Moimenta","Nespereira","Oliveira do Douro","Santiago de Piães","São Cristóvão de Nogueira","Souselo","Tarouquela","Tendais","Travanca"]
+freguesias = ["Alhões", "Bustelo", "Gralheira e Ramires","Cinfães","Espadanedo","Ferreiros de Tendais","Fornélos","Moimenta","Nespereira","Oliveira do Douro","Santiago de Piães","São Cristóvão de Nogueira","Souselo","Tarouquela","Tendais","Travanca"]
 marcas = ["Abarth","Adria","Aixam","Alfa Romeo","Aston Martin","Audi","Austin","Austin Morris","Benimar","Bentley","Bertone","BMW","Cadillac","Challenger","Chevrolet","Chrysler","Citroen","Corvette" ,"Dacia","Daewoo" ,"Daihatsu" ,"Datsun","Dodge" ,"DS","Ferrari" ,"Fiat" ,"Ford","Hobby" ,"Honda","Hyundai","Isuzu" ,"Jaguar","JDM" ,"Jeep","Kia","Lamborghini" ,"Lancia","Land Rover","Lexus","Ligier","Lincoln","Lotu","Maserati","Maybach","Mazda","Mercedes-Benz" ,"MG","Microcar","MINI"]
 letters = ["AA","AB","AC","AD"]
 numbers = ["00","01","02","03","04","05","06","07","08","09"]
@@ -312,28 +312,30 @@ gen2IO (Res clientes proprietarios carros alugers classificacoes) = return
         ++ (gen2IOCarros carros) ++ (gen2IOAlugers alugers) 
         ++ gen2IOClassificacoes classificacoes) 
 
-genInput:: Int -> Gen Resultado 
-genInput n = do let nrClientes      = n
-                let nrProprietarios = 1000
-                nifs               <- genNifs [] (n + 1000) 
-                clientes           <- genClientes (take nrClientes nifs)
-                proprietarios      <- genProprietarios (drop nrClientes nifs)
-                carros             <- genCarros (drop nrClientes nifs)
-                matriculas         <- getMatriculas carros
-                alugers            <- genAlugers (take (1000) nifs)
-                classificacoes     <- genClassificacoes (take (1000) nifs) (take 600 matriculas)
-                return (Res clientes proprietarios carros alugers classificacoes)
+genInput:: Int -> Int -> Gen Resultado 
+genInput n1 n2 = do let nrClientes      = n1
+                    let nrProprietarios = n2
+                    nifs               <- genNifs [] (nrClientes + nrProprietarios) 
+                    clientes           <- genClientes (take nrClientes nifs)
+                    proprietarios      <- genProprietarios (drop nrClientes nifs)
+                    carros             <- genCarros (drop nrClientes nifs)
+                    matriculas         <- getMatriculas carros
+                    alugers            <- genAlugers (take (nrClientes) nifs)
+                    classificacoes     <- genClassificacoes (take (nrClientes) nifs) (take nrProprietarios matriculas)
+                    return (Res clientes proprietarios carros alugers classificacoes)
 
 
 conc:: [String] -> String
 conc [] = []
 conc (x:xs) = x ++ conc xs
 
-strGen:: Int -> IO()
-strGen n = do res <- generate (genInput n)
-              let output = gen2IO res
-              let out = conc output
-              writeFile "generatedOutput.bak" out 
+strGen:: Int -> Int -> IO()
+strGen n1 n2 = do res <- generate (genInput n1 n2)
+                  let output = gen2IO res
+                  let out = conc output
+                  writeFile "generatedOutput.bak" out 
+
+
 
 
 

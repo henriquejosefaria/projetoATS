@@ -1,0 +1,544 @@
+-------------------------------------------------------------------------------
+Test set: main.java.model.Parser_ESTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.138 sec <<< FAILURE!
+test0(main.java.model.Parser_ESTest)  Time elapsed: 0.009 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/Parser.parseLine(Ljava/lang/String;Lmain/java/model/UMCarroJa;)Ljava/lang/String; @3: aload_1
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/Parser', 'java/lang/String', 'main/java/model/UMCarroJa' }
+    stack: { }
+  Bytecode:
+    0000000: b800 1f2b 12ba b600 be4e b800 1f2d 0332
+    0000010: 3a04 b800 1f2d 0432 12c0 b600 be3a 05b8
+    0000020: 001f 1904 3a06 0236 0719 06b6 00c4 ab00
+    0000030: 0000 00b4 0000 0004 2d61 c2a5 0000 009c
+    0000040: 4238 4040 0000 0050 5ae3 7cd7 0000 0076
+    0000050: 660d 7edd 0000 002a 1906 12c6 b600 c9b8
+    0000060: 0095 12ca b600 9ab8 001f 9900 7803 3607
+    0000070: b800 9512 cbb6 009a b800 1fa7 0067 1906
+    0000080: 12cd b600 c9b8 0095 12ce b600 9ab8 001f
+    0000090: 9900 5204 3607 b800 9512 cfb6 009a b800
+    00000a0: 1fa7 0041 1906 12d1 b600 c9b8 0095 12d2
+    00000b0: b600 9ab8 001f 9900 2c05 3607 b800 9512
+    00000c0: d3b6 009a b800 1fa7 001b 1906 12d5 b600
+    00000d0: c9b8 0095 12d6 b600 9ab8 001f 9900 0606
+    00000e0: 3607 1507 aa00 0000 0000 0213 0000 0000
+    00000f0: 0000 0003 0000 0020 0000 0082 0000 0103
+    0000100: 0000 01cf b800 1f19 05be 07b8 0095 12d7
+    0000110: b600 9ab8 001f 9f00 14b8 001f b800 9512
+    0000120: d8b6 009a b800 1fa7 020a b800 1f2c bb00
+    0000130: da59 1905 0532 1905 0332 1905 0632 1905
+    0000140: 0432 b800 1fb8 00e0 1905 0532 b700 e3b8
+    0000150: 001f b600 e7b8 001f b800 9512 e8b6 009a
+    0000160: b800 1fa7 01ce b800 1f19 05be 1006 b800
+    0000170: 9512 e9b6 009a b800 1f9f 0014 b800 1fb8
+    0000180: 0095 12ea b600 9ab8 001f a701 a7b8 001f
+    0000190: 2cbb 00ec 59bb 00ee 5919 0507 32b8 001f
+    00001a0: b800 f4b8 00f8 1905 0832 b800 f4b8 00f8
+    00001b0: b700 fb19 0505 3219 0505 3219 0503 3219
+    00001c0: 0506 3219 0504 32b8 001f b800 e0b7 00fe
+    00001d0: b800 1fb6 00e7 b800 1fb8 0095 12ff b600
+    00001e0: 9ab8 001f a701 4db8 001f 1905 be10 0ab8
+    00001f0: 0095 1301 00b6 009a b800 1f9f 0015 b800
+    0000200: 1fb8 0095 1301 01b6 009a b800 1fa7 0124
+    0000210: b800 1fbb 000b 5919 0503 32b8 0105 1905
+    0000220: 0732 b800 f419 0504 32b7 0108 3a08 b800
+    0000230: 1f2c 1905 0532 bb01 0a59 b701 0b19 0506
+    0000240: 32b8 001f b601 0f13 0111 b800 1fb6 010f
+    0000250: b800 1fb6 0114 1908 1905 0832 b800 1fb8
+    0000260: 00f4 1905 1006 32b8 001f b800 f419 0510
+    0000270: 0732 b800 1fb8 00e0 bb00 ee59 1905 1008
+    0000280: 32b8 001f b800 f4b8 00f8 1905 1009 32b8
+    0000290: 001f b800 f4b8 00f8 b700 fbb8 001f b601
+    00002a0: 18b8 001f b800 9513 0119 b600 9ab8 001f
+    00002b0: a700 81b8 001f 1905 be08 b800 9513 011a
+    00002c0: b600 9ab8 001f 9f00 15b8 001f b800 9513
+    00002d0: 011b b600 9ab8 001f a700 59b8 001f 2a19
+    00002e0: 052c b601 1fb8 001f b800 9513 0120 b600
+    00002f0: 9ab8 001f a700 3db8 001f 1905 be05 b800
+    0000300: 9513 0121 b600 9ab8 001f 9f00 15b8 001f
+    0000310: b800 9513 0122 b600 9ab8 001f a700 15b8
+    0000320: 001f 2c19 0503 3219 0504 32b8 00e0 b601
+    0000330: 26b8 001f b800 9513 0127 b600 9ab8 001f
+    0000340: a700 0f3a 06b2 009e 2ab4 0024 b600 a4b8
+    0000350: 001f 2bb0                              
+  Exception Handler Table:
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+
+	at main.java.model.Parser_ESTest.test0(Parser_ESTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test1(main.java.model.Parser_ESTest)  Time elapsed: 0.013 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/UMCarroJa', 'java/lang/String' }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] => handler: 93
+    bci [50, 67] => handler: 136
+    bci [93, 110] => handler: 136
+    bci [136, 141] => handler: 136
+
+	at main.java.model.Parser_ESTest.test1(Parser_ESTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test8(main.java.model.Parser_ESTest)  Time elapsed: 0.009 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/Parser.parseLine(Ljava/lang/String;Lmain/java/model/UMCarroJa;)Ljava/lang/String; @3: aload_1
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/Parser', 'java/lang/String', 'main/java/model/UMCarroJa' }
+    stack: { }
+  Bytecode:
+    0000000: b800 1f2b 12ba b600 be4e b800 1f2d 0332
+    0000010: 3a04 b800 1f2d 0432 12c0 b600 be3a 05b8
+    0000020: 001f 1904 3a06 0236 0719 06b6 00c4 ab00
+    0000030: 0000 00b4 0000 0004 2d61 c2a5 0000 009c
+    0000040: 4238 4040 0000 0050 5ae3 7cd7 0000 0076
+    0000050: 660d 7edd 0000 002a 1906 12c6 b600 c9b8
+    0000060: 0095 12ca b600 9ab8 001f 9900 7803 3607
+    0000070: b800 9512 cbb6 009a b800 1fa7 0067 1906
+    0000080: 12cd b600 c9b8 0095 12ce b600 9ab8 001f
+    0000090: 9900 5204 3607 b800 9512 cfb6 009a b800
+    00000a0: 1fa7 0041 1906 12d1 b600 c9b8 0095 12d2
+    00000b0: b600 9ab8 001f 9900 2c05 3607 b800 9512
+    00000c0: d3b6 009a b800 1fa7 001b 1906 12d5 b600
+    00000d0: c9b8 0095 12d6 b600 9ab8 001f 9900 0606
+    00000e0: 3607 1507 aa00 0000 0000 0213 0000 0000
+    00000f0: 0000 0003 0000 0020 0000 0082 0000 0103
+    0000100: 0000 01cf b800 1f19 05be 07b8 0095 12d7
+    0000110: b600 9ab8 001f 9f00 14b8 001f b800 9512
+    0000120: d8b6 009a b800 1fa7 020a b800 1f2c bb00
+    0000130: da59 1905 0532 1905 0332 1905 0632 1905
+    0000140: 0432 b800 1fb8 00e0 1905 0532 b700 e3b8
+    0000150: 001f b600 e7b8 001f b800 9512 e8b6 009a
+    0000160: b800 1fa7 01ce b800 1f19 05be 1006 b800
+    0000170: 9512 e9b6 009a b800 1f9f 0014 b800 1fb8
+    0000180: 0095 12ea b600 9ab8 001f a701 a7b8 001f
+    0000190: 2cbb 00ec 59bb 00ee 5919 0507 32b8 001f
+    00001a0: b800 f4b8 00f8 1905 0832 b800 f4b8 00f8
+    00001b0: b700 fb19 0505 3219 0505 3219 0503 3219
+    00001c0: 0506 3219 0504 32b8 001f b800 e0b7 00fe
+    00001d0: b800 1fb6 00e7 b800 1fb8 0095 12ff b600
+    00001e0: 9ab8 001f a701 4db8 001f 1905 be10 0ab8
+    00001f0: 0095 1301 00b6 009a b800 1f9f 0015 b800
+    0000200: 1fb8 0095 1301 01b6 009a b800 1fa7 0124
+    0000210: b800 1fbb 000b 5919 0503 32b8 0105 1905
+    0000220: 0732 b800 f419 0504 32b7 0108 3a08 b800
+    0000230: 1f2c 1905 0532 bb01 0a59 b701 0b19 0506
+    0000240: 32b8 001f b601 0f13 0111 b800 1fb6 010f
+    0000250: b800 1fb6 0114 1908 1905 0832 b800 1fb8
+    0000260: 00f4 1905 1006 32b8 001f b800 f419 0510
+    0000270: 0732 b800 1fb8 00e0 bb00 ee59 1905 1008
+    0000280: 32b8 001f b800 f4b8 00f8 1905 1009 32b8
+    0000290: 001f b800 f4b8 00f8 b700 fbb8 001f b601
+    00002a0: 18b8 001f b800 9513 0119 b600 9ab8 001f
+    00002b0: a700 81b8 001f 1905 be08 b800 9513 011a
+    00002c0: b600 9ab8 001f 9f00 15b8 001f b800 9513
+    00002d0: 011b b600 9ab8 001f a700 59b8 001f 2a19
+    00002e0: 052c b601 1fb8 001f b800 9513 0120 b600
+    00002f0: 9ab8 001f a700 3db8 001f 1905 be05 b800
+    0000300: 9513 0121 b600 9ab8 001f 9f00 15b8 001f
+    0000310: b800 9513 0122 b600 9ab8 001f a700 15b8
+    0000320: 001f 2c19 0503 3219 0504 32b8 00e0 b601
+    0000330: 26b8 001f b800 9513 0127 b600 9ab8 001f
+    0000340: a700 0f3a 06b2 009e 2ab4 0024 b600 a4b8
+    0000350: 001f 2bb0                              
+  Exception Handler Table:
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+
+	at main.java.model.Parser_ESTest.test8(Parser_ESTest.java:125)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test6(main.java.model.Parser_ESTest)  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/UMCarroJa', 'java/lang/String' }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] => handler: 93
+    bci [50, 67] => handler: 136
+    bci [93, 110] => handler: 136
+    bci [136, 141] => handler: 136
+
+	at main.java.model.Parser_ESTest.test6(Parser_ESTest.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test7(main.java.model.Parser_ESTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/UMCarroJa', 'java/lang/String' }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] => handler: 93
+    bci [50, 67] => handler: 136
+    bci [93, 110] => handler: 136
+    bci [136, 141] => handler: 136
+
+	at main.java.model.Parser_ESTest.test7(Parser_ESTest.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test4(main.java.model.Parser_ESTest)  Time elapsed: 0.006 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/Parser.parseLine(Ljava/lang/String;Lmain/java/model/UMCarroJa;)Ljava/lang/String; @3: aload_1
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/Parser', 'java/lang/String', 'main/java/model/UMCarroJa' }
+    stack: { }
+  Bytecode:
+    0000000: b800 1f2b 12ba b600 be4e b800 1f2d 0332
+    0000010: 3a04 b800 1f2d 0432 12c0 b600 be3a 05b8
+    0000020: 001f 1904 3a06 0236 0719 06b6 00c4 ab00
+    0000030: 0000 00b4 0000 0004 2d61 c2a5 0000 009c
+    0000040: 4238 4040 0000 0050 5ae3 7cd7 0000 0076
+    0000050: 660d 7edd 0000 002a 1906 12c6 b600 c9b8
+    0000060: 0095 12ca b600 9ab8 001f 9900 7803 3607
+    0000070: b800 9512 cbb6 009a b800 1fa7 0067 1906
+    0000080: 12cd b600 c9b8 0095 12ce b600 9ab8 001f
+    0000090: 9900 5204 3607 b800 9512 cfb6 009a b800
+    00000a0: 1fa7 0041 1906 12d1 b600 c9b8 0095 12d2
+    00000b0: b600 9ab8 001f 9900 2c05 3607 b800 9512
+    00000c0: d3b6 009a b800 1fa7 001b 1906 12d5 b600
+    00000d0: c9b8 0095 12d6 b600 9ab8 001f 9900 0606
+    00000e0: 3607 1507 aa00 0000 0000 0213 0000 0000
+    00000f0: 0000 0003 0000 0020 0000 0082 0000 0103
+    0000100: 0000 01cf b800 1f19 05be 07b8 0095 12d7
+    0000110: b600 9ab8 001f 9f00 14b8 001f b800 9512
+    0000120: d8b6 009a b800 1fa7 020a b800 1f2c bb00
+    0000130: da59 1905 0532 1905 0332 1905 0632 1905
+    0000140: 0432 b800 1fb8 00e0 1905 0532 b700 e3b8
+    0000150: 001f b600 e7b8 001f b800 9512 e8b6 009a
+    0000160: b800 1fa7 01ce b800 1f19 05be 1006 b800
+    0000170: 9512 e9b6 009a b800 1f9f 0014 b800 1fb8
+    0000180: 0095 12ea b600 9ab8 001f a701 a7b8 001f
+    0000190: 2cbb 00ec 59bb 00ee 5919 0507 32b8 001f
+    00001a0: b800 f4b8 00f8 1905 0832 b800 f4b8 00f8
+    00001b0: b700 fb19 0505 3219 0505 3219 0503 3219
+    00001c0: 0506 3219 0504 32b8 001f b800 e0b7 00fe
+    00001d0: b800 1fb6 00e7 b800 1fb8 0095 12ff b600
+    00001e0: 9ab8 001f a701 4db8 001f 1905 be10 0ab8
+    00001f0: 0095 1301 00b6 009a b800 1f9f 0015 b800
+    0000200: 1fb8 0095 1301 01b6 009a b800 1fa7 0124
+    0000210: b800 1fbb 000b 5919 0503 32b8 0105 1905
+    0000220: 0732 b800 f419 0504 32b7 0108 3a08 b800
+    0000230: 1f2c 1905 0532 bb01 0a59 b701 0b19 0506
+    0000240: 32b8 001f b601 0f13 0111 b800 1fb6 010f
+    0000250: b800 1fb6 0114 1908 1905 0832 b800 1fb8
+    0000260: 00f4 1905 1006 32b8 001f b800 f419 0510
+    0000270: 0732 b800 1fb8 00e0 bb00 ee59 1905 1008
+    0000280: 32b8 001f b800 f4b8 00f8 1905 1009 32b8
+    0000290: 001f b800 f4b8 00f8 b700 fbb8 001f b601
+    00002a0: 18b8 001f b800 9513 0119 b600 9ab8 001f
+    00002b0: a700 81b8 001f 1905 be08 b800 9513 011a
+    00002c0: b600 9ab8 001f 9f00 15b8 001f b800 9513
+    00002d0: 011b b600 9ab8 001f a700 59b8 001f 2a19
+    00002e0: 052c b601 1fb8 001f b800 9513 0120 b600
+    00002f0: 9ab8 001f a700 3db8 001f 1905 be05 b800
+    0000300: 9513 0121 b600 9ab8 001f 9f00 15b8 001f
+    0000310: b800 9513 0122 b600 9ab8 001f a700 15b8
+    0000320: 001f 2c19 0503 3219 0504 32b8 00e0 b601
+    0000330: 26b8 001f b800 9513 0127 b600 9ab8 001f
+    0000340: a700 0f3a 06b2 009e 2ab4 0024 b600 a4b8
+    0000350: 001f 2bb0                              
+  Exception Handler Table:
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+
+	at main.java.model.Parser_ESTest.test4(Parser_ESTest.java:84)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test5(main.java.model.Parser_ESTest)  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/UMCarroJa', 'java/lang/String' }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] => handler: 93
+    bci [50, 67] => handler: 136
+    bci [93, 110] => handler: 136
+    bci [136, 141] => handler: 136
+
+	at main.java.model.Parser_ESTest.test5(Parser_ESTest.java:91)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test2(main.java.model.Parser_ESTest)  Time elapsed: 0.009 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/Parser.parseLine(Ljava/lang/String;Lmain/java/model/UMCarroJa;)Ljava/lang/String; @3: aload_1
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/Parser', 'java/lang/String', 'main/java/model/UMCarroJa' }
+    stack: { }
+  Bytecode:
+    0000000: b800 1f2b 12ba b600 be4e b800 1f2d 0332
+    0000010: 3a04 b800 1f2d 0432 12c0 b600 be3a 05b8
+    0000020: 001f 1904 3a06 0236 0719 06b6 00c4 ab00
+    0000030: 0000 00b4 0000 0004 2d61 c2a5 0000 009c
+    0000040: 4238 4040 0000 0050 5ae3 7cd7 0000 0076
+    0000050: 660d 7edd 0000 002a 1906 12c6 b600 c9b8
+    0000060: 0095 12ca b600 9ab8 001f 9900 7803 3607
+    0000070: b800 9512 cbb6 009a b800 1fa7 0067 1906
+    0000080: 12cd b600 c9b8 0095 12ce b600 9ab8 001f
+    0000090: 9900 5204 3607 b800 9512 cfb6 009a b800
+    00000a0: 1fa7 0041 1906 12d1 b600 c9b8 0095 12d2
+    00000b0: b600 9ab8 001f 9900 2c05 3607 b800 9512
+    00000c0: d3b6 009a b800 1fa7 001b 1906 12d5 b600
+    00000d0: c9b8 0095 12d6 b600 9ab8 001f 9900 0606
+    00000e0: 3607 1507 aa00 0000 0000 0213 0000 0000
+    00000f0: 0000 0003 0000 0020 0000 0082 0000 0103
+    0000100: 0000 01cf b800 1f19 05be 07b8 0095 12d7
+    0000110: b600 9ab8 001f 9f00 14b8 001f b800 9512
+    0000120: d8b6 009a b800 1fa7 020a b800 1f2c bb00
+    0000130: da59 1905 0532 1905 0332 1905 0632 1905
+    0000140: 0432 b800 1fb8 00e0 1905 0532 b700 e3b8
+    0000150: 001f b600 e7b8 001f b800 9512 e8b6 009a
+    0000160: b800 1fa7 01ce b800 1f19 05be 1006 b800
+    0000170: 9512 e9b6 009a b800 1f9f 0014 b800 1fb8
+    0000180: 0095 12ea b600 9ab8 001f a701 a7b8 001f
+    0000190: 2cbb 00ec 59bb 00ee 5919 0507 32b8 001f
+    00001a0: b800 f4b8 00f8 1905 0832 b800 f4b8 00f8
+    00001b0: b700 fb19 0505 3219 0505 3219 0503 3219
+    00001c0: 0506 3219 0504 32b8 001f b800 e0b7 00fe
+    00001d0: b800 1fb6 00e7 b800 1fb8 0095 12ff b600
+    00001e0: 9ab8 001f a701 4db8 001f 1905 be10 0ab8
+    00001f0: 0095 1301 00b6 009a b800 1f9f 0015 b800
+    0000200: 1fb8 0095 1301 01b6 009a b800 1fa7 0124
+    0000210: b800 1fbb 000b 5919 0503 32b8 0105 1905
+    0000220: 0732 b800 f419 0504 32b7 0108 3a08 b800
+    0000230: 1f2c 1905 0532 bb01 0a59 b701 0b19 0506
+    0000240: 32b8 001f b601 0f13 0111 b800 1fb6 010f
+    0000250: b800 1fb6 0114 1908 1905 0832 b800 1fb8
+    0000260: 00f4 1905 1006 32b8 001f b800 f419 0510
+    0000270: 0732 b800 1fb8 00e0 bb00 ee59 1905 1008
+    0000280: 32b8 001f b800 f4b8 00f8 1905 1009 32b8
+    0000290: 001f b800 f4b8 00f8 b700 fbb8 001f b601
+    00002a0: 18b8 001f b800 9513 0119 b600 9ab8 001f
+    00002b0: a700 81b8 001f 1905 be08 b800 9513 011a
+    00002c0: b600 9ab8 001f 9f00 15b8 001f b800 9513
+    00002d0: 011b b600 9ab8 001f a700 59b8 001f 2a19
+    00002e0: 052c b601 1fb8 001f b800 9513 0120 b600
+    00002f0: 9ab8 001f a700 3db8 001f 1905 be05 b800
+    0000300: 9513 0121 b600 9ab8 001f 9f00 15b8 001f
+    0000310: b800 9513 0122 b600 9ab8 001f a700 15b8
+    0000320: 001f 2c19 0503 3219 0504 32b8 00e0 b601
+    0000330: 26b8 001f b800 9513 0127 b600 9ab8 001f
+    0000340: a700 0f3a 06b2 009e 2ab4 0024 b600 a4b8
+    0000350: 001f 2bb0                              
+  Exception Handler Table:
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+    bci [31, 817] => handler: 835
+
+	at main.java.model.Parser_ESTest.test2(Parser_ESTest.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+
+test3(main.java.model.Parser_ESTest)  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { 'main/java/model/UMCarroJa', 'java/lang/String' }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] => handler: 93
+    bci [50, 67] => handler: 136
+    bci [93, 110] => handler: 136
+    bci [136, 141] => handler: 136
+
+	at main.java.model.Parser_ESTest.test3(Parser_ESTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+

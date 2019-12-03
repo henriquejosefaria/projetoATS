@@ -1,0 +1,2599 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="38" failures="0" name="main.java.controller.Controller_ESTest" time="0.396" errors="38" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.2+9"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/henrique/Documents/4ano/ATS/projeto/demo1"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="PT"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/henrique/Documents/4ano/ATS/projeto/demo1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.2+9"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/rm/l9695zr55lbfkw2m0r27vmzm0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/apache-maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/henrique/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/apache-maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.3"/>
+    <property name="library.jansi.path" value="/opt/apache-maven/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/henrique"/>
+    <property name="user.timezone" value="Europe/Lisbon"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="henrique"/>
+    <property name="java.class.path" value="/opt/apache-maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/apache-maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test31" time="0.014">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test31(Controller_ESTest.java:492)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test10" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test10(Controller_ESTest.java:138)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test32" time="0.018">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test32(Controller_ESTest.java:508)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test11" time="0.011">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test11(Controller_ESTest.java:155)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test33" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test33(Controller_ESTest.java:525)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test12" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test12(Controller_ESTest.java:173)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test34" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test34(Controller_ESTest.java:542)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test13" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test13(Controller_ESTest.java:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test35" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test35(Controller_ESTest.java:558)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test14" time="0.013">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test14(Controller_ESTest.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test36" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test36(Controller_ESTest.java:574)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test15" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test15(Controller_ESTest.java:225)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test37" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test37(Controller_ESTest.java:590)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test16" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test16(Controller_ESTest.java:242)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test17" time="0.012">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test17(Controller_ESTest.java:261)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test18" time="0.025">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test18(Controller_ESTest.java:277)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test19" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test19(Controller_ESTest.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test30" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test30(Controller_ESTest.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test20" time="0.011">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test20(Controller_ESTest.java:312)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test21" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test21(Controller_ESTest.java:329)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test00" time="0.016">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test00(Controller_ESTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test22" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test22(Controller_ESTest.java:346)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test01" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test01(Controller_ESTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test23" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test23(Controller_ESTest.java:363)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test02" time="0.008">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test02(Controller_ESTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test24" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test24(Controller_ESTest.java:382)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test03" time="0.008">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test03(Controller_ESTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test25" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test25(Controller_ESTest.java:400)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test04" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test04(Controller_ESTest.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test26" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test26(Controller_ESTest.java:407)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test05" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test05(Controller_ESTest.java:71)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test27" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test27(Controller_ESTest.java:424)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test06" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test06(Controller_ESTest.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test28" time="0.011">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test28(Controller_ESTest.java:441)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test07" time="0.008">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test07(Controller_ESTest.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test29" time="0.008">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test29(Controller_ESTest.java:458)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test08" time="0.01">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/controller/Controller.caseLogin()Ljava/lang/String; @3: ldc
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/controller/Controller&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 3212 4c4c b800 322a b400 3f2b b600
+    0000010: c04d b800 322a 2ab4 0041 2cb6 00c5 2cb6
+    0000020: 00c8 b600 ceb5 00d0 b800 322a b400 3f2a
+    0000030: b400 d0c1 00d2 b800 5612 d3b6 005b b800
+    0000040: 3299 0014 b200 d7b8 0056 12d8 b600 5bb8
+    0000050: 0032 a700 06b2 00db b600 df57 b800 3212
+    0000060: 4c4c b800 32b8 0056 12e0 b600 5bb8 0032
+    0000070: a700 1fb8 0032 4d12 e24c b800 32b8 0056
+    0000080: 12e3 b600 5bb8 0032 a700 074d 12e5 4cb8
+    0000090: 0032 2bb0                              
+  Exception Handler Table:
+    bci [6, 98] =&gt; handler: 115
+    bci [6, 98] =&gt; handler: 139
+
+	at main.java.controller.Controller_ESTest.test08(Controller_ESTest.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+  <testcase classname="main.java.controller.Controller_ESTest" name="test09" time="0.009">
+    <error message="Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+" type="java.lang.VerifyError">java.lang.VerifyError: Operand stack overflow
+Exception Details:
+  Location:
+    main/java/model/UMCarroJa.save(Ljava/lang/String;)V @3: new
+  Reason:
+    Exceeded max stack size.
+  Current Frame:
+    bci: @3
+    flags: { }
+    locals: { &apos;main/java/model/UMCarroJa&apos;, &apos;java/lang/String&apos; }
+    stack: { }
+  Bytecode:
+    0000000: b800 30bb 01d4 592b b801 da99 0010 4d58
+    0000010: bb01 dc59 2cb7 01de a700 06b7 01df 4eb8
+    0000020: 0030 013a 04b8 0030 bb01 e159 2db7 01e4
+    0000030: 3a04 b800 3019 042a b601 e7b8 0030 1904
+    0000040: b601 eab8 0030 1904 b601 edb8 0030 b801
+    0000050: 2413 01ee b601 29b8 0030 a700 3eb8 0030
+    0000060: 3a05 b800 30b2 01f0 1301 f2b6 01f7 b800
+    0000070: 3019 04b6 01ed b800 30b8 0124 1301 f8b6
+    0000080: 0129 b800 30a7 0013 b800 303a 0619 04b6
+    0000090: 01ed b800 3019 06bf b800 30b1          
+  Exception Handler Table:
+    bci [50, 67] =&gt; handler: 93
+    bci [50, 67] =&gt; handler: 136
+    bci [93, 110] =&gt; handler: 136
+    bci [136, 141] =&gt; handler: 136
+
+	at main.java.controller.Controller_ESTest.test09(Controller_ESTest.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)
+</error>
+  </testcase>
+</testsuite>
