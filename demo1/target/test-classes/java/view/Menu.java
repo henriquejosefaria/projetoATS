@@ -21,6 +21,7 @@ import main.java.exceptions.InvalidNewRegisterException;
 import main.java.exceptions.InvalidNewRentalException;
 import main.java.exceptions.InvalidRatingException;
 import main.java.exceptions.InvalidTimeIntervalException;
+import sun.jvm.hotspot.asm.Register;
 
 import java.util.logging.Logger;
 
