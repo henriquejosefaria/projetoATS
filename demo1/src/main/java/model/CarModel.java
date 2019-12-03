@@ -1,7 +1,6 @@
 package main.java.model;
 
 import main.java.exceptions.UnknownCarTypeException;
-import main.java.model.Car;
 
 public class CarModel {
     private final String brand;
@@ -37,6 +36,11 @@ public class CarModel {
                 && this.brand.equals(m.brand)
                 && this.type == m.type;
     }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     public enum CarType {
         ELECTRIC,
         GAS,

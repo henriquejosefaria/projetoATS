@@ -28,8 +28,12 @@ public class Point implements Serializable {
     }
     public boolean equals(Object o){
         if (this == o) return true;
-        if (this.getClass() != o.getClass() || o == null) return false;
+        if ( o == null || this.getClass() != o.getClass()) return false;
         Point p = (Point)o;
         return this.x == p.x && this.y == p.y;
+    }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }

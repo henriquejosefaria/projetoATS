@@ -18,7 +18,6 @@ public class Controller {
     private String errorParam = "Parametros Inválidos";
     private String errorCars = "No cars availables";
     private static final Logger LOGGER = Logger.getLogger(Controller.class.getName());
-	private AttributeList lR;
     
     
     public Controller(UMCarroJa model) {
@@ -190,7 +189,7 @@ public class Controller {
 	public String caseReviewRental() {
 		String error = "";
 		Owner owner = (Owner)this.user;
-        lR = (AttributeList) owner.getPending();
+        AttributeList lR = owner.getPending();
         if (lR.isEmpty()){
             this.menu.back();
             

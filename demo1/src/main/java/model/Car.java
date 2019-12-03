@@ -6,7 +6,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.exceptions.UnknownCarTypeException;
 
 public class Car implements Serializable {
     private static final long serialVersionUID = -1292370800088543472L;
