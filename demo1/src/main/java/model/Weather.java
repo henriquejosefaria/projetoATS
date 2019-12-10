@@ -17,7 +17,7 @@ class Weather {
     };
 
     private String getSeason() {
-        return seasons[LocalDateTime.now().getMonthValue()];
+        return seasons[LocalDateTime.now().getMonthValue()-1];
     }
 
     public double getSeasonDelay() {

@@ -110,7 +110,9 @@ public class UMCarroJa implements Serializable {
             throws UnknownCompareTypeException, NoCarAvaliableException, InvalidUserException {
         Client c = (Client) users.getUser(username);
         Car car = cars.getCar(preference, dest, c.getPos(), a);
+        System.out.println("quase lá");
         Rental r = new Rental(car, c, dest);
+        System.out.println("passou");
         this.rent(r);
     }
 

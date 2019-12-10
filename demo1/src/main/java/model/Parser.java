@@ -46,6 +46,7 @@ public class Parser {
 
     private String parseLine(String l, UMCarroJa model){
         String[] pLine = l.split(":");
+        System.out.println(l);
         String categoria = pLine[0];
         String[] content = pLine[1].split(",");
         try {
@@ -77,13 +78,6 @@ public class Parser {
                     if (content.length != 10) {
                         break;
                     }
-                    //String numberPlate, String ownerID,
-
-                    // Car.CarType type, double avgSpeed, <-
-                    //
-                    // double basePrice, double gasMileage, int range, Point pos,
-                    //
-                    //                String brand <-
                     CarModel cm = new CarModel( CarModel.CarType.fromString(content[0]),Double.parseDouble(content[4]),content[1]);
                     model.addCar(
                             content[2],
@@ -116,6 +110,11 @@ public class Parser {
     }
     
     public void extra (String[] content, UMCarroJa model) {
+        System.out.println(content[0]);
+        System.out.println(content[1]);
+        System.out.println(content[2]);
+        System.out.println(content[3]);
+        System.out.println(content[4]);
     	try {
             model.rental(new StringBuilder()
                             .append(content[0])

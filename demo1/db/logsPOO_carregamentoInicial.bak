@@ -1,0 +1,60 @@
+NovoCliente:Manuel Marques,944087218,944087218@gmail.com,Nespereira,-29.96019,39.128708
+NovoCliente:Vitor Rodrigues,839886231,839886231@gmail.com,Ferreiros de Tendais,-30.711239,25.79197
+NovoCliente:Belo Teixeira,901027140,901027140@gmail.com,Alhões,-28.432219,22.310204
+NovoCliente:Filipa Gonçalves,293045179,293045179@gmail.com,Alhões,-24.325214,25.568544
+NovoCliente:Sofia Marques,823878836,823878836@gmail.com,Tendais,-30.834576,26.42725
+NovoCliente:Gonçalo Rodrigues,534946593,534946593@gmail.com,Oliveira do Douro,-23.342709,35.574356
+NovoCliente:Matilde Alves,488926338,488926338@gmail.com,Souselo,-27.255554,28.644745
+NovoCliente:Nuna Pinto,212218916,212218916@gmail.com,Gralheira e Ramires,-27.908552,31.104664
+NovoCliente:Sofia Alves,580263378,580263378@gmail.com,Bustelo,-24.075012,36.763702
+NovoCliente:Nuna Fernandes,475751357,475751357@gmail.com,Tendais,-29.24797,23.994526
+NovoProp:Carolina Fernandes,995133613,995133613@gmail.com,Fornélos
+NovoProp:Sebastião Silva,925090092,925090092@gmail.com,Moimenta
+NovoProp:Nuno Ferreira,918493765,918493765@gmail.com,Gralheira e Ramires
+NovoProp:Carolina Teixeira,990666283,990666283@gmail.com,Cinfães
+NovoProp:Guilherme Martins,134896143,134896143@gmail.com,Nespereira
+NovoProp:Sebastião Ribeiro,612425998,612425998@gmail.com,Gralheira e Ramires
+NovoProp:Paula Gonçalves,931140939,931140939@gmail.com,Ferreiros de Tendais
+NovoProp:Vitor Costa,908248342,908248342@gmail.com,Cinfães
+NovoProp:Sofia Oliveira,226175998,226175998@gmail.com,Travanca
+NovoProp:Rui Pereira,526786794,526786794@gmail.com,Tendais
+NovoCarro:Hibrido,Maserati,AB-09-07,995133613,116,1.0997374,5.476952,394,-31.872492,31.33067
+NovoCarro:Gasolina,Aixam,06-08-AB,925090092,104,1.9674807,5.6439743,432,-31.304758,21.11129
+NovoCarro:Gasolina,Hobby,03-08-AD,918493765,111,2.9881084,6.1915207,369,-28.248354,19.402788
+NovoCarro:Gasolina,Chevrolet,AC-06-07,990666283,53,0.7240506,5.3778076,443,-24.840965,21.197525
+NovoCarro:Gasolina,MINI,03-07-AA,134896143,141,1.2720416,3.8416615,435,-24.72144,22.621635
+NovoCarro:Electrico,DS,AD-03-06,612425998,102,1.7777395,6.048783,494,-24.956854,25.134838
+NovoCarro:Gasolina,Jeep,AA-07-09,931140939,91,1.4530933,3.7544684,373,-21.638765,28.439598
+NovoCarro:Gasolina,Benimar,00-AD-00,908248342,89,2.2065291,4.4605694,443,-21.330294,35.17752
+NovoCarro:Gasolina,Lincoln,08-04-AC,226175998,58,1.9908391,5.371268,470,-21.629953,20.086798
+NovoCarro:Gasolina,Ligier,07-AC-05,526786794,82,2.9333436,5.7522864,402,-26.077343,23.846245
+Aluguer:944087218,-21.137554,24.104935,Hibrido,MaisPerto
+Aluguer:839886231,-31.227673,27.275303,Gasolina,MaisPerto
+Aluguer:901027140,-20.94875,24.483383,Gasolina,MaisPerto
+Aluguer:293045179,-21.698566,33.53096,Hibrido,MaisBarato
+Aluguer:823878836,-23.434664,36.19191,Gasolina,MaisBarato
+Aluguer:534946593,-29.348072,30.035992,Gasolina,MaisPerto
+Aluguer:488926338,-25.534597,24.239782,Electrico,MaisBarato
+Aluguer:212218916,-23.563293,29.471611,Gasolina,MaisPerto
+Aluguer:580263378,-21.44101,28.860085,Gasolina,MaisPerto
+Aluguer:475751357,-24.360365,36.396633,Gasolina,MaisBarato
+Classificar:944087218,74
+Classificar:839886231,49
+Classificar:901027140,22
+Classificar:293045179,87
+Classificar:823878836,35
+Classificar:534946593,54
+Classificar:488926338,57
+Classificar:212218916,63
+Classificar:580263378,24
+Classificar:475751357,56
+Classificar:AB-09-07,53
+Classificar:06-08-AB,65
+Classificar:03-08-AD,23
+Classificar:AC-06-07,33
+Classificar:03-07-AA,25
+Classificar:AD-03-06,72
+Classificar:AA-07-09,47
+Classificar:00-AD-00,50
+Classificar:08-04-AC,32
+Classificar:07-AC-05,79
