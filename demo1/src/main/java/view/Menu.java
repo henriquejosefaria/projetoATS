@@ -324,7 +324,7 @@ public class Menu{
         Scanner scanner = new Scanner(System.in);
 		String str2 = scanner.nextLine();
         if (str2.matches("^[+-]?\\d{1,8}$")) {
-            int i = Integer.parseInt(str);
+            int i = Integer.parseInt(str2);
             if (this.options.size() > i - 1 && i > 0) {
                 this.prev.push(this.myMenu);
                 this.myMenu = this.options.get(i - 1);

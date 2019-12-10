@@ -333,7 +333,7 @@ strGen:: Int -> Int -> IO()
 strGen n1 n2 = do res <- generate (genInput n1 n2)
                   let output = gen2IO res
                   let out = conc output
-                  writeFile "generatedOutput.bak" out 
+                  writeFile "demo1/.tmp" out 
 
 
 

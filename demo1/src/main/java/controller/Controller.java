@@ -30,62 +30,62 @@ public class Controller {
         while(this.menu.getRun()) {
             switch (menu.getMenu()) {
                 case LOGIN:
-                	error = caseLogin();
+                	error = caseLogin(error);
                     break;
                 case REGISTERCLIENT:
-                    error = caseRegisterClient();
+                    error = caseRegisterClient(error);
                     break;
                 case REGISTEROWNER:
-                    error = caseRegisterOwner();
+                    error = caseRegisterOwner(error);
                     break;
                 case CLOSEST:
-                    error = caseClosest();
+                    error = caseClosest(error);
                     break;
                 case CHEAPEST:
-                    error = caseCheapest();
+                    error = caseCheapest(error);
                     break;
                 case REVIEWRENTAL:
-                    error = caseReviewRental();
+                    error = caseReviewRental(error);
                     break;
 
                 case CHEAPESTNEAR:
-                    error = caseCheapestNear();
+                    error = caseCheapestNear(error);
                     break;
 
                 case AUTONOMY:
-                	error = caseAutonomy();
+                	error = caseAutonomy(error);
                     break;
 
                 case SPECIFIC:
-                    error = caseSpecific();
+                    error = caseSpecific(error);
                     break;
 
                 case ADDCAR:
-                    error = caseAddCar();
+                    error = caseAddCar(error);
                     break;
 
                 case NUSES:
-                    error = caseNUses();
+                    error = caseNUses(error);
                     break;
 
                 case DISTANCE:
-                    error = caseDistance();
+                    error = caseDistance(error);
                     break;
 
                 case CAROVERVIEW:
-                    error = caseCarOverview();
+                    error = caseCarOverview(error);
                     break;
 
                 case PENDING:
-                    error = casePending();
+                    error = casePending(error);
                     break;
 
                 case HISTORYOWNER:
-                    error = caseHistoryOwner();
+                    error = caseHistoryOwner(error);
                     break;
 
                 case HISTORYCLIENT:
-                    error = caseHistoryClient();
+                    error = caseHistoryClient(error);
                     break;
                 default:
                     this.menu.parser();
@@ -95,8 +95,7 @@ public class Controller {
         }
     }
 
-	public String caseLogin() {
-    	String error = "";
+	public String caseLogin(String error) {
     	try {
     		NewLogin r = menu.newLogin(error);
     		user = model.logIn(r.getUser(), r.getPassword());
@@ -108,8 +107,7 @@ public class Controller {
     	return error;
     }
 	
-	public String caseRegisterClient() {
-		String error = "";
+	public String caseRegisterClient(String error) {
 		try {
             RegisterUser registerUserCli = menu.newRegisterUser(error);
             Client client = new Client(
@@ -129,8 +127,7 @@ public class Controller {
 		return error;
 	}
 
-	public String caseRegisterOwner() {
-		String error = "";
+	public String caseRegisterOwner(String error) {
 		try {
             RegisterUser registerUserProp = menu.newRegisterUser(error);
             Owner owner = new Owner(
@@ -149,8 +146,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseClosest() {
-		String error = "";
+	public String caseClosest(String error) {
 		try{
             RentCarSimple rent = menu.simpleCarRent(error);
             Rental rental = model.rental(
@@ -168,8 +164,7 @@ public class Controller {
 		return error;
 	}
 
-	public String caseCheapest() {
-		String error = "";
+	public String caseCheapest(String error) {
 		try{
             RentCarSimple rent = menu.simpleCarRent(error);
             Rental rental = model.rental(
@@ -186,8 +181,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseReviewRental() {
-		String error = "";
+	public String caseReviewRental(String error) {
 		Owner owner = (Owner)this.user;
         AttributeList lR = owner.getPending();
         if (lR.isEmpty()){
@@ -226,8 +220,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseCheapestNear() {
-		String error = "";
+	public String caseCheapestNear(String error) {
 		try{
             CheapestNearCar walkCar = menu.walkingDistanceRent(error);
 
@@ -246,8 +239,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseAutonomy() {
-		String error = "";
+	public String caseAutonomy(String error) {
 		try{
             AutonomyCar autoCar = menu.autonomyCarRent(error);
 
@@ -265,8 +257,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseSpecific() {
-		String error = "";
+	public String caseSpecific(String error) {
 		try {
             SpecificCar sc = this.menu.specificCarRent(error);
             Rental rental = this.model.rental(sc.getPoint(), sc.getNumberPlate(), (Client)user);
@@ -280,8 +271,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseAddCar() {
-		String error = "";
+	public String caseAddCar(String error) {
 		try {
             RegisterCar registerCar = menu.newRegisterCar(error);
             Owner ownerCar = (Owner)this.user;
@@ -307,8 +297,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseNUses() {
-		String error = "";
+	public String caseNUses(String error) {
 		menu.top10ClientsShow(
                 this.model.getBestClientsTimes()
                         .stream()
@@ -323,8 +312,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseDistance() {
-		String error = "";
+	public String caseDistance(String error) {
 		menu.top10ClientsShow(
                 this.model.getBestClientsTravel()
                         .stream()
@@ -339,8 +327,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseCarOverview() {
-		String error = "";
+	public String caseCarOverview(String error) {
 		Owner ownerCar = (Owner)this.user;
         String action = this.menu.carOverviewShow(error,
                 ownerCar.getCars().stream()
@@ -386,8 +373,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String casePending() {
-		String error = "";
+	public String casePending(String error) {
 		try {
             Client cli = (Client) user;
             List<Rental> pR = cli.getPendingRates();
@@ -407,8 +393,7 @@ public class Controller {
 		return error;
 	}
 	
-	public String caseHistoryOwner() {
-		String error = "";
+	public String caseHistoryOwner(String error) {
 		try{
             TimeInterval ti = this.menu.getTimeInterval(error);
 
@@ -426,8 +411,7 @@ public class Controller {
 		return error;
 	}
 
-	public String caseHistoryClient() {
-		String error = "";
+	public String caseHistoryClient(String error) {
 		try{
             TimeInterval ti = this.menu.getTimeInterval(error);
 

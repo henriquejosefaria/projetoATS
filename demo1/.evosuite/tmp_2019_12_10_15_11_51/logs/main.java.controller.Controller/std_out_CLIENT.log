@@ -1,5 +1,5 @@
 * Starting client
-* Connecting to master process on port 21109
+* Connecting to master process on port 18348
 * Analyzing classpath: 
   - /Users/henrique/Documents/4ano/ATS/projeto/demo1/target/classes
   - /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/charsets.jar
@@ -43,7 +43,7 @@
   - /Users/henrique/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0-M1/junit-jupiter-engine-5.6.0-M1.jar
   - /Users/henrique/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0-M1/junit-platform-engine-1.6.0-M1.jar
 * Finished analyzing classpath
-* Generating tests for class main.java.view.Menu
+* Generating tests for class main.java.controller.Controller
 * Test criteria:
   - Line Coverage
   - Branch Coverage
@@ -54,16 +54,101 @@
   - No-Exception Top-Level Method Coverage
   - Context Branch Coverage
 * Setting up search algorithm for whole suite generation
-[MASTER] 14:57:19.122 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/evosuite-seeds/main.java.view.Menu.seed
-* Loaded 0 tests from /Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/evosuite-seeds/main.java.view.Menu.seed
+[MASTER] 15:28:26.920 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/evosuite-seeds/main.java.controller.Controller.seed
+* Loaded 0 tests from /Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/evosuite-seeds/main.java.controller.Controller.seed
 * Total number of test goals: 
-  - Line 323
-  - Branch 121
+  - Line 264
+  - Branch 79
   - Exception 0
-  - MutationFactory 349
-  - Output 69
-  - Method 23
-  - MethodNoException 23
-  - CBranchFitnessFactory 121
-* Using seed 1575989830110
+  - MutationFactory 99
+  - Output 48
+  - Method 18
+  - MethodNoException 18
+  - CBranchFitnessFactory 79
+* Using seed 1575991698645
 * Starting evolution
+* Search finished after 464s and 951 generations, 142145 statements, best individual has fitness: 307.7708672598583
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 30%
+* Total number of goals: 264
+* Number of covered goals: 80
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 44%
+* Total number of goals: 79
+* Number of covered goals: 35
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 28
+* Number of covered goals: 28
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 23%
+* Total number of goals: 99
+* Number of covered goals: 23
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 19%
+* Total number of goals: 48
+* Number of covered goals: 9
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 18
+* Number of covered goals: 18
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 56%
+* Total number of goals: 18
+* Number of covered goals: 10
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 44%
+* Total number of goals: 79
+* Number of covered goals: 35
+* Generated 38 tests with total length 146
+* Resulting test suite's coverage: 52% (average coverage for all fitness functions)
+* Generating assertions
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+Method not found - keeping old class loader 
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 1
+* Writing JUnit test case 'Controller_ESTest' to /Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_15_11_51/tests
+* Done!
+
