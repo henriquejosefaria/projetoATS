@@ -1,2 +1,0 @@
-[MASTER] 16:02:09.223 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.LinkedList<E> : Type points to itself
-[MASTER] 16:04:21.109 [pool-2-thread-1] ERROR JUnitAnalyzer - Ran out of time while checking tests
