@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  1 DEC 2019 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  10 DEC 2019 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -202,6 +202,9 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@posthook=\toks24
 ) (./report.aux
 
+LaTeX Warning: Label `fig27' multiply defined.
+
+
 LaTeX Warning: Label `fig44' multiply defined.
 
 )
@@ -294,13 +297,8 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-
-Overfull \hbox (8.09528pt too wide) in paragraph at lines 24--26
-\T1/cmr/m/n/10 tanto es-tes in-di-cam fra-que-zas no de-sign de uma apli-ca-ção
- que po-dem comprometer-
- []
-
-) (./tarefa1.tex
+)
+(./tarefa1.tex
 <./images/sonarEvaluation.png, id=1, 787.94376pt x 639.38875pt>
 File: ./images/sonarEvaluation.png Graphic file (type png)
 <use ./images/sonarEvaluation.png>
@@ -748,13 +746,19 @@ File: ./images/JStanley'sOutput2.png Graphic file (type png)
 Package pdftex.def Info: ./images/JStanley'sOutput2.png  used on input line 629
 .
 (pdftex.def)             Requested size: 505.89758pt x 316.18599pt.
-[15 <./images/JStanley'sOutput2.png>]) (./tarefa3.tex
-<./images/clientTest1.png, id=125, 1138.2525pt x 714.67pt>
+<./images/allFixed.png, id=121, 472.76625pt x 459.7175pt>
+File: ./images/allFixed.png Graphic file (type png)
+<use ./images/allFixed.png>
+Package pdftex.def Info: ./images/allFixed.png  used on input line 643.
+(pdftex.def)             Requested size: 283.66193pt x 275.83263pt.
+[15 <./images/JStanley'sOutput2.png>] [16 <./images/allFixed.png>])
+(./tarefa3.tex
+<./images/clientTest1.png, id=130, 1138.2525pt x 714.67pt>
 File: ./images/clientTest1.png Graphic file (type png)
 <use ./images/clientTest1.png>
 Package pdftex.def Info: ./images/clientTest1.png  used on input line 20.
 (pdftex.def)             Requested size: 455.29294pt x 285.86293pt.
-<./images/clientTestResults.png, id=126, 1440.38126pt x 903.375pt>
+<./images/clientTestResults.png, id=131, 1440.38126pt x 903.375pt>
 File: ./images/clientTestResults.png Graphic file (type png)
 <use ./images/clientTestResults.png>
 Package pdftex.def Info: ./images/clientTestResults.png  used on input line 28.
@@ -763,12 +767,12 @@ Package pdftex.def Info: ./images/clientTestResults.png  used on input line 28.
 
 Underfull \vbox (badness 6284) has occurred while \output is active []
 
- [16 <./images/clientTest1.png>]
+ [17 <./images/clientTest1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<./images/coverageClient.png, id=131, 628.3475pt x 558.085pt>
+<./images/coverageClient.png, id=136, 628.3475pt x 558.085pt>
 File: ./images/coverageClient.png Graphic file (type png)
 <use ./images/coverageClient.png>
 Package pdftex.def Info: ./images/coverageClient.png  used on input line 43.
@@ -776,7 +780,7 @@ Package pdftex.def Info: ./images/coverageClient.png  used on input line 43.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./images/clientTestResults.png>]
+ [18 <./images/clientTestResults.png>]
 Overfull \hbox (34.30222pt too wide) in paragraph at lines 51--52
 []\T1/cmr/m/it/10 Nota1: \T1/cmr/m/n/10 Note-se que o facto do teste co-brir 46
 % das clas-ses do pac-kage main.java.model
@@ -793,112 +797,109 @@ Overfull \hbox (3.61526pt too wide) in paragraph at lines 52--53
 brange o pac-kage main.java.model.
  []
 
-<./images/evoMain.png, id=136, 218.8175pt x 182.6825pt>
+<./images/evoMain.png, id=141, 218.8175pt x 182.6825pt>
 File: ./images/evoMain.png Graphic file (type png)
 <use ./images/evoMain.png>
 Package pdftex.def Info: ./images/evoMain.png  used on input line 63.
 (pdftex.def)             Requested size: 98.46695pt x 82.20634pt.
-<./images/evoController.png, id=137, 227.85126pt x 66.2475pt>
+<./images/evoController.png, id=142, 227.85126pt x 66.2475pt>
 File: ./images/evoController.png Graphic file (type png)
 <use ./images/evoController.png>
 Package pdftex.def Info: ./images/evoController.png  used on input line 67.
 (pdftex.def)             Requested size: 102.5321pt x 55.41832pt.
-<./images/evoExceptions.png, id=138, 403.5075pt x 545.03625pt>
+<./images/evoExceptions.png, id=143, 403.5075pt x 545.03625pt>
 File: ./images/evoExceptions.png Graphic file (type png)
 <use ./images/evoExceptions.png>
 Package pdftex.def Info: ./images/evoExceptions.png  used on input line 71.
 (pdftex.def)             Requested size: 181.57669pt x 270.87129pt.
-<./images/evoModel.png, id=139, 272.01625pt x 507.8975pt>
-File: ./images/evoModel.png Graphic file (type png)
-<use ./images/evoModel.png>
-Package pdftex.def Info: ./images/evoModel.png  used on input line 80.
-(pdftex.def)             Requested size: 122.40617pt x 254.15901pt.
-<./images/evoUtils.png, id=140, 247.92625pt x 101.37875pt>
+<./images/evoUtils.png, id=144, 247.92625pt x 101.37875pt>
 File: ./images/evoUtils.png Graphic file (type png)
 <use ./images/evoUtils.png>
-Package pdftex.def Info: ./images/evoUtils.png  used on input line 84.
+Package pdftex.def Info: ./images/evoUtils.png  used on input line 75.
 (pdftex.def)             Requested size: 111.56578pt x 71.22725pt.
-<./images/evoView.png, id=141, 310.15875pt x 482.80376pt>
+<./images/evoModel.png, id=145, 272.01625pt x 507.8975pt>
+File: ./images/evoModel.png Graphic file (type png)
+<use ./images/evoModel.png>
+Package pdftex.def Info: ./images/evoModel.png  used on input line 84.
+(pdftex.def)             Requested size: 122.40617pt x 254.15901pt.
+<./images/evoView.png, id=146, 310.15875pt x 482.80376pt>
 File: ./images/evoView.png Graphic file (type png)
 <use ./images/evoView.png>
-Package pdftex.def Info: ./images/evoView.png  used on input line 87.
+Package pdftex.def Info: ./images/evoView.png  used on input line 88.
 (pdftex.def)             Requested size: 139.57014pt x 242.86693pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./images/coverageClient.png>]
+ [19 <./images/coverageClient.png>]
+Overfull \vbox (18.58322pt too high) has occurred while \output is active []
+
+
+[20 <./images/evoMain.png> <./images/evoController.png> <./images/evoExceptions
+.png> <./images/evoUtils.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./images/evoMain.png> <./images/evoController.png> <./images/evoException
-s.png>]
-Overfull \vbox (84.86363pt too high) has occurred while \output is active []
-
-
-[20 <./images/evoModel.png> <./images/evoUtils.png> <./images/evoView.png>]
-<./images/erroCertoMain_ESTest.png, id=159, 871.255pt x 574.145pt>
+ [21 <./images/evoModel.png> <./images/evoView.png>]
+<./images/erroCertoMain_ESTest.png, id=164, 871.255pt x 574.145pt>
 File: ./images/erroCertoMain_ESTest.png Graphic file (type png)
 <use ./images/erroCertoMain_ESTest.png>
 Package pdftex.def Info: ./images/erroCertoMain_ESTest.png  used on input line 
-109.
+110.
 (pdftex.def)             Requested size: 392.06113pt x 258.36285pt.
 
-Overfull \hbox (44.93759pt too wide) in paragraph at lines 109--110
+Overfull \hbox (44.93759pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
-[21 <./images/erroCertoMain_ESTest.png>]
-<./images/MainTests.png, id=164, 272.01625pt x 129.48375pt>
-File: ./images/MainTests.png Graphic file (type png)
-<use ./images/MainTests.png>
-Package pdftex.def Info: ./images/MainTests.png  used on input line 128.
-(pdftex.def)             Requested size: 122.40617pt x 58.26714pt.
-<./images/ControllerTests.png, id=165, 419.5675pt x 744.7825pt>
+[22 <./images/erroCertoMain_ESTest.png>]
+<./images/ControllerTests.png, id=169, 419.5675pt x 744.7825pt>
 File: ./images/ControllerTests.png Graphic file (type png)
 <use ./images/ControllerTests.png>
-Package pdftex.def Info: ./images/ControllerTests.png  used on input line 139.
+Package pdftex.def Info: ./images/ControllerTests.png  used on input line 129.
 (pdftex.def)             Requested size: 188.80362pt x 335.14903pt.
-<./images/ControllerTests2.png, id=166, 422.57875pt x 40.15pt>
+<./images/ControllerTests2.png, id=170, 422.57875pt x 40.15pt>
 File: ./images/ControllerTests2.png Graphic file (type png)
 <use ./images/ControllerTests2.png>
-Package pdftex.def Info: ./images/ControllerTests2.png  used on input line 140.
+Package pdftex.def Info: ./images/ControllerTests2.png  used on input line 130.
 
 (pdftex.def)             Requested size: 190.15868pt x 18.06732pt.
-<./images/ClientTests.png, id=167, 420.57124pt x 479.7925pt>
+<./images/MainTests.png, id=171, 272.01625pt x 129.48375pt>
+File: ./images/MainTests.png Graphic file (type png)
+<use ./images/MainTests.png>
+Package pdftex.def Info: ./images/MainTests.png  used on input line 140.
+(pdftex.def)             Requested size: 122.40617pt x 58.26714pt.
+<./images/ClientTests.png, id=172, 420.57124pt x 479.7925pt>
 File: ./images/ClientTests.png Graphic file (type png)
 <use ./images/ClientTests.png>
-Package pdftex.def Info: ./images/ClientTests.png  used on input line 150.
+Package pdftex.def Info: ./images/ClientTests.png  used on input line 151.
 (pdftex.def)             Requested size: 189.25531pt x 215.90462pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./images/MainTests.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [23 <./images/ControllerTests.png> <./images/ControllerTests2.png>] [24 <./ima
-ges/ClientTests.png>]
-<./images/jacoco.png, id=181, 1073.00874pt x 673.51625pt>
+ges/MainTests.png> <./images/ClientTests.png>]
+<./images/jacoco.png, id=183, 1073.00874pt x 673.51625pt>
 File: ./images/jacoco.png Graphic file (type png)
 <use ./images/jacoco.png>
-Package pdftex.def Info: ./images/jacoco.png  used on input line 167.
+Package pdftex.def Info: ./images/jacoco.png  used on input line 168.
 (pdftex.def)             Requested size: 482.84947pt x 303.07951pt.
-<./images/runCoverage.png, id=182, 1445.4pt x 903.375pt>
+<./images/runCoverage.png, id=184, 1445.4pt x 903.375pt>
 File: ./images/runCoverage.png Graphic file (type png)
 <use ./images/runCoverage.png>
-Package pdftex.def Info: ./images/runCoverage.png  used on input line 181.
+Package pdftex.def Info: ./images/runCoverage.png  used on input line 182.
 (pdftex.def)             Requested size: 505.89758pt x 316.18599pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./images/jacoco.png>]
-<./images/resultsCoverage.png, id=188, 555.07375pt x 184.69pt>
+<./images/resultsCoverage.png, id=190, 555.07375pt x 184.69pt>
 File: ./images/resultsCoverage.png Graphic file (type png)
 <use ./images/resultsCoverage.png>
-Package pdftex.def Info: ./images/resultsCoverage.png  used on input line 195.
+Package pdftex.def Info: ./images/resultsCoverage.png  used on input line 196.
 (pdftex.def)             Requested size: 249.78087pt x 83.10971pt.
-<./images/falhaTeste01.png, id=189, 1402.23875pt x 242.9075pt>
+<./images/falhaTeste01.png, id=191, 1402.23875pt x 242.9075pt>
 File: ./images/falhaTeste01.png Graphic file (type png)
 <use ./images/falhaTeste01.png>
-Package pdftex.def Info: ./images/falhaTeste01.png  used on input line 209.
+Package pdftex.def Info: ./images/falhaTeste01.png  used on input line 210.
 (pdftex.def)             Requested size: 631.00162pt x 109.30736pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -914,13 +915,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3120 strings out of 492616
- 45290 string characters out of 6129481
+ 3125 strings out of 492616
+ 45405 string characters out of 6129481
  120569 words of memory out of 5000000
- 6940 multiletter control sequences out of 15000+600000
+ 6944 multiletter control sequences out of 15000+600000
  11430 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,493b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,25p,493b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
@@ -932,10 +933,10 @@ al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
 exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (27 pages, 1474316 bytes).
+Output written on report.pdf (27 pages, 1493291 bytes).
 PDF statistics:
- 233 PDF objects out of 1000 (max. 8388607)
+ 235 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
