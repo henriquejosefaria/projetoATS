@@ -66,3 +66,50 @@
   - CBranchFitnessFactory 121
 * Using seed 1576000017251
 * Starting evolution
+* Search finished after 855s and 2107 generations, 432074 statements, best individual has fitness: 146.8677781822827
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 94%
+* Total number of goals: 323
+* Number of covered goals: 304
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 87%
+* Total number of goals: 121
+* Number of covered goals: 105
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 40
+* Number of covered goals: 40
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 87%
+* Total number of goals: 349
+* Number of covered goals: 304
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 36%
+* Total number of goals: 69
+* Number of covered goals: 25
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 23
+* Number of covered goals: 23
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 74%
+* Total number of goals: 23
+* Number of covered goals: 17
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 87%
+* Total number of goals: 121
+* Number of covered goals: 105
+* Generated 73 tests with total length 292
+* Resulting test suite's coverage: 83% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 40%
+* Compiling and checking tests
+* Permissions denied during test execution: 
+  - java.lang.RuntimePermission: 
+         writeFileDescriptor: 4
+* Writing JUnit test case 'Menu_ESTest' to /Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests
+* Done!
+

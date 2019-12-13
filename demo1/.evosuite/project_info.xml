@@ -61,6 +61,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>175</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Users/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Users/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Users/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Users/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Users_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>13</numberOfTests>
+                <totalNumberOfStatements>47</totalNumberOfStatements>
+                <totalEffortInSeconds>105</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.75</coverageValue>
+                    <coverageBitString>111101101110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.exceptions.InvalidCarException</fullNameOfTargetClass>
@@ -80,6 +137,63 @@
                 <numberOfTests>1</numberOfTests>
                 <totalNumberOfStatements>1</totalNumberOfStatements>
                 <totalEffortInSeconds>8</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidCarException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidCarException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidCarException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidCarException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/InvalidCarException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>7</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -183,6 +297,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterUser/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterUser/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterUser/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterUser/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/RegisterUser_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>16</numberOfTests>
+                <totalNumberOfStatements>32</totalNumberOfStatements>
+                <totalEffortInSeconds>35</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.73</coverageValue>
+                    <coverageBitString>1111111111111110000001</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.model.Parser</fullNameOfTargetClass>
@@ -244,6 +415,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>568</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Parser/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Parser/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Parser/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Parser/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Parser_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>9</numberOfTests>
+                <totalNumberOfStatements>31</totalNumberOfStatements>
+                <totalEffortInSeconds>302</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.41</coverageValue>
+                    <coverageBitString>111111110000001110111111111111111111101100000000000000000000000000000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.21</coverageValue>
+                    <coverageBitString>111100000000000000000000000000000000000000111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.35</coverageValue>
+                    <coverageBitString>0000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.21</coverageValue>
+                    <coverageBitString>111100000000000000000000000000000000000000111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.model.Rentals</fullNameOfTargetClass>
@@ -263,6 +491,63 @@
                 <numberOfTests>22</numberOfTests>
                 <totalNumberOfStatements>138</totalNumberOfStatements>
                 <totalEffortInSeconds>88</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.53</coverageValue>
+                    <coverageBitString>11110110110110010010110110010010001001</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>129</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rentals/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rentals/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rentals/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rentals/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Rentals_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>22</numberOfTests>
+                <totalNumberOfStatements>144</totalNumberOfStatements>
+                <totalEffortInSeconds>85</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -366,6 +651,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>221</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Owner/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Owner/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Owner/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Owner/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Owner_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>21</numberOfTests>
+                <totalNumberOfStatements>126</totalNumberOfStatements>
+                <totalEffortInSeconds>132</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.96</coverageValue>
+                    <coverageBitString>111111111101111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.72</coverageValue>
+                    <coverageBitString>111101101101101110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.92</coverageValue>
+                    <coverageBitString>111111111100111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.model.User</fullNameOfTargetClass>
@@ -385,6 +727,63 @@
                 <numberOfTests>18</numberOfTests>
                 <totalNumberOfStatements>70</totalNumberOfStatements>
                 <totalEffortInSeconds>176</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.79</coverageValue>
+                    <coverageBitString>11111111111111111100000000111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.39</coverageValue>
+                    <coverageBitString>111111111111100000000000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.49</coverageValue>
+                    <coverageBitString>1111111111111111011111111111111111111111111111111111100000000000000000000000000000000000000000000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.93</coverageValue>
+                    <coverageBitString>111111111111110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.36</coverageValue>
+                    <coverageBitString>011111111111100000000000000000000</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>314</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.User/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.User/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.User/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.User/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/User_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>17</numberOfTests>
+                <totalNumberOfStatements>60</totalNumberOfStatements>
+                <totalEffortInSeconds>178</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>0.79</coverageValue>
@@ -488,6 +887,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RateOwnerCar/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RateOwnerCar/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RateOwnerCar/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RateOwnerCar/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/RateOwnerCar_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>6</numberOfTests>
+                <totalNumberOfStatements>12</totalNumberOfStatements>
+                <totalEffortInSeconds>6</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.model.Rental</fullNameOfTargetClass>
@@ -546,6 +1002,63 @@
                     <criterion>CBranchCoverage</criterion>
                     <coverageValue>0.93</coverageValue>
                     <coverageBitString>111111111111111111111111011111111111100111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>337</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rental/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rental/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rental/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Rental/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Rental_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>51</numberOfTests>
+                <totalNumberOfStatements>499</totalNumberOfStatements>
+                <totalEffortInSeconds>207</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111111111111111111111111111111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.98</coverageValue>
+                    <coverageBitString>111111111111111111111111111111111111011111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.65</coverageValue>
+                    <coverageBitString>1111111110011111111010010010010010</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.98</coverageValue>
+                    <coverageBitString>111111111111111111111111111111111111101111</coverageBitString>
                 </coverage>
             </suite>
         </generation>
@@ -610,6 +1123,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.Main/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.Main/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.Main/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.Main/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/Main_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>4</numberOfTests>
+                <totalNumberOfStatements>83</totalNumberOfStatements>
+                <totalEffortInSeconds>43</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.92</coverageValue>
+                    <coverageBitString>111111111011</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.view.viewmodel.NewLogin</fullNameOfTargetClass>
@@ -629,6 +1199,63 @@
                 <numberOfTests>6</numberOfTests>
                 <totalNumberOfStatements>12</totalNumberOfStatements>
                 <totalEffortInSeconds>10</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.NewLogin/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.NewLogin/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.NewLogin/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.NewLogin/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/NewLogin_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>6</numberOfTests>
+                <totalNumberOfStatements>12</totalNumberOfStatements>
+                <totalEffortInSeconds>6</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -732,6 +1359,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCarTypeException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCarTypeException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCarTypeException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCarTypeException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/UnknownCarTypeException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>7</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.exceptions.UnknownCompareTypeException</fullNameOfTargetClass>
@@ -751,6 +1435,63 @@
                 <numberOfTests>1</numberOfTests>
                 <totalNumberOfStatements>1</totalNumberOfStatements>
                 <totalEffortInSeconds>8</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCompareTypeException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCompareTypeException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCompareTypeException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UnknownCompareTypeException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/UnknownCompareTypeException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>13</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -854,6 +1595,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.TimeInterval/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.TimeInterval/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.TimeInterval/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.TimeInterval/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/TimeInterval_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>4</numberOfTests>
+                <totalNumberOfStatements>10</totalNumberOfStatements>
+                <totalEffortInSeconds>15</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.view.viewmodel.SpecificCar</fullNameOfTargetClass>
@@ -873,6 +1671,63 @@
                 <numberOfTests>4</numberOfTests>
                 <totalNumberOfStatements>8</totalNumberOfStatements>
                 <totalEffortInSeconds>41</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.4</coverageValue>
+                    <coverageBitString>1110000001</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.SpecificCar/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.SpecificCar/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.SpecificCar/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.SpecificCar/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/SpecificCar_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>4</numberOfTests>
+                <totalNumberOfStatements>8</totalNumberOfStatements>
+                <totalEffortInSeconds>34</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -976,6 +1831,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>221</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Cars/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Cars/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Cars/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Cars/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Cars_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>25</numberOfTests>
+                <totalNumberOfStatements>134</totalNumberOfStatements>
+                <totalEffortInSeconds>133</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111111111111111111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.93</coverageValue>
+                    <coverageBitString>111110111111011111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.61</coverageValue>
+                    <coverageBitString>111010101101101010</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.model.Traffic</fullNameOfTargetClass>
@@ -994,6 +1906,63 @@
                 <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_15_11_51/tests/main/java/model/Traffic_ESTest.java</fullPathOfTestSuite>
                 <numberOfTests>5</numberOfTests>
                 <totalNumberOfStatements>16</totalNumberOfStatements>
+                <totalEffortInSeconds>93</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.75</coverageValue>
+                    <coverageBitString>11110101</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.67</coverageValue>
+                    <coverageBitString>101101110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.53</coverageValue>
+                    <coverageBitString>11111111011111111110110000000000000000000000011111111111110010000000000000000000000011111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.67</coverageValue>
+                    <coverageBitString>101101110</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>152</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Traffic/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Traffic/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Traffic/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Traffic/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Traffic_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>4</numberOfTests>
+                <totalNumberOfStatements>13</totalNumberOfStatements>
                 <totalEffortInSeconds>93</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
@@ -1098,6 +2067,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>521</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Car/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Car/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Car/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Car/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Car_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>69</numberOfTests>
+                <totalNumberOfStatements>492</totalNumberOfStatements>
+                <totalEffortInSeconds>308</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111111111111111111111111111111111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.97</coverageValue>
+                    <coverageBitString>1111111111111111111111111111111111111111111111111111111111010111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.98</coverageValue>
+                    <coverageBitString>111111111111111111111111111111111111111111111111101111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111111111101111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.89</coverageValue>
+                    <coverageBitString>11111111111111111111111111111110010110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.97</coverageValue>
+                    <coverageBitString>1111111111111111111111111111111111111111111111111111111111100111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.model.Weather</fullNameOfTargetClass>
@@ -1156,6 +2182,63 @@
                     <criterion>CBranchCoverage</criterion>
                     <coverageValue>0.62</coverageValue>
                     <coverageBitString>111001001110100111110011</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>314</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Weather/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Weather/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Weather/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Weather/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Weather_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>6</totalNumberOfStatements>
+                <totalEffortInSeconds>170</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.62</coverageValue>
+                    <coverageBitString>11110001</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.42</coverageValue>
+                    <coverageBitString>110101011000000001010110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.27</coverageValue>
+                    <coverageBitString>11111111000000000000000000000000000000000000000000000111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.42</coverageValue>
+                    <coverageBitString>110001001110000011010010</coverageBitString>
                 </coverage>
             </suite>
         </generation>
@@ -1220,6 +2303,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>106</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.UMCarroJa/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.UMCarroJa/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.UMCarroJa/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.UMCarroJa/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/UMCarroJa_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>58</numberOfTests>
+                <totalNumberOfStatements>254</totalNumberOfStatements>
+                <totalEffortInSeconds>73</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.7</coverageValue>
+                    <coverageBitString>1111110000100001111111111111111111111111111111111111111000110111000111111111111111011111100000010001000100010000011110111111011</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.87</coverageValue>
+                    <coverageBitString>1111111111111111111111111110000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.43</coverageValue>
+                    <coverageBitString>10001000111111101111000000000000000000000000111111111111000000001111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.37</coverageValue>
+                    <coverageBitString>11011011011011011001001001001001001001001000100100000100000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>0.62</coverageValue>
+                    <coverageBitString>10011111111110011101100000101</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.87</coverageValue>
+                    <coverageBitString>1111111111111111111111111110000</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.view.viewmodel.RegisterCar</fullNameOfTargetClass>
@@ -1239,6 +2379,63 @@
                 <numberOfTests>2</numberOfTests>
                 <totalNumberOfStatements>4</totalNumberOfStatements>
                 <totalEffortInSeconds>41</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.23</coverageValue>
+                    <coverageBitString>1111100000000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.1</coverageValue>
+                    <coverageBitString>0000001000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>0000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>000000000000000000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>0.1</coverageValue>
+                    <coverageBitString>1000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>0000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.1</coverageValue>
+                    <coverageBitString>0000000010</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterCar/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterCar/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterCar/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RegisterCar/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/RegisterCar_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>2</numberOfTests>
+                <totalNumberOfStatements>4</totalNumberOfStatements>
+                <totalEffortInSeconds>37</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>0.23</coverageValue>
@@ -1342,6 +2539,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidUserException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidUserException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidUserException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidUserException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/InvalidUserException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>16</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.exceptions.InvalidNumberOfArgumentsException</fullNameOfTargetClass>
@@ -1358,6 +2612,63 @@
             <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_15_11_51/logs/main.java.exceptions.InvalidNumberOfArgumentsException/std_out_MASTER.log</std_out_MASTER>
             <suite>
                 <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_15_11_51/tests/main/java/exceptions/InvalidNumberOfArgumentsException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>7</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNumberOfArgumentsException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNumberOfArgumentsException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNumberOfArgumentsException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNumberOfArgumentsException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/InvalidNumberOfArgumentsException_ESTest.java</fullPathOfTestSuite>
                 <numberOfTests>1</numberOfTests>
                 <totalNumberOfStatements>1</totalNumberOfStatements>
                 <totalEffortInSeconds>7</totalEffortInSeconds>
@@ -1464,6 +2775,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>198</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.CarModel/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.CarModel/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.CarModel/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.CarModel/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/CarModel_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>24</numberOfTests>
+                <totalNumberOfStatements>71</totalNumberOfStatements>
+                <totalEffortInSeconds>119</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.92</coverageValue>
+                    <coverageBitString>1111111111111111111111111111111010101011111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.89</coverageValue>
+                    <coverageBitString>1111111111111110111111111111111111111111110011100111001111110011111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.92</coverageValue>
+                    <coverageBitString>1111111111111111111111111110110111111110101111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.exceptions.CarExistsException</fullNameOfTargetClass>
@@ -1483,6 +2851,63 @@
                 <numberOfTests>1</numberOfTests>
                 <totalNumberOfStatements>1</totalNumberOfStatements>
                 <totalEffortInSeconds>14</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.CarExistsException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.CarExistsException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.CarExistsException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.CarExistsException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/CarExistsException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>11</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -1586,6 +3011,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>175</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Client/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Client/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Client/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.model.Client/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/model/Client_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>21</numberOfTests>
+                <totalNumberOfStatements>117</totalNumberOfStatements>
+                <totalEffortInSeconds>106</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.79</coverageValue>
+                    <coverageBitString>1111011011111101110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.view.viewmodel.CheapestNearCar</fullNameOfTargetClass>
@@ -1605,6 +3087,63 @@
                 <numberOfTests>2</numberOfTests>
                 <totalNumberOfStatements>4</totalNumberOfStatements>
                 <totalEffortInSeconds>41</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.36</coverageValue>
+                    <coverageBitString>11110000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.25</coverageValue>
+                    <coverageBitString>0010</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>0.25</coverageValue>
+                    <coverageBitString>1000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>0000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.25</coverageValue>
+                    <coverageBitString>0001</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.CheapestNearCar/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.CheapestNearCar/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.CheapestNearCar/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.CheapestNearCar/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/CheapestNearCar_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>2</numberOfTests>
+                <totalNumberOfStatements>4</totalNumberOfStatements>
+                <totalEffortInSeconds>35</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>0.36</coverageValue>
@@ -1708,6 +3247,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRentalException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRentalException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRentalException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRentalException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/InvalidNewRentalException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>7</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.controller.Controller</fullNameOfTargetClass>
@@ -1769,6 +3365,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>822</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.controller.Controller/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.controller.Controller/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.controller.Controller/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.controller.Controller/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/controller/Controller_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>67</numberOfTests>
+                <totalNumberOfStatements>748</totalNumberOfStatements>
+                <totalEffortInSeconds>1023</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.23</coverageValue>
+                    <coverageBitString>11111110000000000000000010000001111110000000000000000000000000000010000000001000000111100000000001111111110000000001100000000011100111111111111100000001000000000000010000000000001100000000000000000000010000000011100000000000000000000000000000000111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.41</coverageValue>
+                    <coverageBitString>1111111111111110101010101010101010101010101010110000000000000000000000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.18</coverageValue>
+                    <coverageBitString>101000000000000000000000000000000011000000111111111111000000000000000000000000000000000000000000011</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.23</coverageValue>
+                    <coverageBitString>000010000000010000111010010010111000000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.41</coverageValue>
+                    <coverageBitString>1111111111111110010000111011100101110101000011101000000000000000000000000000000</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.exceptions.NoCarAvaliableException</fullNameOfTargetClass>
@@ -1788,6 +3441,63 @@
                 <numberOfTests>1</numberOfTests>
                 <totalNumberOfStatements>1</totalNumberOfStatements>
                 <totalEffortInSeconds>12</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.NoCarAvaliableException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.NoCarAvaliableException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.NoCarAvaliableException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.NoCarAvaliableException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/NoCarAvaliableException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>8</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -1891,6 +3601,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRegisterException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRegisterException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRegisterException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidNewRegisterException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/InvalidNewRegisterException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>12</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.exceptions.WrongPasswordExecption</fullNameOfTargetClass>
@@ -1910,6 +3677,63 @@
                 <numberOfTests>1</numberOfTests>
                 <totalNumberOfStatements>1</totalNumberOfStatements>
                 <totalEffortInSeconds>6</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.WrongPasswordExecption/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.WrongPasswordExecption/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.WrongPasswordExecption/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.WrongPasswordExecption/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/WrongPasswordExecption_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>12</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -2013,6 +3837,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.AutonomyCar/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.AutonomyCar/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.AutonomyCar/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.AutonomyCar/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/AutonomyCar_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>2</numberOfTests>
+                <totalNumberOfStatements>3</totalNumberOfStatements>
+                <totalEffortInSeconds>44</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.36</coverageValue>
+                    <coverageBitString>11110000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.25</coverageValue>
+                    <coverageBitString>0010</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>000000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>0.25</coverageValue>
+                    <coverageBitString>1000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>0000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.25</coverageValue>
+                    <coverageBitString>1000</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.view.Table</fullNameOfTargetClass>
@@ -2032,6 +3913,63 @@
                 <numberOfTests>5</numberOfTests>
                 <totalNumberOfStatements>33</totalNumberOfStatements>
                 <totalEffortInSeconds>155</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.99</coverageValue>
+                    <coverageBitString>11111111111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111101111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.33</coverageValue>
+                    <coverageBitString>010</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>267</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Table/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Table/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Table/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Table/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/Table_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>6</numberOfTests>
+                <totalNumberOfStatements>39</totalNumberOfStatements>
+                <totalEffortInSeconds>153</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -2135,6 +4073,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>1214</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Menu/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Menu/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Menu/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.Menu/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/Menu_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>73</numberOfTests>
+                <totalNumberOfStatements>292</totalNumberOfStatements>
+                <totalEffortInSeconds>929</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.94</coverageValue>
+                    <coverageBitString>11111111111111111111111111111111111111111111111111111000011111111111111100011111011111111111111111101111111111111111111111111100111111111111111111111111111111111111100111111111110111011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110011111110011111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.87</coverageValue>
+                    <coverageBitString>1111111111111111111111111111101011000000101100110011011111111110111111111111111111111111111111111111111011111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>0.87</coverageValue>
+                    <coverageBitString>1111111111111111111111100001100001111111111111111110101111111111111111111111111111000000111111111111111111111111111111111111111111111111111111111111111011111111111111111111111011111100000000001110001111111111111101111111111100111111101111111111110011111111111111111111111000001111111111111111110111111111111110111111111111111111111111101111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.36</coverageValue>
+                    <coverageBitString>000011011010110010000000000000001101110100011011011011001100000100000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>0.74</coverageValue>
+                    <coverageBitString>10111101011111111100110</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.87</coverageValue>
+                    <coverageBitString>1111111111111111111111111111100001000110011011010010111111111111111111111111111111111101111111101111111111111111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.exceptions.InvalidTimeIntervalException</fullNameOfTargetClass>
@@ -2154,6 +4149,63 @@
                 <numberOfTests>1</numberOfTests>
                 <totalNumberOfStatements>1</totalNumberOfStatements>
                 <totalEffortInSeconds>12</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidTimeIntervalException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidTimeIntervalException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidTimeIntervalException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidTimeIntervalException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/InvalidTimeIntervalException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>14</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -2257,6 +4309,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UserExistsException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UserExistsException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UserExistsException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.UserExistsException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/UserExistsException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>5</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.utils.StringBetter</fullNameOfTargetClass>
@@ -2318,6 +4427,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>83</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.StringBetter/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.StringBetter/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.StringBetter/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.StringBetter/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/utils/StringBetter_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>19</numberOfTests>
+                <totalNumberOfStatements>132</totalNumberOfStatements>
+                <totalEffortInSeconds>67</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.58</coverageValue>
+                    <coverageBitString>10101010101011110101010101010101111010</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1111111111111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.utils.Point</fullNameOfTargetClass>
@@ -2337,6 +4503,63 @@
                 <numberOfTests>22</numberOfTests>
                 <totalNumberOfStatements>77</totalNumberOfStatements>
                 <totalEffortInSeconds>106</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>111111111111111111111111111111111111111111111111111111111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.81</coverageValue>
+                    <coverageBitString>011111111111111110010</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11111111111111111</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>175</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.Point/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.Point/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.Point/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.utils.Point/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/utils/Point_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>22</numberOfTests>
+                <totalNumberOfStatements>76</totalNumberOfStatements>
+                <totalEffortInSeconds>105</totalEffortInSeconds>
                 <coverage>
                     <criterion>LineCoverage</criterion>
                     <coverageValue>1.0</coverageValue>
@@ -2440,6 +4663,63 @@
                 </coverage>
             </suite>
         </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidRatingException/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidRatingException/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidRatingException/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.exceptions.InvalidRatingException/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/exceptions/InvalidRatingException_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>1</numberOfTests>
+                <totalNumberOfStatements>1</totalNumberOfStatements>
+                <totalEffortInSeconds>8</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>1</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
     </cut>
     <cut>
         <fullNameOfTargetClass>main.java.view.viewmodel.RentCarSimple</fullNameOfTargetClass>
@@ -2456,6 +4736,63 @@
             <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_15_11_51/logs/main.java.view.viewmodel.RentCarSimple/std_out_MASTER.log</std_out_MASTER>
             <suite>
                 <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_15_11_51/tests/main/java/view/viewmodel/RentCarSimple_ESTest.java</fullPathOfTestSuite>
+                <numberOfTests>2</numberOfTests>
+                <totalNumberOfStatements>4</totalNumberOfStatements>
+                <totalEffortInSeconds>34</totalEffortInSeconds>
+                <coverage>
+                    <criterion>LineCoverage</criterion>
+                    <coverageValue>0.56</coverageValue>
+                    <coverageBitString>111110000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>BranchCoverage</criterion>
+                    <coverageValue>0.33</coverageValue>
+                    <coverageBitString>001</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>ExceptionCoverage</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString>11</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>WeakMutationScore</criterion>
+                    <coverageValue>1.0</coverageValue>
+                    <coverageBitString></coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>OutputCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>000000000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodCoverage</criterion>
+                    <coverageValue>0.33</coverageValue>
+                    <coverageBitString>100</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>MethodNoExceptionCoverage</criterion>
+                    <coverageValue>0.0</coverageValue>
+                    <coverageBitString>000</coverageBitString>
+                </coverage>
+                <coverage>
+                    <criterion>CBranchCoverage</criterion>
+                    <coverageValue>0.33</coverageValue>
+                    <coverageBitString>010</coverageBitString>
+                </coverage>
+            </suite>
+        </generation>
+        <generation>
+            <id>1</id>
+            <failed>false</failed>
+            <modified>true</modified>
+            <timeBudgetInSeconds>60</timeBudgetInSeconds>
+            <memoryInMB>7000</memoryInMB>
+            <std_err_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RentCarSimple/std_err_CLIENT.log</std_err_CLIENT>
+            <std_out_CLIENT>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RentCarSimple/std_out_CLIENT.log</std_out_CLIENT>
+            <std_err_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RentCarSimple/std_err_MASTER.log</std_err_MASTER>
+            <std_out_MASTER>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/logs/main.java.view.viewmodel.RentCarSimple/std_out_MASTER.log</std_out_MASTER>
+            <suite>
+                <fullPathOfTestSuite>/Users/henrique/Documents/4ano/ATS/projeto/demo1/.evosuite/tmp_2019_12_10_17_46_25/tests/main/java/view/viewmodel/RentCarSimple_ESTest.java</fullPathOfTestSuite>
                 <numberOfTests>2</numberOfTests>
                 <totalNumberOfStatements>4</totalNumberOfStatements>
                 <totalEffortInSeconds>34</totalEffortInSeconds>
