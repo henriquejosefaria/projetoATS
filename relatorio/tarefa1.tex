@@ -15,17 +15,17 @@
 \end{figure}
 
 
-\par Como se pode ver pela figura~\ref{fig01} este projeto possui alguns bugs, pelo menos 1 vulnerabilidade uma quantidade consideravel de code smells e 2 blocos duplicados.
+\par Como se pode ver pela figura~\ref{fig01} este projeto possui alguns bugs, pelo menos 1 vulnerabilidade uma quantidade considerável de \textit{code smells} e 2 blocos duplicados.
 
 \section{Refactoring da Aplicação}
 
-De seguida apresenta-se um relatório detalhado dos tipos de erros e da sua gravidade bem como das respetivas soluções implementadas com recurso ao Eclipse e ao relatório de erros detalhado do Sonarqube (incluindo as descrições dos erros e codeSmells encontrados):
+De seguida apresenta-se um relatório detalhado dos tipos de erros e da sua gravidade bem como das respetivas soluções implementadas com recurso ao Eclipse e ao relatório de erros detalhado do \textit{Sonarqube} (incluindo as descrições dos erros e \textit{code smells} encontrados):
 
 \subsection{Bugs}
-versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descriminar o impacto dos smells
+Versão com e sem \textit{bugs}, com e sem \textit{smells} (por tipos de \textit{smells}) -> descriminar o impacto dos \textit{smells}
 \subsubsection{Blocker Bugs:}
 \begin{itemize}
-\item Não usar blocos try/catch ao escrever em ficheiros.\newline
+\item Não usar blocos \textit{try/catch} ao escrever em ficheiros.\newline
  Ficheiro: UMCarroJa.java\newline
 
 
@@ -55,7 +55,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \end{figure}
 
-\item Não usar blocos try/catch ao ler de ficheiros.\newline
+\item Não usar blocos \textit{try/catch} ao ler de ficheiros.\newline
  Ficheiro: UMCarroJa.java\newline
 
 
@@ -95,7 +95,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
  Ficheiro: Traffic.java \newline
 
 
-\par Para resolver o problema basta verificar que o random estava a ser gerado sempre que a função \textit{getTraficDelay()} era invocada. Para resolver basta gerar o random uma unica vez quando a classe for criada e usar o mesmo sempre que a função em causa for invocada.
+\par Para resolver o problema basta verificar que o \textit{random} estava a ser gerado sempre que a função \textit{getTraficDelay()} era invocada. Para resolver basta gerar o \textit{random} uma única vez quando a classe for criada e usar o mesmo sempre que a função em causa for invocada.
 
 \begin{figure}[H]
 
@@ -103,7 +103,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \includegraphics[scale = 0.5]{randomGeneration.png}
 
-  \caption {Recolocação do método de geração de um número Random}
+  \caption {Recolocação do método de geração de um número \textit{Random}}
 
   \label {fig06}
 
@@ -112,10 +112,10 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \subsubsection{Major Bugs:}
 \begin{itemize}
-\item Não obrigar a usar o método redifinido usando override.\newline
+\item Não obrigar a usar o método redefinido usando \textit{override}.\newline
  Ficheiro: Car.java\newline
 
-\par Para resolver este problema da forma mais simples foi preciso renomear o método equals para o método isEqual, visto que usar um \textit{@Override} sobre este método obrigaria a implementação um método de super tipo e da função \textit{hashCode()}.
+\par Para resolver este problema da forma mais simples foi preciso renomear o método \textit{equals} para o método \textit{isEqual}, visto que usar um \textit{@Override} sobre este método obrigaria a implementação um método de super tipo e da função \textit{hashCode()}.
 
 
 \begin{figure}[H]
@@ -167,7 +167,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
   \includegraphics[scale = 0.6]{Logger_info.png}
 
-  \caption {Solução do problema de Override do método hashCode}
+  \caption {Solução do problema de \textit{Override} do método \textit{hashCode}}
 
   \label {fig09}
 
@@ -179,10 +179,10 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \subsubsection{Critical CodeSmells:}
 \begin{itemize}
-\item Possuir um método complexo com cerca de de 290 linhas, é muito dificil manter e até mesmo perceber um código tão extenso.\newline
+\item Possuir um método complexo com cerca de de 290 linhas, é muito difícil manter e até mesmo perceber um código tão extenso.\newline
  Ficheiro: Controller.java\newline
 
-\par Para resolver o problema cada case do switch foi dividido em 1 função de complexidade inferior de média 15 linhas. podemos ver nas duas figuras em baixo, um dos cases e a função para o qual foi passado o código correspondente.
+\par Para resolver o problema cada case do \textit{switch} foi dividido em 1 função de complexidade inferior de média 15 linhas. podemos ver nas duas figuras em baixo, um dos cases e a função para o qual foi passado o código correspondente.
 
 \begin{figure}[H]
 
@@ -198,7 +198,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 
 \begin{itemize}
 \item Repetir várias vezes a atribuição da mesma string pode tornar o código confuso e ineficiente. \newline
-\par Para ultrapassar essa dificuldade essa string passou a ser criada e guardade numa constante quando um objeto da classe é inicializado e essa constante é depois atribuida quando necessário. \newline
+\par Para ultrapassar essa dificuldade essa string passou a ser criada e guarda numa constante quando um objeto da classe é inicializado e essa constante é depois atribuída quando necessário. \newline
  Ficheiros: Controller.java, Rental.java, Weather.java e Menu.java\newline
 \end{itemize}
 
@@ -208,7 +208,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \end{itemize}
 
 \begin{itemize}
-\item Ter constantes numa enumeração escritas em letras minúsculas. Basta escreve-las em maiúsculas para que passem a seguir a convenção. Para além disso todas as ocorrencias destas palavras sofrerão a mesma modificação.
+\item Ter constantes numa enumeração escritas em letras minúsculas. Basta escreve-las em maiúsculas para que passem a seguir a convenção. Para além disso todas as ocorrências destas palavras sofrerão a mesma modificação.
  Ficheiros: Car.java e Menu.java\newline
 \end{itemize}
 
@@ -224,7 +224,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \subsubsection{Major CodeSmells:}
 
 \begin{itemize}
-\item A existência de blocos try/catch vazios não afeta o desempenho da aplicação mas pode ser um erro de falta de código, neste caso, assumimos que foi deixado propositadamente vazio, logo para nã alterar o código restante preencheu-se o bloco com a atribuição de uma String vazia á variavel error.\newline
+\item A existência de blocos try/catch vazios não afeta o desempenho da aplicação mas pode ser um erro de falta de código, neste caso, assumimos que foi deixado propositadamente vazio, logo para não alterar o código restante preencheu-se o bloco com a atribuição de uma String vazia á variável erro.\newline
  Ficheiros: Controller.java e Main.java\newline
 
  \begin{figure}[H]
@@ -241,13 +241,13 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \end{itemize}
 
 \begin{itemize}
-\item A existencia de blocos try/catch dentro de um case não é uma boa prática, deve-se criar um método e usar o try catch dentro desta, sendo depois o método chamado dentro do case.\newline
+\item A existência de blocos \textit{try/catch} dentro de um case não é uma boa prática, deve-se criar um método e usar o \textit{try/catch} dentro desta, sendo depois o método chamado dentro do case.\newline
  Ficheiros: Parser.java\newline
-\par Para corrigir isto basta criar o método com o bloco try/catch lá dentro.
+\par Para corrigir isto basta criar o método com o bloco \textit{try/catch} lá dentro.
 \end{itemize}
 
 \begin{itemize}
-\item A utilização de uma classe que reporta uma exceção e não extende a class \textit{Exception} viola a convenção, para corrigir o erro mudou-se a expressão \textit{extends Throwable} para \textit{ extends Exception}.\newline
+\item A utilização de uma classe que reporta uma excepção e não estende a class \textit{Exception} viola a convenção, para corrigir o erro mudou-se a expressão \textit{extends Throwable} para \textit{ extends Exception}.\newline
  Ficheiros: InvalidNewRentalException.java e InvalidNumberOfArgumentsException.java\newline
 
 \par O código corrigido é apresentado na seguinte figura.
@@ -266,7 +266,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \end{itemize}
 
 \begin{itemize}
-\item A utilização de uma classe que reporta uma exceção e não extende a class \textit{Exception} viola a convenção, para corrigir o erro mudou-se a expressão \textit{extends Throwable} para \textit{ extends Exception}.\newline
+\item A utilização de uma classe que reporta uma excepção e não entende a class \textit{Exception} viola a convenção, para corrigir o erro mudou-se a expressão \textit{extends Throwable} para \textit{ extends Exception}.\newline
  Ficheiros: InvalidNewRentalException.java e InvalidNumberOfArgumentsException.java\newline
 
 \par O código corrigido é apresentado na seguinte imagem.
@@ -285,7 +285,7 @@ versão com bugs, sem bugs, com smells sem smells (por tipos de smells) -> descr
 \end{itemize}
 
 \begin{itemize}
-\item Ao reportar algo o utilizador deve ser capaz de aceder aos logs facilmente,estes logs têm de ter um formato uniforme, devem ser guardados e dados sensiveis devem ser guardados de forma segura. A utilização de System.out.println() pode comprometer um destes aspetos. Portanto tivemos de importar a biblioteca -textit{java.util.logging.Logger} e criar um \textit{Logger} para guardar o output disponibilizado ao utilizador.\newline
+\item Ao reportar algo o utilizador deve ser capaz de aceder aos logs facilmente,estes logs têm de ter um formato uniforme, devem ser guardados e dados sensíveis devem ser guardados de forma segura. A utilização de System.out.println() pode comprometer um destes aspetos. Portanto tivemos de importar a biblioteca -textit{java.util.logging.Logger} e criar um \textit{Logger} para guardar o output disponibilizado ao utilizador.\newline
  Ficheiros: Main.java e  Menu.java\newline
 
 \par O código com o Logger é apresentado na seguinte imagem.
@@ -331,7 +331,7 @@ Ficheiros: Point.java e StringBetter.java \newline
 \end{itemize}
 
 \begin{itemize}
-\item A presença de uma variavel com o mesmo nome da classe em que se insere pode confundir, as boas práticas indicam que devem ser nomes distintos. Portanto a variável \textit{menu} foi renomeada para \textit{mymenu}. \newline
+\item A presença de uma variável com o mesmo nome da classe em que se insere pode confundir, as boas práticas indicam que devem ser nomes distintos. Portanto a variável \textit{menu} foi renomeada para \textit{mymenu}. \newline
 Ficheiro: Menu.java \newline
 
 \end{itemize}
@@ -339,18 +339,18 @@ Ficheiro: Menu.java \newline
 \subsubsection{Minor CodeSmells:}
 \begin{itemize}
 \item Nomes de pacotes com letras maiúsculas.\newline
- Ficheiros: todos os packages exceto o main.java.\newline
+ Ficheiros: todos os packages excepto o main.java.\newline
 
 
-\par Para resolver este problema basta substituir as letras maiúsculas nos nomes dos packages por minusculas, o eclipse trata de renomear o nome do package nas declarações feitas dentro dos ficheiros do próprio package.\newline
-\par Em seguida temos um exemplo da correção de uma dessas ocorrencias. 
+\par Para resolver este problema basta substituir as letras maiúsculas nos nomes dos packages por minúsculas, o eclipse trata de renomear o nome do package nas declarações feitas dentro dos ficheiros do próprio package.\newline
+\par Em seguida temos um exemplo da correção de uma dessas ocorrências. 
 \begin{figure}[H]
 
   \centering
 
   \includegraphics[scale = 0.6]{packageRename.png}
 
-  \caption {Solução do problema de renomeação de packages}
+  \caption {Solução do problema de renomear packages}
 
   \label {fig16}
 
@@ -363,15 +363,15 @@ Ficheiro: Menu.java \newline
  Ficheiros: Controller.java e Menu.java.\newline
 
 
-\par Neste caso num if é utilizado o método size() do ArrayList e seguidamente verifica-se se o array está vazio. A solução para esta ineficiencia passa por invocar o método isEmpty() do ArrayList.\newline
-\par Em seguida temos um exemplo da correção de uma dessas ocorrencias. 
+\par Neste caso num if é utilizado o método size() do ArrayList e seguidamente verifica-se se o array está vazio. A solução para esta ineficiência passa por invocar o método isEmpty() do ArrayList.\newline
+\par Em seguida temos um exemplo da correção de uma dessas ocorrências. 
 \begin{figure}[H]
 
   \centering
 
   \includegraphics[scale = 0.6]{sizeForIsEmpty.png}
 
-  \caption {Solução do problema de inefeciência no uso de funções de Coleções na classe Controller}
+  \caption {Solução do problema de ineficiência no uso de funções de Coleções na classe Controller}
 
   \label {fig17}
 
@@ -387,7 +387,7 @@ Ficheiro: Menu.java \newline
   \includegraphics[scale = 0.6]{ifElseChangePre.png}
   \includegraphics[scale = 0.6]{ifElseChangePos.png}
 
-  \caption {Solução do problema de inefeciência no uso de funções de Coleções na classe Menu}
+  \caption {Solução do problema de ineficiência no uso de funções de Coleções na classe Menu}
 
   \label {fig18}
 
@@ -421,7 +421,7 @@ Ficheiro: Menu.java \newline
  Ficheiro: Car.java.\newline
 
 
-\par Para colmatar a ineficiencia do código basta mudar a negação de uma operação de >, extremamente custosa, para uma operação de >= que tem o mesmo efeito.\newline
+\par Para colmatar a ineficiência do código basta mudar a negação de uma operação de >, extremamente custosa, para uma operação de >= que tem o mesmo efeito.\newline
 \par A resolução encontra-se na figura seguinte. 
 \begin{figure}[H]
 
@@ -429,7 +429,7 @@ Ficheiro: Menu.java \newline
 
   \includegraphics[scale = 0.6]{returnMinorEqual.png}
 
-  \caption {Solução do problema de inefeciência do return}
+  \caption {Solução do problema de ineficiência do return}
 
   \label {fig20}
 
@@ -484,7 +484,7 @@ Ficheiro: Menu.java \newline
 \end{itemize}
 
 \begin{itemize}
-\item Utilização desnecessária de parentesis num filter.\newline
+\item Utilização desnecessária de parêntesis num filter.\newline
  Ficheiros: Cars.java e UmCarroJa.java.\newline
 
 
@@ -495,7 +495,7 @@ Ficheiro: Menu.java \newline
   \includegraphics[scale = 0.6]{filterEpre.png}
   \includegraphics[scale = 0.6]{filterEpos.png}
 
-  \caption {filter sem paretesis}
+  \caption {filter sem parêntesis}
 
   \label {fig23}
 
@@ -594,7 +594,7 @@ Ficheiros: Traffic.java e Weather.java
 
 \par Adicionalmente foram tratados três problemas referidos pelo IDE Eclipse.
 
-\par O primeiro problema diz respeito ao uso de uma variavel error na classe Controller.java. Esta era usada para guardar uma mensagem explicativa do erro ocorrido durante a execução do programa, mas este nunca era mostrado ao utilizador caso ocorre-se. Para isso bastou imprimir caso ocorra, com recurso ao System.out.println(), o erro obtido após um ciclo.\newline
+\par O primeiro problema diz respeito ao uso de uma variável error na classe Controller.java. Esta era usada para guardar uma mensagem explicativa do erro ocorrido durante a execução do programa, mas este nunca era mostrado ao utilizador caso ocorre-se. Para isso bastou imprimir caso ocorra, com recurso ao System.out.println(), o erro obtido após um ciclo.\newline
 
 \par No segundo problema existe uma variável "privare int id" no ficheiro Rentals.java que nunca é utilizada para nada, apenas é incrementada quando é adicionado um novo objeto rental mas não tem um propósito no código. Para resolver esta dependência bastou remover esta variável.\newline 
 
@@ -603,7 +603,7 @@ Ficheiros: Traffic.java e Weather.java
 
 \subsection{Technical Debts}
 
-Ao fazer a análise dos technical debts foram analisadas versões guardadas no github que tenham sido modificadas de tal forma a que podesse ter-se dado uma redução do tempo de execução estimado do programa. Os resultados obtidos pelo JStanley são mostrados na figura abaixo.
+Ao fazer a análise dos technical debts foram analisadas versões guardadas no github que tenham sido modificadas de tal forma a que pudesse ter-se dado uma redução do tempo de execução estimado do programa. Os resultados obtidos pelo JStanley são mostrados na figura abaixo.
 
 \begin{figure}[H]
 

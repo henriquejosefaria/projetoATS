@@ -45,9 +45,12 @@ public class Parser {
     }
 
     private String parseLine(String l, UMCarroJa model){
+        System.out.println("l: "+l.trim());
         String[] pLine = l.split(":");
         String categoria = pLine[0];
         String[] content = pLine[1].split(",");
+
+
         try {
             switch (categoria) {
                 case "NovoProp":
@@ -117,6 +120,9 @@ public class Parser {
     
     public void extra (String[] content, UMCarroJa model) {
     	try {
+            for (String s :content) {
+                System.out.println(s);
+            }
             model.rental(new StringBuilder()
                             .append(content[0])
                             .append("@gmail.com")

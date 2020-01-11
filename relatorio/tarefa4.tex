@@ -1,1 +1,58 @@
+\vspace{1cm}
 \section{Análise de Desempenho da Aplicação}
+
+Com o fim de elaborar uma análise de desempenho da aplicação \textbf{UmCarroJá}, utilizou-se a solução \textit{\textbf{Running Average Power Limit - RAPL}}.
+
+\begin{figure}[H]
+    \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_inicial.png}}
+    \label{fig47}
+    \caption{Pasta inicial do jRAPL}
+\end{figure}
+
+Antes de se poder correr o \textit{RAPL} é necessário correr o comando \textit{make} com o intuito de compilar os ficheiros.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/rapl_make.png}
+    \label{fig48}
+    \caption{jRAPL make}
+\end{figure}
+
+Para alem de executar o comando \textit{make} falta ir ao projeto e apagar o ficheiro \textit{.tmp} da pasta para no código no \textit{try/catch}, em vez de entrar no \textit{.tmp} e assim poder executar o programa a partir do ficheiro \textit{generatedOutput.bak}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.2\textwidth]{images/remove_tmp.png}
+    \label{fig49}
+    \caption{Remover .tmp do programa UmCarroJá}
+\end{figure}
+
+Para obter os dados de energia é necessário correr o ficheiro java do \textit{RAPL} chamado EnergyCheckUtils que é responsável por indicar o valor de energia do dram / uncore gpu energy (depende da arquitetura da cpu), do CPU e do pacote de energia.
+
+Quando corremos pela primeira vez o java o EnergyCheckUtils deu erro de paser dos dados, por isso foi necessário efectuar uma alteração no código, ver imagem em baixo.
+
+\begin{figure}[H]
+    \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/energycheckutils.png}}
+    \label{fig50}
+    \caption{Alterações no ficheiro EnergyCheckUtils}
+\end{figure}
+
+Depois de corrigir o EnergyCheckUtils procedemos à execução dos comando necessário para obter os dados de energia. Comandos, \textit{sudo modprobe msr}, \textit{javac EnergyCheckUtils.java} e \textit{java EnergyCheckUtils}.
+
+\begin{figure}[H]
+    \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_run.png}}
+    \label{fig50}
+    \caption{Comandos para correr o RAPL}
+\end{figure}
+
+Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e depois correr o UmCarroJá e assim obter os dados de energia tendo em consideração a solução UmCarroJá.
+
+Efectuamos quatro testes e conseguimos os seguintes resultados:
+
+\begin{figure}[H]
+    \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_run_tests.png}}
+    \label{fig50}
+    \caption{Testes elaborados com RAPL à solução UmCarroJá}
+\end{figure}
+
