@@ -143,7 +143,7 @@ genClientes (x:xs) = do c <- genCliente x
                         return (c:cs)
 
 genTipo:: Gen Tipo
-genTipo  = frequency [(70,return "Combustão"),(25,return "Hibrido"),(5,return "Eletrico")]
+genTipo  = frequency [(70,return "Gasolina"),(25,return "Hibrido"),(5,return "Electrico")]
 
 genPrecoKm:: Gen Float
 genPrecoKm = choose (0.5,3)
@@ -170,7 +170,7 @@ genVelocidadeMedia:: Gen VelocidadeMedia
 genVelocidadeMedia = choose(50, 150)
 
 genConsumo:: Gen Consumo
-genConsumo = choose(3.5,7.5)
+genConsumo = choose(3.5,6.5)
 
 
 -- #################################################################### --
@@ -207,7 +207,7 @@ getMatriculas ((Novocarro _ _ matricula _ _ _ _ _ _ _):xs) = do let m = matricul
                                                                 return (m:ms) 
 
 genPreferencia:: Gen Preferencia
-genPreferencia  = frequency [(65,return "Mais Perto"),(35,return "Mais Barato")]
+genPreferencia  = frequency [(65,return "MaisPerto"),(35,return "MaisBarato")]
 
 
 -- ##################################################################### --
@@ -333,7 +333,7 @@ strGen:: Int -> Int -> IO()
 strGen n1 n2 = do res <- generate (genInput n1 n2)
                   let output = gen2IO res
                   let out = conc output
-                  writeFile "generatedOutput.bak" out 
+                  writeFile "demo1/db/logsPOO_carregamentoInicial.bak" out 
 
 
 
