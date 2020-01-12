@@ -89,8 +89,6 @@ Versão com e sem \textit{bugs}, com e sem \textit{smells} (por tipos de \textit
 \end{itemize}
 \par Note-se que é usado no fim dos blocos \textit{try/catch} o bloco \textit{finally} para fechar o descritor de escrita/leitura. Isto serve para, caso alguma coisa corra mal na escrita em/leitura de um ficheiro, o descritor ser fechado. 
 
-\par Foi corrigido um bug adicional que ocorreria na aplicação ao ser usada em Dezembro. No ficheiro Weather.java estava a ser calculada a posição do array seasons a ser usada da seguinte maneira: LocalDateTime.now().getMonthValue(), se atentar nos resultados desta resolução verá que em Dezembro é retornado 12, como o array começa em 0 a posição máxima deste é 11 e portanto incorre-se num erro, basta para isso subtrair 1 unidade ao resultado do método descrito na obtenção do número do mês.
-
 \subsubsection{Critical Bugs:}
 \begin{itemize}
 \item Guardar e reutilizar variáveis random.\newline
