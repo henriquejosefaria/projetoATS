@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  10 DEC 2019 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  12 JAN 2020 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -320,12 +320,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--30
 
  []
 
-<./images/preWriteTryCatch.png, id=20, 428.60126pt x 111.41624pt>
+<./images/preWriteTryCatch.png, id=21, 428.60126pt x 111.41624pt>
 File: ./images/preWriteTryCatch.png Graphic file (type png)
 <use ./images/preWriteTryCatch.png>
 Package pdftex.def Info: ./images/preWriteTryCatch.png  used on input line 38.
 (pdftex.def)             Requested size: 214.3001pt x 55.70798pt.
-<./images/posreWriteTryCatch.png, id=21, 643.40375pt x 200.75pt>
+<./images/posreWriteTryCatch.png, id=22, 643.40375pt x 200.75pt>
 File: ./images/posreWriteTryCatch.png Graphic file (type png)
 <use ./images/posreWriteTryCatch.png>
 Package pdftex.def Info: ./images/posreWriteTryCatch.png  used on input line 50
@@ -336,7 +336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
-<./images/preReadTryCatch.png, id=22, 646.415pt x 102.3825pt>
+<./images/preReadTryCatch.png, id=23, 646.415pt x 102.3825pt>
 File: ./images/preReadTryCatch.png Graphic file (type png)
 <use ./images/preReadTryCatch.png>
 Package pdftex.def Info: ./images/preReadTryCatch.png  used on input line 69.
@@ -345,7 +345,7 @@ Package pdftex.def Info: ./images/preReadTryCatch.png  used on input line 69.
 Underfull \vbox (badness 1097) has occurred while \output is active []
 
  [3 <./images/preWriteTryCatch.png> <./images/posreWriteTryCatch.png>]
-<./images/posreReadTryCatch.png, id=29, 408.52625pt x 190.7125pt>
+<./images/posreReadTryCatch.png, id=30, 408.52625pt x 190.7125pt>
 File: ./images/posreReadTryCatch.png Graphic file (type png)
 <use ./images/posreReadTryCatch.png>
 Package pdftex.def Info: ./images/posreReadTryCatch.png  used on input line 81.
@@ -356,7 +356,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
  []
 
-<./images/randomGeneration.png, id=30, 445.665pt x 188.705pt>
+<./images/randomGeneration.png, id=31, 445.665pt x 188.705pt>
 File: ./images/randomGeneration.png Graphic file (type png)
 <use ./images/randomGeneration.png>
 Package pdftex.def Info: ./images/randomGeneration.png  used on input line 106.
@@ -910,38 +910,86 @@ Package pdftex.def Info: ./images/falhaTeste01.png  used on input line 211.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <./images/runCoverage.png> <./images/resultsCoverage.png>]) (./tarefa4.tex
-)
+<images/rapl_inicial.png, id=197, 1857.94125pt x 526.96875pt>
+File: images/rapl_inicial.png Graphic file (type png)
+<use images/rapl_inicial.png>
+Package pdftex.def Info: images/rapl_inicial.png  used on input line 7.
+(pdftex.def)             Requested size: 520.6853pt x 147.68694pt.
+<images/rapl_make.png, id=198, 968.61874pt x 782.925pt>
+File: images/rapl_make.png Graphic file (type png)
+<use images/rapl_make.png>
+Package pdftex.def Info: images/rapl_make.png  used on input line 16.
+(pdftex.def)             Requested size: 347.12354pt x 280.57451pt.
+ [27 <./images/falhaTeste01.png> <./images/rapl_inicial.png>]
+<images/remove_tmp.png, id=205, 1244.65pt x 683.55376pt>
+File: images/remove_tmp.png Graphic file (type png)
+<use images/remove_tmp.png>
+Package pdftex.def Info: images/remove_tmp.png  used on input line 26.
+(pdftex.def)             Requested size: 416.54718pt x 228.76508pt.
+
+Overfull \hbox (69.42365pt too wide) in paragraph at lines 26--28
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <./images/rapl_make.png>]
+<images/energycheckutils.png, id=210, 1927.2pt x 985.6825pt>
+File: images/energycheckutils.png Graphic file (type png)
+<use images/energycheckutils.png>
+Package pdftex.def Info: images/energycheckutils.png  used on input line 36.
+(pdftex.def)             Requested size: 520.6853pt x 266.30327pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./images/remove_tmp.png>]
+<images/rapl_run.png, id=215, 846.16125pt x 74.2775pt>
+File: images/rapl_run.png Graphic file (type png)
+<use images/rapl_run.png>
+Package pdftex.def Info: images/rapl_run.png  used on input line 44.
+(pdftex.def)             Requested size: 520.6853pt x 45.70815pt.
+<images/rapl_run_tests.png, id=216, 831.105pt x 356.33125pt>
+File: images/rapl_run_tests.png Graphic file (type png)
+<use images/rapl_run_tests.png>
+Package pdftex.def Info: images/rapl_run_tests.png  used on input line 54.
+(pdftex.def)             Requested size: 520.6853pt x 223.25018pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./images/energycheckutils.png> <./images/rapl_run.png>])
 
 LaTeX Warning: Empty `thebibliography' environment on input line 25.
 
-[27 <./images/falhaTeste01.png>] (./report.aux)
+[31 <./images/rapl_run_tests.png>] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3125 strings out of 492616
- 45405 string characters out of 6129481
+ 3162 strings out of 492616
+ 46210 string characters out of 6129481
  121569 words of memory out of 5000000
- 6944 multiletter control sequences out of 15000+600000
- 11430 words of font info for 25 fonts, out of 8000000 for 9000
+ 6973 multiletter control sequences out of 15000+600000
+ 12131 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,25p,549b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (27 pages, 1493598 bytes).
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on report.pdf (31 pages, 2202241 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 265 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 
