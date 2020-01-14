@@ -45,9 +45,7 @@ public class Parser {
     }
 
     private String parseLine(String l, UMCarroJa model){
-        System.out.println("l: "+l.trim());
         String[] pLine = l.split(":");
-        System.out.println(l);
         String categoria = pLine[0];
         String[] content = pLine[1].split(",");
 
@@ -113,15 +111,7 @@ public class Parser {
     }
     
     public void extra (String[] content, UMCarroJa model) {
-        System.out.println(content[0]);
-        System.out.println(content[1]);
-        System.out.println(content[2]);
-        System.out.println(content[3]);
-        System.out.println(content[4]);
     	try {
-            for (String s :content) {
-                System.out.println(s);
-            }
             model.rental(new StringBuilder()
                             .append(content[0])
                             .append("@gmail.com")

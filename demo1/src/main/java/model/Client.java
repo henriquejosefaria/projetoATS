@@ -5,7 +5,7 @@ import java.util.List;
 
 import main.java.utils.Point;
 
-public class Client extends User{
+public class Client extends User {
     private static final long serialVersionUID = 6476239603804875239L;
     private Point pos;
     private final List<Rental> pendingRates;
