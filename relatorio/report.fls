@@ -58,6 +58,12 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /home/xan/Documents/git/projetoATS/relatorio/report.aux
 INPUT /home/xan/Documents/git/projetoATS/relatorio/report.aux
 OUTPUT /home/xan/Documents/git/projetoATS/relatorio/report.aux
@@ -262,6 +268,12 @@ INPUT ./images/resultsCoverage.png
 INPUT /home/xan/Documents/git/projetoATS/relatorio/./images/falhaTeste01.png
 INPUT ./images/falhaTeste01.png
 INPUT ./images/falhaTeste01.png
+INPUT /home/xan/Documents/git/projetoATS/relatorio/./images/estruturas.png
+INPUT ./images/estruturas.png
+INPUT ./images/estruturas.png
+INPUT /home/xan/Documents/git/projetoATS/relatorio/./images/dados.png
+INPUT ./images/dados.png
+INPUT ./images/dados.png
 INPUT /home/xan/Documents/git/projetoATS/relatorio/tarefa4.tex
 INPUT /home/xan/Documents/git/projetoATS/relatorio/tarefa4.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbi1000.tfm
