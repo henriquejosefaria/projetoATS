@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  12 JAN 2020 18:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  14 JAN 2020 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,53 +921,58 @@ File: images/rapl_make.png Graphic file (type png)
 <use images/rapl_make.png>
 Package pdftex.def Info: images/rapl_make.png  used on input line 16.
 (pdftex.def)             Requested size: 261.53055pt x 211.39258pt.
-[28 <./images/rapl_inicial.png> <./images/rapl_make.png>]
-<images/remove_tmp.png, id=209, 1244.65pt x 683.55376pt>
+<images/remove_tmp.png, id=203, 1244.65pt x 683.55376pt>
 File: images/remove_tmp.png Graphic file (type png)
 <use images/remove_tmp.png>
 Package pdftex.def Info: images/remove_tmp.png  used on input line 27.
 (pdftex.def)             Requested size: 416.54718pt x 228.76508pt.
-<images/energycheckutils.png, id=210, 1927.2pt x 985.6825pt>
+[28 <./images/rapl_inicial.png> <./images/rapl_make.png>] [29 <./images/remove_
+tmp.png>]
+<images/energycheckutils.png, id=214, 1927.2pt x 985.6825pt>
 File: images/energycheckutils.png Graphic file (type png)
 <use images/energycheckutils.png>
 Package pdftex.def Info: images/energycheckutils.png  used on input line 38.
 (pdftex.def)             Requested size: 520.6853pt x 266.30327pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
- [29 <./images/remove_tmp.png>]
+ []
+
 <images/rapl_run.png, id=215, 846.16125pt x 74.2775pt>
 File: images/rapl_run.png Graphic file (type png)
 <use images/rapl_run.png>
-Package pdftex.def Info: images/rapl_run.png  used on input line 46.
+Package pdftex.def Info: images/rapl_run.png  used on input line 54.
 (pdftex.def)             Requested size: 520.6853pt x 45.70815pt.
- [30 <./images/energycheckutils.png> <./images/rapl_run.png>]
+[30 <./images/energycheckutils.png> <./images/rapl_run.png>]
 <images/rapl_5k.png, id=221, 775.89874pt x 269.005pt>
 File: images/rapl_5k.png Graphic file (type png)
 <use images/rapl_5k.png>
-Package pdftex.def Info: images/rapl_5k.png  used on input line 59.
-(pdftex.def)             Requested size: 520.6853pt x 180.52383pt.
+Package pdftex.def Info: images/rapl_5k.png  used on input line 65.
+(pdftex.def)             Requested size: 485.97083pt x 168.4889pt.
 <images/rapl_10k.png, id=222, 782.925pt x 265.99374pt>
 File: images/rapl_10k.png Graphic file (type png)
 <use images/rapl_10k.png>
-Package pdftex.def Info: images/rapl_10k.png  used on input line 67.
-(pdftex.def)             Requested size: 520.6853pt x 176.90796pt.
+Package pdftex.def Info: images/rapl_10k.png  used on input line 73.
+(pdftex.def)             Requested size: 485.97083pt x 165.10516pt.
 <images/rapl_25k.png, id=223, 782.925pt x 268.00125pt>
 File: images/rapl_25k.png Graphic file (type png)
 <use images/rapl_25k.png>
-Package pdftex.def Info: images/rapl_25k.png  used on input line 75.
-(pdftex.def)             Requested size: 520.6853pt x 178.24312pt.
+Package pdftex.def Info: images/rapl_25k.png  used on input line 81.
+(pdftex.def)             Requested size: 485.97083pt x 166.35124pt.
  [31 <./images/rapl_5k.png> <./images/rapl_10k.png>]
 <images/rapl_50k.png, id=230, 782.925pt x 271.0125pt>
 File: images/rapl_50k.png Graphic file (type png)
 <use images/rapl_50k.png>
-Package pdftex.def Info: images/rapl_50k.png  used on input line 83.
-(pdftex.def)             Requested size: 520.6853pt x 180.24585pt.
+Package pdftex.def Info: images/rapl_50k.png  used on input line 89.
+(pdftex.def)             Requested size: 485.97083pt x 168.22037pt.
 )
 
 LaTeX Warning: Empty `thebibliography' environment on input line 25.
 
-[32 <./images/rapl_25k.png> <./images/rapl_50k.png>] [33] (./report.aux)
+
+Underfull \vbox (badness 6316) has occurred while \output is active []
+
+ [32 <./images/rapl_25k.png> <./images/rapl_50k.png>] [33] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -992,7 +997,7 @@ exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (33 pages, 2304679 bytes).
+Output written on report.pdf (33 pages, 2304615 bytes).
 PDF statistics:
  277 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams

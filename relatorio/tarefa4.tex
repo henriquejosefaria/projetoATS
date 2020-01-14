@@ -19,7 +19,7 @@ Com o fim de elaborar uma análise de desempenho da aplicação \textbf{UmCarroJ
 \end{figure}
 
 
-Para além de executar o comando \textit{make} é necessário, no projeto, apagar o ficheiro \textit{.tmp} da respetiva pasta para que no código do \textit{try/catch} responsável por carregar a base de dados se  use o ficheiro previamente gerado \textit{generatedOutput.bak}.
+Para além de executar o comando \textit{make} é necessário, no projeto, apagar o ficheiro \textit{.tmp} da respetiva pasta para que no código responsável por carregar a base de dados se  use o ficheiro previamente gerado \textit{generatedOutput.bak}.
 
 
 \begin{figure}[H]
@@ -31,16 +31,24 @@ Para além de executar o comando \textit{make} é necessário, no projeto, apaga
 
 Para obter os dados de energia é necessário correr o ficheiro java do \textit{RAPL} chamado EnergyCheckUtils que é responsável por indicar o valor de energia do dram / uncore gpu energy (depende da arquitetura da cpu), do CPU e do pacote de energia.
 
-Quando corremos pela primeira vez o java o EnergyCheckUtils deu erro de paser dos dados, por isso foi necessário efectuar uma alteração no código, ver imagem em baixo.
+Quando corremos pela primeira vez o java o EnergyCheckUtils deu erro de paser dos dados, por isso foi necessário efectuar uma alteração no código do mesmo, ver imagem em baixo.
 
-
+\newpage
 \begin{figure}[H]
     \hbox{\hspace{-10em} \includegraphics[width=1.5\textwidth]{images/energycheckutils.png}}
     \label{fig50}
     \caption{Alterações no ficheiro EnergyCheckUtils}
 \end{figure}
 
-Depois de corrigir o EnergyCheckUtils procedemos à execução dos comando necessário para obter os dados de energia. Comandos, \textit{sudo modprobe msr}, \textit{javac EnergyCheckUtils.java} e \textit{java EnergyCheckUtils}.
+Depois de corrigir o EnergyCheckUtils procedemos à execução dos comandos necessários para obter os dados de energia.\newline
+ \par\textbf{Comandos:}
+
+ \begin{enumerate}
+ \item \textit{sudo modprobe msr}
+ \item \textit{javac EnergyCheckUtils.java} 
+ \item \textit{java EnergyCheckUtils}
+\end{enumerate}
+
 
 \begin{figure}[H]
     \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_run.png}}
@@ -48,15 +56,13 @@ Depois de corrigir o EnergyCheckUtils procedemos à execução dos comando neces
     \caption{Comandos para correr o RAPL}
 \end{figure}
 
-Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e depois correr o UmCarroJá e assim obter os dados de energia tendo em consideração a solução UmCarroJá.
+Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e depois correr o UmCarroJá e assim obter os dados de energia do mesmo. Assim fectuamos quatro testes sobre a versão final do nosso trabalho e conseguimos os seguintes resultados:
 
-Efectuamos quatro testes sobre a versão final do nosso trabalho e conseguimos os seguintes resultados:
-\newpage
 \begin{itemize}
     \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veiculos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;
     
         \begin{figure}[H]
-            \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_5k.png}}
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_5k.png}}
             \label{fig52}
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 5k elementos}
         \end{figure}
@@ -64,7 +70,7 @@ Efectuamos quatro testes sobre a versão final do nosso trabalho e conseguimos o
     \item generatedOutput10k: base de dados com 10 mil utilizadores, 10 mil proprietários, 10 mil veiculos e 20 mil avaliações 10 mil sobre os utilizadores e 10 mil sobre os proprietários;
     
         \begin{figure}[H]
-            \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_10k.png}}
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_10k.png}}
             \label{fig53}
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 10k elementos}
         \end{figure}
@@ -72,7 +78,7 @@ Efectuamos quatro testes sobre a versão final do nosso trabalho e conseguimos o
     \item generatedOutput25k: base de dados com 25 mil utilizadores, 25 mil proprietários, 25 mil veiculos e 50 mil avaliações 25 mil sobre o utilizador e 25 mil sobre o proprietário;
     
         \begin{figure}[H]
-            \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_25k.png}}
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_25k.png}}
             \label{fig54}
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 25k elementos}
         \end{figure}
@@ -80,7 +86,7 @@ Efectuamos quatro testes sobre a versão final do nosso trabalho e conseguimos o
     \item generatedOutput50k: base de dados com 50 mil utilizadores, 50 mil proprietários, 50 mil veiculos e 100 mil avaliações 50 mil sobre o utilizador e 50 mil sobre o proprietário;
     
         \begin{figure}[H]
-            \hbox{\hspace{-8em} \includegraphics[width=1.5\textwidth]{images/rapl_50k.png}}
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_50k.png}}
             \label{fig55}
             \caption{Testes elaborados com RAPL à solução UmCarroJá 50k elementos}
         \end{figure}
