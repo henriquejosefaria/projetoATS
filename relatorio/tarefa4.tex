@@ -56,10 +56,55 @@ Depois de corrigir o EnergyCheckUtils procedemos à execução dos comandos nece
     \caption{Comandos para correr o RAPL}
 \end{figure}
 
-Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e depois correr o UmCarroJá e assim obter os dados de energia do mesmo. Assim fectuamos quatro testes sobre a versão final do nosso trabalho e conseguimos os seguintes resultados:
+Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e depois correr o UmCarroJá e assim obter os dados de energia do mesmo. Assim efectuamos quatro testes para a primeira versão da solução seguidos de quatro para a versão final.
+
+
+
+\subsection{Primeira Versão do Código}
+Resultados da versão inicial da aplicação, esta ainda com \textit{bugs} e \textit{code smells}.
 
 \begin{itemize}
-    \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veiculos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;
+    \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veículos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;
+    
+        \begin{figure}[H]
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_5k_v1.png}}
+            \label{fig52}
+            \caption{Testes elaborados com RAPL à solução UmCarroJá para 5k elementos}
+        \end{figure}
+   
+    \item generatedOutput10k: base de dados com 10 mil utilizadores, 10 mil proprietários, 10 mil veículos e 20 mil avaliações 10 mil sobre os utilizadores e 10 mil sobre os proprietários;
+    
+        \begin{figure}[H]
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_10k_v1.png}}
+            \label{fig53}
+            \caption{Testes elaborados com RAPL à solução UmCarroJá para 10k elementos}
+        \end{figure}
+        
+    \item generatedOutput25k: base de dados com 25 mil utilizadores, 25 mil proprietários, 25 mil veículos e 50 mil avaliações 25 mil sobre o utilizador e 25 mil sobre o proprietário;
+    
+        \begin{figure}[H]
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_25k_v1.png}}
+            \label{fig54}
+            \caption{Testes elaborados com RAPL à solução UmCarroJá para 25k elementos}
+        \end{figure}
+        
+    \item generatedOutput50k: base de dados com 50 mil utilizadores, 50 mil proprietários, 50 mil veículos e 100 mil avaliações 50 mil sobre o utilizador e 50 mil sobre o proprietário;
+    
+        \begin{figure}[H]
+            \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_50k_v1.png}}
+            \label{fig55}
+            \caption{Testes elaborados com RAPL à solução UmCarroJá 50k elementos}
+        \end{figure}
+        
+
+\end{itemize}
+
+
+\subsection{Versão Final}
+Resultados da versão final da aplicação , esta sem \textit{bugs} e sem \textit{code smells}.
+
+\begin{itemize}
+    \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veículos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;
     
         \begin{figure}[H]
             \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_5k.png}}
@@ -67,7 +112,7 @@ Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e dep
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 5k elementos}
         \end{figure}
    
-    \item generatedOutput10k: base de dados com 10 mil utilizadores, 10 mil proprietários, 10 mil veiculos e 20 mil avaliações 10 mil sobre os utilizadores e 10 mil sobre os proprietários;
+    \item generatedOutput10k: base de dados com 10 mil utilizadores, 10 mil proprietários, 10 mil veículos e 20 mil avaliações 10 mil sobre os utilizadores e 10 mil sobre os proprietários;
     
         \begin{figure}[H]
             \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_10k.png}}
@@ -75,7 +120,7 @@ Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e dep
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 10k elementos}
         \end{figure}
         
-    \item generatedOutput25k: base de dados com 25 mil utilizadores, 25 mil proprietários, 25 mil veiculos e 50 mil avaliações 25 mil sobre o utilizador e 25 mil sobre o proprietário;
+    \item generatedOutput25k: base de dados com 25 mil utilizadores, 25 mil proprietários, 25 mil veículos e 50 mil avaliações 25 mil sobre o utilizador e 25 mil sobre o proprietário;
     
         \begin{figure}[H]
             \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_25k.png}}
@@ -83,7 +128,7 @@ Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e dep
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 25k elementos}
         \end{figure}
         
-    \item generatedOutput50k: base de dados com 50 mil utilizadores, 50 mil proprietários, 50 mil veiculos e 100 mil avaliações 50 mil sobre o utilizador e 50 mil sobre o proprietário;
+    \item generatedOutput50k: base de dados com 50 mil utilizadores, 50 mil proprietários, 50 mil veículos e 100 mil avaliações 50 mil sobre o utilizador e 50 mil sobre o proprietário;
     
         \begin{figure}[H]
             \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_50k.png}}
@@ -93,6 +138,4 @@ Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e dep
         
 
 \end{itemize}
-
-
 
