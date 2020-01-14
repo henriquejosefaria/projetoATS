@@ -1,5 +1,5 @@
 \vspace{1cm}
-\section{Análise de Desempenho da Aplicação}
+\section{Tarefa 4: Análise de Desempenho da Aplicação}
 
 Com o fim de elaborar uma análise de desempenho da aplicação \textbf{UmCarroJá}, utilizou-se a solução \textit{\textbf{Running Average Power Limit - RAPL}}.
 
@@ -56,22 +56,25 @@ Depois de corrigir o EnergyCheckUtils procedemos à execução dos comandos nece
     \caption{Comandos para correr o RAPL}
 \end{figure}
 
-Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e depois correr o UmCarroJá e assim obter os dados de energia do mesmo. Assim efectuamos quatro testes para a primeira versão da solução seguidos de quatro para a versão final.
+\par Para testar o UmCarroJá é primeiro necessário correr o EnergyCheckUtils e depois correr o UmCarroJá e assim obter os dados de energia do mesmo. Assim efectuamos quatro testes para a primeira versão da solução seguidos de quatro para a versão final.\newline
 
 
 
-\subsection{Primeira Versão do Código}
-Resultados da versão inicial da aplicação, esta ainda com \textit{bugs} e \textit{code smells}.
+\subsection{Primeira Versão do Código}\hfill
+\newline
+\par Resultados da versão inicial da aplicação, ainda com \textit{bugs} e \textit{code smells}.\newline
 
 \begin{itemize}
-    \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veículos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;
+    \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veículos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;\newline
     
         \begin{figure}[H]
             \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_5k_v1.png}}
             \label{fig52}
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 5k elementos}
         \end{figure}
-   
+\end{itemize}
+\newpage
+\begin{itemize}  
     \item generatedOutput10k: base de dados com 10 mil utilizadores, 10 mil proprietários, 10 mil veículos e 20 mil avaliações 10 mil sobre os utilizadores e 10 mil sobre os proprietários;
     
         \begin{figure}[H]
@@ -99,12 +102,14 @@ Resultados da versão inicial da aplicação, esta ainda com \textit{bugs} e \te
 
 \end{itemize}
 
-
-\subsection{Versão Final}
-Resultados da versão final da aplicação , esta sem \textit{bugs} e sem \textit{code smells}.
+\hfill\newline
+\hfill\newline
+\subsection{Versão Final}\hfill
+\newline
+\par Resultados da versão final da aplicação, com \textit{bugs} e \textit{code smells} corrigidos.\newpage
 
 \begin{itemize}
-    \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veículos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;
+    \item generatedOutput5k: base de dados com 5 mil utilizadores, 5 mil proprietários, 5 mil veículos e 10 mil avaliações 5 mil sobre os utilizadores e 5 mil sobre os proprietários;\newline
     
         \begin{figure}[H]
             \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_5k.png}}
@@ -128,7 +133,7 @@ Resultados da versão final da aplicação , esta sem \textit{bugs} e sem \texti
             \caption{Testes elaborados com RAPL à solução UmCarroJá para 25k elementos}
         \end{figure}
         
-    \item generatedOutput50k: base de dados com 50 mil utilizadores, 50 mil proprietários, 50 mil veículos e 100 mil avaliações 50 mil sobre o utilizador e 50 mil sobre o proprietário;
+    \item generatedOutput50k: base de dados com 50 mil utilizadores, 50 mil proprietários, 50 mil veículos e 100 mil avaliações 50 mil sobre o utilizador e 50 mil sobre o proprietário;\newline
     
         \begin{figure}[H]
             \hbox{\hspace{-8em} \includegraphics[width=1.4\textwidth]{images/rapl_50k.png}}
@@ -138,4 +143,4 @@ Resultados da versão final da aplicação , esta sem \textit{bugs} e sem \texti
         
 
 \end{itemize}
-
+\newpage
