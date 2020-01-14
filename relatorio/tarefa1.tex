@@ -1,4 +1,5 @@
-\section{Qualidade do Código Fonte}
+\section{Tarefa 1: Qualidade do Código Fonte}
+Nesta tarefa utilizamos o SonarQube com o intuito de obter uma avalição de qualidade do código, com análise estática para detectar \textit{bugs}, \textit{code smells} e vulnerabilidades.
 
 \subsection{SonarQube}
 
@@ -17,13 +18,16 @@
 
 \par Como se pode ver pela figura~\ref{fig01} este projeto possui alguns bugs, pelo menos 1 vulnerabilidade uma quantidade considerável de \textit{code smells} e 2 blocos duplicados.
 
-\section{Refactoring da Aplicação}
+\section{Tarefa 2: Refactoring da Aplicação}
 
-De seguida apresenta-se um relatório detalhado dos tipos de erros e da sua gravidade bem como das respetivas soluções implementadas com recurso ao Eclipse e ao relatório de erros detalhado do \textit{Sonarqube} (incluindo as descrições dos erros e \textit{code smells} encontrados):
+Na tarefa 2 utilizamos ferramentas para efectuar refactor e assim se eliminar os \textit{bad smells} e \textit{red smells} existentes no
+código fornecido.\\
+\\
+O relatório detalhado dos tipos de erros e da sua gravidade bem como das respetivas soluções implementadas obteve-se com  
+recurso ao Eclipse, já o relatório de erros surgiu da utilização do \textit{Sonarqube} (incluindo as descrições dos erros e \textit{code smells} encontrados):
 
 \subsection{Bugs}
-Versão com e sem \textit{bugs}, com e sem \textit{smells} (por tipos de \textit{smells}) -> descriminar o impacto dos \textit{smells}
-\subsubsection{Blocker Bugs:}
+Versão com e sem \textit{bugs}, com e sem \textit{smells} (por tipos de \textit{smells}).
 \begin{itemize}
 \item Não usar blocos \textit{try/catch} ao escrever em ficheiros.\newline
  Ficheiro: UMCarroJa.java\newline
@@ -87,7 +91,10 @@ Versão com e sem \textit{bugs}, com e sem \textit{smells} (por tipos de \textit
 \end{figure}
 
 \end{itemize}
-\par Note-se que é usado no fim dos blocos \textit{try/catch} o bloco \textit{finally} para fechar o descritor de escrita/leitura. Isto serve para, caso alguma coisa corra mal na escrita em/leitura de um ficheiro, o descritor ser fechado. 
+\\
+Note-se que é usado no fim dos blocos \textit{try/catch} o bloco \textit{finally} para fechar o descritor de 
+escrita/leitura. Isto serve para, caso alguma coisa corra mal na escrita em/leitura de um ficheiro, o 
+descritor ser fechado. 
 
 \subsubsection{Critical Bugs:}
 \begin{itemize}
@@ -285,7 +292,7 @@ Versão com e sem \textit{bugs}, com e sem \textit{smells} (por tipos de \textit
 \end{itemize}
 
 \begin{itemize}
-\item Ao reportar algo o utilizador deve ser capaz de aceder aos logs facilmente,estes logs têm de ter um formato uniforme, devem ser guardados e dados sensíveis devem ser guardados de forma segura. A utilização de System.out.println() pode comprometer um destes aspetos. Portanto tivemos de importar a biblioteca -textit{java.util.logging.Logger} e criar um \textit{Logger} para guardar o output disponibilizado ao utilizador.\newline
+\item Ao reportar algo o utilizador deve ser capaz de aceder aos logs facilmente,estes logs têm de ter um formato uniforme, devem ser guardados e dados sensíveis devem ser guardados de forma segura. A utilização de LOGGER.info() pode comprometer um destes aspetos. Portanto tivemos de importar a biblioteca -textit{java.util.logging.Logger} e criar um \textit{Logger} para guardar o output disponibilizado ao utilizador.\newline
  Ficheiros: Main.java e  Menu.java\newline
 
 \par O código com o Logger é apresentado na seguinte imagem.
