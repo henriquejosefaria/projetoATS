@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  14 JAN 2020 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  14 JAN 2020 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -201,34 +201,78 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
 )
-No file report.aux.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count120
+\lst@gtempboxa=\box57
+\lst@token=\toks25
+\lst@length=\count121
+\lst@currlwidth=\dimen128
+\lst@column=\count122
+\lst@pos=\count123
+\lst@lostspace=\dimen129
+\lst@width=\dimen130
+\lst@newlines=\count124
+\lst@lineno=\count125
+\lst@maxwidth=\dimen131
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count126
+\lst@skipnumbers=\count127
+\lst@framebox=\box58
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
+(./report.aux
+
+LaTeX Warning: Label `fig27' multiply defined.
+
+
+LaTeX Warning: Label `fig44' multiply defined.
+
+
+LaTeX Warning: Label `fig52' multiply defined.
+
+
+LaTeX Warning: Label `fig53' multiply defined.
+
+
+LaTeX Warning: Label `fig54' multiply defined.
+
+
+LaTeX Warning: Label `fig55' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen128
-\scratchbox=\box57
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen129
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count128
+\scratchdimen=\dimen132
+\scratchbox=\box59
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen133
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -280,6 +324,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count134
+
 (./title.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 11.
@@ -309,10 +355,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Reference `fig01' on page 2 undefined on input line 19.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 23--28
 
  []
@@ -351,18 +393,6 @@ Package pdftex.def Info: ./images/posreReadTryCatch.png  used on input line 85.
 (pdftex.def)             Requested size: 204.26262pt x 95.356pt.
 [3 <./images/preWriteTryCatch.png> <./images/posreWriteTryCatch.png> <./images/
 preReadTryCatch.png>]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95 N
-      ote-se que é usado no fim dos blocos \textit{try/catch} o bloco \text...
-
-? 
-
 Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
@@ -917,9 +947,86 @@ Package pdftex.def Info: ./images/falhaTeste01.png  used on input line 211.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <./images/runCoverage.png> <./images/resultsCoverage.png>] [27 <./images/f
-alhaTeste01.png>]) (./tarefa4.tex
-<images/rapl_inicial.png, id=201, 1857.94125pt x 526.96875pt>
+ [26 <./images/runCoverage.png> <./images/resultsCoverage.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+<./images/estruturas.png, id=197, 1087.06125pt x 381.425pt>
+File: ./images/estruturas.png Graphic file (type png)
+<use ./images/estruturas.png>
+Package pdftex.def Info: ./images/estruturas.png  used on input line 231.
+(pdftex.def)             Requested size: 489.17303pt x 171.63965pt.
+<./images/dados.png, id=198, 316.18124pt x 321.2pt>
+File: ./images/dados.png Graphic file (type png)
+<use ./images/dados.png>
+Package pdftex.def Info: ./images/dados.png  used on input line 240.
+(pdftex.def)             Requested size: 142.28024pt x 144.53867pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <./images/falhaTeste01.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+[28 <./images/estruturas.png> <./images/dados.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Overfull \hbox (0.79416pt too wide) in paragraph at lines 283--284
+[][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+[29]) (./tarefa4.tex
+<images/rapl_inicial.png, id=211, 1857.94125pt x 526.96875pt>
 File: images/rapl_inicial.png Graphic file (type png)
 <use images/rapl_inicial.png>
 Package pdftex.def Info: images/rapl_inicial.png  used on input line 7.
@@ -929,19 +1036,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-<images/rapl_make.png, id=202, 968.61874pt x 782.925pt>
+<images/rapl_make.png, id=212, 968.61874pt x 782.925pt>
 File: images/rapl_make.png Graphic file (type png)
 <use images/rapl_make.png>
 Package pdftex.def Info: images/rapl_make.png  used on input line 16.
 (pdftex.def)             Requested size: 261.53055pt x 211.39258pt.
-<images/remove_tmp.png, id=203, 1244.65pt x 683.55376pt>
+<images/remove_tmp.png, id=213, 1244.65pt x 683.55376pt>
 File: images/remove_tmp.png Graphic file (type png)
 <use images/remove_tmp.png>
 Package pdftex.def Info: images/remove_tmp.png  used on input line 27.
 (pdftex.def)             Requested size: 416.54718pt x 228.76508pt.
-[28 <./images/rapl_inicial.png> <./images/rapl_make.png>] [29 <./images/remove_
+[30 <./images/rapl_inicial.png> <./images/rapl_make.png>] [31 <./images/remove_
 tmp.png>]
-<images/energycheckutils.png, id=214, 1927.2pt x 985.6825pt>
+<images/energycheckutils.png, id=225, 1927.2pt x 985.6825pt>
 File: images/energycheckutils.png Graphic file (type png)
 <use images/energycheckutils.png>
 Package pdftex.def Info: images/energycheckutils.png  used on input line 38.
@@ -951,7 +1058,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<images/rapl_run.png, id=215, 846.16125pt x 74.2775pt>
+<images/rapl_run.png, id=226, 846.16125pt x 74.2775pt>
 File: images/rapl_run.png Graphic file (type png)
 <use images/rapl_run.png>
 Package pdftex.def Info: images/rapl_run.png  used on input line 54.
@@ -961,7 +1068,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-[30 <./images/energycheckutils.png> <./images/rapl_run.png>]
+[32 <./images/energycheckutils.png> <./images/rapl_run.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
@@ -976,23 +1083,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-<images/rapl_5k_v1.png, id=221, 770.88pt x 271.0125pt>
+<images/rapl_5k_v1.png, id=232, 770.88pt x 271.0125pt>
 File: images/rapl_5k_v1.png Graphic file (type png)
 <use images/rapl_5k_v1.png>
 Package pdftex.def Info: images/rapl_5k_v1.png  used on input line 71.
 (pdftex.def)             Requested size: 485.97083pt x 170.84628pt.
-[31 <./images/rapl_5k_v1.png>]
-<images/rapl_10k_v1.png, id=227, 759.83875pt x 262.9825pt>
+[33 <./images/rapl_5k_v1.png>]
+<images/rapl_10k_v1.png, id=237, 759.83875pt x 262.9825pt>
 File: images/rapl_10k_v1.png Graphic file (type png)
 <use images/rapl_10k_v1.png>
 Package pdftex.def Info: images/rapl_10k_v1.png  used on input line 81.
 (pdftex.def)             Requested size: 485.97083pt x 168.19986pt.
-<images/rapl_25k_v1.png, id=228, 759.83875pt x 271.0125pt>
+<images/rapl_25k_v1.png, id=238, 759.83875pt x 271.0125pt>
 File: images/rapl_25k_v1.png Graphic file (type png)
 <use images/rapl_25k_v1.png>
 Package pdftex.def Info: images/rapl_25k_v1.png  used on input line 89.
 (pdftex.def)             Requested size: 485.97083pt x 173.33574pt.
-<images/rapl_50k_v1.png, id=229, 770.88pt x 270.00874pt>
+<images/rapl_50k_v1.png, id=239, 770.88pt x 270.00874pt>
 File: images/rapl_50k_v1.png Graphic file (type png)
 <use images/rapl_50k_v1.png>
 Package pdftex.def Info: images/rapl_50k_v1.png  used on input line 97.
@@ -1000,7 +1107,7 @@ Package pdftex.def Info: images/rapl_50k_v1.png  used on input line 97.
 
 Underfull \vbox (badness 2662) has occurred while \output is active []
 
- [32 <./images/rapl_10k_v1.png> <./images/rapl_25k_v1.png>]
+ [34 <./images/rapl_10k_v1.png> <./images/rapl_25k_v1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
@@ -1015,22 +1122,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-[33 <./images/rapl_50k_v1.png>]
+[35 <./images/rapl_50k_v1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-<images/rapl_5k.png, id=239, 775.89874pt x 269.005pt>
+<images/rapl_5k.png, id=249, 775.89874pt x 269.005pt>
 File: images/rapl_5k.png Graphic file (type png)
 <use images/rapl_5k.png>
 Package pdftex.def Info: images/rapl_5k.png  used on input line 115.
 (pdftex.def)             Requested size: 485.97083pt x 168.4889pt.
-<images/rapl_10k.png, id=240, 782.925pt x 265.99374pt>
+<images/rapl_10k.png, id=250, 782.925pt x 265.99374pt>
 File: images/rapl_10k.png Graphic file (type png)
 <use images/rapl_10k.png>
 Package pdftex.def Info: images/rapl_10k.png  used on input line 123.
 (pdftex.def)             Requested size: 485.97083pt x 165.10516pt.
-<images/rapl_25k.png, id=241, 782.925pt x 268.00125pt>
+<images/rapl_25k.png, id=251, 782.925pt x 268.00125pt>
 File: images/rapl_25k.png Graphic file (type png)
 <use images/rapl_25k.png>
 Package pdftex.def Info: images/rapl_25k.png  used on input line 131.
@@ -1038,37 +1145,34 @@ Package pdftex.def Info: images/rapl_25k.png  used on input line 131.
 
 Underfull \vbox (badness 1939) has occurred while \output is active []
 
- [34 <./images/rapl_5k.png> <./images/rapl_10k.png>]
+ [36 <./images/rapl_5k.png> <./images/rapl_10k.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-<images/rapl_50k.png, id=247, 782.925pt x 271.0125pt>
+<images/rapl_50k.png, id=257, 782.925pt x 271.0125pt>
 File: images/rapl_50k.png Graphic file (type png)
 <use images/rapl_50k.png>
 Package pdftex.def Info: images/rapl_50k.png  used on input line 139.
 (pdftex.def)             Requested size: 485.97083pt x 168.22037pt.
-[35 <./images/rapl_25k.png> <./images/rapl_50k.png>]) (./conclusao.tex)
-[36]
+[37 <./images/rapl_25k.png> <./images/rapl_50k.png>]) (./conclusao.tex)
+[38]
 
-LaTeX Warning: Empty `thebibliography' environment on input line 31.
+LaTeX Warning: Empty `thebibliography' environment on input line 32.
 
-[37] (./report.aux)
+[39] (./report.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3203 strings out of 492616
- 47029 string characters out of 6129481
- 120154 words of memory out of 5000000
- 7006 multiletter control sequences out of 15000+600000
+ 4807 strings out of 492616
+ 68163 string characters out of 6129481
+ 150127 words of memory out of 5000000
+ 8594 multiletter control sequences out of 15000+600000
  12131 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,504b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,32p,504b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
@@ -1081,10 +1185,10 @@ exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (37 pages, 2509555 bytes).
+Output written on report.pdf (39 pages, 2583649 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
+ 310 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 

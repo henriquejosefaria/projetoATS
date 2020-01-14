@@ -216,9 +216,74 @@ Nesta classe, criaram-se as seguintes variáveis globais:
 
 \end{figure}
 
-\par Este problema acontece porque a Máquina virtual do Java tem um tamanho máximo de heap finito, isto leva a um erro como o que se pode verificar na imagem acima.
+\par Este problema acontece porque a Máquina virtual do Java tem um tamanho máximo de heap finito, isto leva a um erro como o que se pode verificar na imagem acima.\newline
 
+\subsection{Geração de Ficheiros Log}
 
+\par A geração de ficheiros de log foi feita com recurso á linguagem de programação \textit{Haskell} e á biblioteca \textit{Test.QuickCheck}.\newline
+
+\par Para estes registos foram criadas as estruturas que se podem ver nas imagens seguintes.\newline
+
+\begin{figure}[H]
+
+  \centering
+
+  \hbox{\hspace{-8em} \includegraphics[scale = 0.45]{estruturas.png}}
+
+  \caption {Estruturas Criptográficas dos registos}
+
+  \label {fig45}
+\end{figure}
+\begin{figure}[H]
+  \centering
+
+  \includegraphics[scale = 0.45]{dados.png}
+
+  \caption {Tipos dos dados dos registos}
+
+  \label {fig46}
+\end{figure}
+
+\par Foi criada uma função, com as respetivas funções auxiliares,s para criar e preencher uma lista para cada estrutura mostrada anteriormente sendo a ultima estrutura aquela que agrega todas as outras para serem imprimidas como um resultado no ficheiro \textit{logsPOO\_carregamentoInicial.bak}.\newline
+\newpage
+
+\subsubsection{Bug extra}\hfill
+\newline
+\par A criação deste ficheiro de forma aleatória permitiu corrigir um erro que passou despercebido ao SonarQube. No ficheiro Weather.java, temos o seguinte:\newline
+\hfill\newline
+
+\begin{lstlisting}
+private static final String[] seasons = {
+        winter, winter,
+        spring, spring, spring,
+        summer, summer, summer,
+        fall, fall, fall,
+        winter
+};
+
+private String getSeason() {
+    return seasons[LocalDateTime.now().getMonthValue()];
+}
+\end{lstlisting}
+\hfill\newline
+\par Se repararmos na lista seasons vemos que tem 12 posições, ou seja varia entre as posições 0 e 11.
+No entanto ao utilizarmos o método \textit{LocalDateTime.now().getMonthValue()} estamos a obter valores entre 1 e 12.\newline
+\par Este bug foi corrigido prontamente modificando o código para o que se apresenta em seguida.\newline
+\hfill\newline
+\begin{lstlisting}
+private static final String[] seasons = {
+        winter, winter,
+        spring, spring, spring,
+        summer, summer, summer,
+        fall, fall, fall,
+        winter
+};
+
+private String getSeason() {
+    return seasons[LocalDateTime.now().getMonthValue()-1];
+}
+\end{lstlisting}
+\hfill\newline
 \newpage
 
 
