@@ -33,7 +33,6 @@ public class Controller {
                 	error = caseLogin(error);
                     break;
                 case REGISTERCLIENT:
-                    LOGGER.info("Entrei");
                     error = caseRegisterClient(error);
                     break;
                 case REGISTEROWNER:

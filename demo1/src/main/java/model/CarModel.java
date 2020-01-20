@@ -68,4 +68,12 @@ public class CarModel implements Serializable {
             }
         }
     }
+
+    public String toString(){
+        StringBuilder s = new StringBuilder();
+        s.append("BRAND:").append(this.brand).append("\n");
+        s.append("TYPE:").append(this.type).append("\n");
+        s.append("AVGSPEED:").append(this.avgSpeed).append("\n");
+        return s.toString();
+    }
 }

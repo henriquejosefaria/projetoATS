@@ -32,6 +32,8 @@ public class Cars implements Serializable {
      * @param a Carro a adicionar
      */
     void addCar(Car a) throws CarExistsException {
+        Boolean bol = false;
+        if(this.carBase.containsKey(a.getNumberPlate())) System.out.println("Carro repetido");
         if(this.carBase
                 .putIfAbsent(a.getNumberPlate(), a)
                 != null)

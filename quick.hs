@@ -55,8 +55,8 @@ maxNifs = 999999999
 proprios = ["João", "Joana", "Manuel", "André", "Belo", "Carlos", "Carolina", "Diogo", "Diolinda", "Helder", "Henrique", "Filipa", "Gonçalo", "Guilherme", "Leonor", "Matilde", "Nuno", "Nuna", "Olga", "Paulo", "Paula", "Rui", "Rafael", "Rita", "Sofia", "Sandra", "Sebastião", "Tiago", "Vitor", "Zulmira"]
 freguesias = ["Alhões", "Bustelo", "Gralheira e Ramires","Cinfães","Espadanedo","Ferreiros de Tendais","Fornélos","Moimenta","Nespereira","Oliveira do Douro","Santiago de Piães","São Cristóvão de Nogueira","Souselo","Tarouquela","Tendais","Travanca"]
 marcas = ["Abarth","Adria","Aixam","Alfa Romeo","Aston Martin","Audi","Austin","Austin Morris","Benimar","Bentley","Bertone","BMW","Cadillac","Challenger","Chevrolet","Chrysler","Citroen","Corvette" ,"Dacia","Daewoo" ,"Daihatsu" ,"Datsun","Dodge" ,"DS","Ferrari" ,"Fiat" ,"Ford","Hobby" ,"Honda","Hyundai","Isuzu" ,"Jaguar","JDM" ,"Jeep","Kia","Lamborghini" ,"Lancia","Land Rover","Lexus","Ligier","Lincoln","Lotu","Maserati","Maybach","Mazda","Mercedes-Benz" ,"MG","Microcar","MINI"]
-letters = ["AA","AB","AC","AD"]
-numbers = ["00","01","02","03","04","05","06","07","08","09"]
+letter = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","W","V","X","Y","Z"]
+numbers = ["0","1","2","3","4","5","6","7","8","9"]
 preferencias = ["Mais Perto","Mais Barato","Partilhado"]
 
 genNifs::[NIF] -> Int -> Gen [NIF]
@@ -154,17 +154,39 @@ genAutonomia = choose (350,500)
 genMarca:: Gen String
 genMarca = elements marcas
 
-genMatriculaAux::Int -> Gen Matricula
-genMatriculaAux x = do a <- elements letters
-                       b <- elements numbers 
-                       c <- elements numbers
-                       if(x == 1) then return (a ++ "-" ++ b ++ "-" ++ c)
-                         else if (x == 2) then return (b ++ "-" ++ a ++ "-" ++ c)
-                         else return (c ++ "-" ++ b ++ "-" ++ a)
+combol:: Int -> [String] -> String
+combol 0 (x:xs) = x 
+combol n (x:xs) = combol (n-1) xs
 
-genMatricula:: Gen Matricula
-genMatricula = do x <- choose(1,3)
-                  genMatriculaAux x
+letterscombo:: Int -> Int -> [String] -> Gen [String]
+letterscombo 26 _ str = return str 
+letterscombo x 26 str = letterscombo (x+1) 0 str
+letterscombo x y  str = letterscombo x (y+1) (((combol x letter) ++ (combol y letter)) :str)
+
+
+combon::Int -> [String] -> String
+combon 0 (x:xs) = x
+combon n (x:xs) = combon (n-1) xs
+
+numberscombo:: Int -> Int -> [String] -> Gen [String]
+numberscombo 9  10  ns = return ns
+numberscombo n  10  ns = numberscombo (n+1) 0 ns
+numberscombo n1 n2 ns = numberscombo n1 (n2+1) (((combon n1 numbers)++(combon n2 numbers)):ns) 
+
+
+aggregate::Int -> [String] -> [String] -> [String] -> [Matricula] -> Gen [Matricula]
+aggregate 0 _ _ _ m = return m
+aggregate n (x:xs) (y:ys) (z:zs) m | (x == "99" || x == "ZZ") && (y == "99" || y == "ZZ") && (z == "99" || z == "ZZ") = aggregate (n-1) (ys++[y]) (zs++[z]) (xs++[x]) ((x ++ "-" ++ y ++ "-" ++ z):m)
+                                   | (y == "99" || y == "ZZ") && (z == "99" || z == "ZZ") = aggregate (n-1) (xs++[x]) (ys++[y]) (zs++[z]) ((x ++ "-" ++ y ++ "-" ++ z):m)
+                                   | (z == "99" || z == "ZZ") = aggregate (n-1) (x:xs) (ys++[y]) (zs++[z]) ((x ++ "-" ++ y ++ "-" ++ z):m)
+                                   |otherwise = aggregate (n-1) (x:xs) (y:ys) (zs++[z]) ((x ++ "-" ++ y ++ "-" ++ z):m)
+
+genMatriculas:: Int -> Gen [Matricula]
+genMatriculas n = do a     <- letterscombo 0 0 []
+                     b     <- numberscombo 0 0 []
+                     m     <- aggregate n a a b []
+                     return m
+
 
 genVelocidadeMedia:: Gen VelocidadeMedia
 genVelocidadeMedia = choose(50, 150)
@@ -181,24 +203,23 @@ genConsumo = choose(3.5,6.5)
 
 --Novocarro Tipo Marca Matricula NIF VelocidadeMedia PrecoKm Consumo Autonomia X Y
 
-genCarro::NIF -> Gen NovoCarro
+genCarro::NIF -> Matricula -> Gen NovoCarro
 
-genCarro nif = do tipo   <- genTipo
-                  marca  <- genMarca
-                  matr   <- genMatricula
-                  vel    <- genVelocidadeMedia
-                  precKM <- genPrecoKm
-                  cons   <- genConsumo
-                  aut    <- genAutonomia
-                  coordX <- genCoordX
-                  coordY <- genCoordY
-                  return (Novocarro tipo marca matr nif vel precKM cons aut coordX coordY)
+genCarro nif mat = do tipo   <- genTipo
+                      marca  <- genMarca
+                      vel    <- genVelocidadeMedia
+                      precKM <- genPrecoKm
+                      cons   <- genConsumo
+                      aut    <- genAutonomia
+                      coordX <- genCoordX
+                      coordY <- genCoordY
+                      return (Novocarro tipo marca mat nif vel precKM cons aut coordX coordY)
 
-genCarros:: [NIF] -> Gen [NovoCarro]
-genCarros [] = return []
-genCarros (x:xs) = do c <- genCarro x
-                      cs <- genCarros xs
-                      return (c:cs)
+genCarros:: [NIF] -> [Matricula] -> Gen [NovoCarro]
+genCarros [] [] = return []
+genCarros (x:xs) (y:ys) = do c <- genCarro x y
+                             cs <- genCarros xs ys
+                             return (c:cs)
 
 getMatriculas::[NovoCarro] ->Gen [String]
 getMatriculas [] =return []
@@ -316,12 +337,13 @@ genInput:: Int -> Int -> Gen Resultado
 genInput n1 n2 = do let nrClientes      = n1
                     let nrProprietarios = n2
                     nifs               <- genNifs [] (nrClientes + nrProprietarios) 
+                    matriculas         <- genMatriculas nrProprietarios
                     clientes           <- genClientes (take nrClientes nifs)
                     proprietarios      <- genProprietarios (drop nrClientes nifs)
-                    carros             <- genCarros (drop nrClientes nifs)
-                    matriculas         <- getMatriculas carros
+                    carros             <- genCarros (drop nrClientes nifs) matriculas
+                    matriculas2        <- getMatriculas carros
                     alugers            <- genAlugers (take (nrClientes) nifs)
-                    classificacoes     <- genClassificacoes (take (nrClientes) nifs) (take nrProprietarios matriculas)
+                    classificacoes     <- genClassificacoes (take (nrClientes) nifs) (take nrProprietarios matriculas2)
                     return (Res clientes proprietarios carros alugers classificacoes)
 
 
@@ -333,25 +355,6 @@ strGen:: Int -> Int -> IO()
 strGen n1 n2 = do res <- generate (genInput n1 n2)
                   let output = gen2IO res
                   let out = conc output
-                  writeFile "demo1/db/logsPOO_carregamentoInicial.bak" out 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  writeFile "demo1/db/logsPOO_carregamento5k.bak" out 
 
 

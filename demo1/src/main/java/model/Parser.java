@@ -46,9 +46,9 @@ public class Parser {
 
     private String parseLine(String l, UMCarroJa model){
         String[] pLine = l.split(":");
+
         String categoria = pLine[0];
         String[] content = pLine[1].split(",");
-
 
         try {
             switch (categoria) {
