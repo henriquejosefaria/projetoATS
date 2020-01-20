@@ -20,7 +20,7 @@ public class Main {
         }
         catch (IOException | ClassNotFoundException e) {
         	LOGGER.info("adasdsada2");
-            new Parser("db/generatedOutput.bak", model);
+            new Parser("db/logsPOO_carregamento5k.bak", model);
         }
         try { Thread.sleep(10000);} catch (Exception e) {LOGGER.info("ignored Data!!");}
         new Controller(model).run();

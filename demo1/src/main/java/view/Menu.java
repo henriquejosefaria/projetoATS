@@ -22,6 +22,9 @@ import main.java.exceptions.InvalidNewRentalException;
 import main.java.exceptions.InvalidRatingException;
 import main.java.exceptions.InvalidTimeIntervalException;
 
+import java.util.logging.ConsoleHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Menu{
@@ -32,7 +35,8 @@ public class Menu{
     private String offset = "\033\143";
     private static final Logger LOGGER = Logger.getLogger(Menu.class.getName());
     private static final String STR = "Tipo do Carro: [electric, gas, hybrid or any]";
-
+    Handler handlerObj = new ConsoleHandler();
+    Scanner scanner = new Scanner(System.in);
     public enum MenuInd {
         INITIAL,
         LOGIN,
@@ -71,17 +75,14 @@ public class Menu{
     }
 
     public void showString(String rental) {
-        Scanner scanner = new Scanner(System.in);
         String str  = this.createHeader();
         LOGGER.info(offset);
         LOGGER.info(str);
         LOGGER.info(rental);
         scanner.nextLine();
-        scanner.close();
     }
 
     public int showRentalRate(String rental) {
-        Scanner scanner = new Scanner(System.in);
         String error = "";
         while(true) {
             this.displayMenuHeader(error);
@@ -92,8 +93,6 @@ public class Menu{
             }
             catch (InputMismatchException e) {
             	error = "Invalid rating";
-            } finally {
-            	scanner.close();
             }
         }
     }
@@ -110,9 +109,7 @@ public class Menu{
         this.tableDefault(valTab, colLabl);
 
         LOGGER.info("\tR[pos] -> Refill car\n\tC[pos] [price] -> Change Price\n\tD[pos] -> Toggle Availability\n\tT[pos] -> total faturado");
-        Scanner scanner = new Scanner(System.in);
         String sc = scanner.nextLine().toLowerCase();
-        scanner.close();
         return sc;
     }
 
@@ -131,13 +128,10 @@ public class Menu{
         LOGGER.info(response);
 
         tableDefault(valTab, colLabl);
-        Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
-        scanner.close();
     }
 
     public AutonomyCar autonomyCarRent(String error) throws InvalidNewRentalException {
-        Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
         LOGGER.info(STR);
         String carType = scanner.nextLine();
@@ -147,13 +141,10 @@ public class Menu{
             return new AutonomyCar(this.getDest(), range, carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
-        } finally {
-        	 scanner.close();
         }
     }
 
     public CheapestNearCar walkingDistanceRent(String error) throws InvalidNewRentalException {
-        Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
         LOGGER.info(STR);
         String carType = scanner.nextLine();
@@ -163,13 +154,10 @@ public class Menu{
             return new CheapestNearCar(this.getDest(), walk, carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
-        } finally {
-        	 scanner.close();
         }
     }
 
     public String reviewRentShow(String error, int ownerRating, List<List<String>> lR){
-        Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
         ArrayList<String> colLabl = new ArrayList<>();
         colLabl.add("Client");
@@ -187,7 +175,6 @@ public class Menu{
 
         LOGGER.info("\tA[pos] -> aprove rental\n\tR[pos] -> refuse rental");
         String sc = scanner.nextLine().toLowerCase();
-        scanner.close();
         return sc;
     }
 
@@ -197,14 +184,11 @@ public class Menu{
         colLabl.add(colum);
         this.displayMenuHeader("");
         this.tableDefault(valTab, colLabl);
-        Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
-        scanner.close();
         
     }
 
     public SpecificCar specificCarRent(String error) throws InvalidNewRentalException {
-        Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
         LOGGER.info("Matricula:");
         String carType = scanner.nextLine();
@@ -212,13 +196,10 @@ public class Menu{
             return new SpecificCar(this.getDest(), carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
-        } finally {
-        	scanner.close();
         }
     }
 
     public RentCarSimple simpleCarRent(String error) throws InvalidNewRentalException {
-        Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
         LOGGER.info(STR);
         String carType = scanner.nextLine();
@@ -226,25 +207,20 @@ public class Menu{
             return new RentCarSimple(this.getDest(), carType);
         } catch (InputMismatchException e) {
             throw new InvalidNewRentalException();
-        } finally {
-        	scanner.close();
         }
     }
 
     public NewLogin newLogin(String error) {
-        Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
-        LOGGER.info("User:");
+        System.out.println("User:");
         String user = scanner.nextLine();
-        LOGGER.info("Password:");
+        System.out.println("Password:");
         String password = scanner.nextLine();
-        scanner.close();
         return new NewLogin(user, password);
     }
 
     public RegisterCar newRegisterCar(String error) throws InvalidNewRegisterException {
         this.displayMenuHeader(error);
-        Scanner scanner = new Scanner(System.in);
         LOGGER.info("Matricula:");
         String matricula = scanner.nextLine();
         LOGGER.info("Marca:");
@@ -273,14 +249,11 @@ public class Menu{
             return c;
         } catch (InputMismatchException e) {
             throw new InvalidNewRegisterException();
-        } finally {
-        	scanner.close();
         }
     }
 
     public RegisterUser newRegisterUser(String error) throws InvalidNewRegisterException {
         displayMenuHeader(error);
-        Scanner scanner = new Scanner(System.in);
         LOGGER.info("Nome de Utilizador:");
         String user = scanner.nextLine();
         LOGGER.info("Email:");
@@ -303,11 +276,7 @@ public class Menu{
         }
         catch (InputMismatchException e) {
             throw new InvalidNewRegisterException();
-        } finally {
-        	scanner.close();
         }
-
-
     }
     public  RegisterUser newRegisterUserAux(String user,String email, String pass,String adress, int nif) throws InvalidNewRegisterException {
     	try {
@@ -321,7 +290,6 @@ public class Menu{
     public Menu parser() {
     	String str = this.toString();
     	LOGGER.info(str);
-        Scanner scanner = new Scanner(System.in);
 		String str2 = scanner.nextLine();
         if (str2.matches("^[+-]?\\d{1,8}$")) {
             int i = Integer.parseInt(str2);
@@ -336,11 +304,12 @@ public class Menu{
             case "..":
                 this.back();
                 break;
-            default: // case "e"
+            case "e":
                 this.run = false;
                 break;
+            default: // case "e"
+                break;
         }
-        scanner.close();
         return this;
     }
 
@@ -352,7 +321,6 @@ public class Menu{
     }
 
     public TimeInterval getTimeInterval(String error) throws InvalidTimeIntervalException{
-        Scanner scanner = new Scanner(System.in);
         this.displayMenuHeader(error);
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
@@ -367,13 +335,10 @@ public class Menu{
         }
         catch (DateTimeParseException e){
             throw new InvalidTimeIntervalException();
-        } finally {
-        	scanner.close();
         }
     }
 
     public RateOwnerCar pendingRateShow(String error, String pending, int total) throws InvalidRatingException {
-        Scanner scanner = new Scanner(System.in);
         displayMenuHeader(error);
         String str = total + ".";
         LOGGER.info(str);
@@ -391,8 +356,6 @@ public class Menu{
         }
         catch (InputMismatchException e){
             throw new InvalidRatingException();
-        } finally {
-        	scanner.close();
         }
 
     }
@@ -412,32 +375,28 @@ public class Menu{
     }
 
     private void displayMenuHeader(String error) {
-    	LOGGER.info(offset);
+        System.out.println(offset);
     	String one = this.createHeader();
     	String two = new StringBetter(error).under().toString();
-        LOGGER.info(one);
-        LOGGER.info(two);
+        System.out.println(one);
+        System.out.println(two);
     }
 
     private Point getDest(){
-        Scanner scanner = new Scanner(System.in);
         LOGGER.info("UMCarroJa wants to know your destination!");
         LOGGER.info("x:");
         double x = scanner.nextDouble();
         LOGGER.info("y:");
         double y = scanner.nextDouble();
-        scanner.close();
         return new Point(x, y);
     }
 
     private Point getLoc(){
-        Scanner scanner = new Scanner(System.in);
         LOGGER.info("UMCarroJa wants to know your location!");
         LOGGER.info("x:");
         double x = scanner.nextDouble();
         LOGGER.info("y:");
         double y = scanner.nextDouble();
-        scanner.close();
         return new Point(x, y);
     }
 
@@ -514,6 +473,7 @@ public class Menu{
                 this.options.add(MenuInd.REGISTER);
                 break;
             case REGISTER:
+                LOGGER.info("Entrei");
                 this.options.add(MenuInd.REGISTERCLIENT);
                 this.options.add(MenuInd.REGISTEROWNER);
                 break;

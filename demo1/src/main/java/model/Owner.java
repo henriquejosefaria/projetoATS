@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import javax.management.AttributeList;
-
+@SuppressWarnings("serial")
 public class Owner extends User implements Serializable {
     private static final long serialVersionUID = -2511785557930475729L;
     private List<Car> cars;
-    private List<Object> pending;
+    private List<Object>  pending;
     private List<Rental> historic;
 
     public Owner(String email, String name, String address, int nif, String passwd) {
@@ -26,7 +26,7 @@ public class Owner extends User implements Serializable {
             Owner o = (Owner) u;
             this.cars = o.getCars();
             this.pending = new ArrayList<>(o.pending);
-            this.historic = new ArrayList<>(o.historic);
+            this.historic = new ArrayList(o.historic);
         }
     }
 
