@@ -35,7 +35,7 @@ Nesta classe, criaram-se as seguintes variáveis globais:
 \par Note-se que para testar a correção do método \textit{myclone()} foi criado um método extra na classe Cliente para verificar se os clientes partilhavam o mesmo apontador, esse método foi chamado \textit{wrongEquals()}.
 
 \par Na figura seguinte podemos ver o código coberto por este ficheiro de testes.\newline
-
+\newpage
 \begin{figure}[H]
 
   \centering
@@ -208,7 +208,7 @@ Nesta classe, criaram-se as seguintes variáveis globais:
 
   \centering
 
-  \hbox{\hspace{-8em} \includegraphics[scale = 0.45]{falhaTeste01.png}}
+  \hbox{\hspace{-11em} \includegraphics[scale = 0.40]{falhaTeste01.png}}
 
   \caption {Falha detetada no teste 01 referente a Java Heap Space}
 
@@ -228,12 +228,13 @@ Nesta classe, criaram-se as seguintes variáveis globais:
 
   \centering
 
-  \hbox{\hspace{-8em} \includegraphics[scale = 0.45]{estruturas.png}}
+  \hbox{\hspace{-5em} \includegraphics[scale = 0.40]{estruturas.png}}
 
   \caption {Estruturas Criptográficas dos registos}
 
   \label {fig45}
 \end{figure}
+\newpage
 \begin{figure}[H]
   \centering
 
@@ -245,7 +246,7 @@ Nesta classe, criaram-se as seguintes variáveis globais:
 \end{figure}
 
 \par Foi criada uma função, com as respetivas funções auxiliares,s para criar e preencher uma lista para cada estrutura mostrada anteriormente sendo a ultima estrutura aquela que agrega todas as outras para serem imprimidas como um resultado no ficheiro \textit{logsPOO\_carregamentoInicial.bak}.\newline
-\newpage
+
 
 \subsubsection{Bug extra}\hfill
 \newline
@@ -307,6 +308,8 @@ private String getSeason() {
   \label {fig48}
 \end{figure}
 
+\par Adicionamente encontrou-se um possível erro quanto á escolha do tipo de carro. Caso um utilizador se engane e escolha um nome que não exista o tipo de carro é automáticamente escolhido pela aplicação, ou seja, um utilizador tem de alugar um carro independentemente do tipo mesmo que queira um tipo especifico.\newline
+\par Para além disso, se o utilizador escolher uma matricula que não exista no caso SpecificCar() a aplicação ficava num loop infinito a pedir coordenadas de destino sem poder avançar dizendo "Carro não existe", para além disso caso tivesse sucesso o utilizaodr ficava preso no menu de escolha de carro. O mesmo acontecia sempre que existia um erro ao selecionar o carro. Agora caso haja erro este é reportado e o utilizador volta ao menu inicial de escolha de carro. Caso tenha sucesso na escolha passou a ser devolvido ao menu inicial.\newline
 
 
 \newpage

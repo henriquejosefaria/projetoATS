@@ -1,5 +1,6 @@
 package main.java.controller;
 
+import main.java.exceptions.InvalidNewRentalException;
 import main.java.model.*;
 import main.java.view.Menu;
 import main.java.view.viewmodel.*;
@@ -47,43 +48,33 @@ public class Controller {
                 case REVIEWRENTAL:
                     error = caseReviewRental(error);
                     break;
-
                 case CHEAPESTNEAR:
                     error = caseCheapestNear(error);
                     break;
-
                 case AUTONOMY:
                 	error = caseAutonomy(error);
                     break;
-
                 case SPECIFIC:
                     error = caseSpecific(error);
                     break;
-
                 case ADDCAR:
                     error = caseAddCar(error);
                     break;
-
                 case NUSES:
                     error = caseNUses(error);
                     break;
-
                 case DISTANCE:
                     error = caseDistance(error);
                     break;
-
                 case CAROVERVIEW:
                     error = caseCarOverview(error);
                     break;
-
                 case PENDING:
                     error = casePending(error);
                     break;
-
                 case HISTORYOWNER:
                     error = caseHistoryOwner(error);
                     break;
-
                 case HISTORYCLIENT:
                     error = caseHistoryClient(error);
                     break;
@@ -92,6 +83,7 @@ public class Controller {
                     break;
             }
             LOGGER.info(error);
+            error="";
         }
     }
 
@@ -155,12 +147,13 @@ public class Controller {
                     "MaisPerto",
                     rent.getCarType());
             menu.showString(rental.toString());
-            menu.back();
             error = "";
+            this.menu.back();
         }
         catch (UnknownCompareTypeException ignored) {error = "";}
         catch (NoCarAvaliableException e) { error = errorCars; }
         catch (InvalidNewRentalException e){error = "Novo Rental inválido"; }
+        finally {this.menu.back();}
 		return error;
 	}
 
@@ -173,11 +166,12 @@ public class Controller {
                     "MaisBarato",
                     rent.getCarType());
             menu.showString(rental.toString());
-            menu.back();
+            this.menu.back();
         }
-        catch (UnknownCompareTypeException ignored) {error = "";}
+        catch (UnknownCompareTypeException ignored) {error = "Tipo de dados errado";}
         catch (NoCarAvaliableException e) { error = errorCars; }
         catch (InvalidNewRentalException e){error = "Novo Rental inválido"; }
+        finally {this.menu.back();}
 		return error;
 	}
 	
@@ -236,6 +230,7 @@ public class Controller {
         }
         catch (InvalidNewRentalException e){error = "New rental inválido";}
         catch (NoCarAvaliableException e)  {error = errorCars; }
+        finally {this.menu.back();}
 		return error;
 	}
 	
@@ -254,6 +249,7 @@ public class Controller {
         }
         catch (InvalidNewRentalException e){error = "New rental inválido";}
         catch (NoCarAvaliableException e) { error = errorCars; }
+		finally {this.menu.back();}
 		return error;
 	}
 	
@@ -262,12 +258,13 @@ public class Controller {
             SpecificCar sc = this.menu.specificCarRent(error);
             Rental rental = this.model.rental(sc.getPoint(), sc.getNumberPlate(), (Client)user);
             this.menu.showString(rental.toString());
-            this.menu.back();
             error = "";
+            this.menu.back();
         }
         catch (NoCarAvaliableException e) { error = "Carro não está disponível"; }
         catch (InvalidCarException e) { error = "Carro não existe"; }
         catch (InvalidNewRentalException e) { error = "Invalid Parameters"; }
+        finally {this.menu.back();}
 		return error;
 	}
 	
@@ -309,6 +306,7 @@ public class Controller {
                         .collect(Collectors.toList()),
                 "Número de Utilizações");
         this.menu.back();
+        this.menu.back();
 		return error;
 	}
 	
@@ -323,6 +321,7 @@ public class Controller {
                         .limit(10)
                         .collect(Collectors.toList()),
                 "Distância");
+        this.menu.back();
         this.menu.back();
 		return error;
 	}

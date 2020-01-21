@@ -66,7 +66,6 @@ public class Parser {
                 case "NovoCliente":
                     if (content.length != 6)
                         break;
-                    System.out.println(content[2]);
                     model.addUser(new Client(
                             new Point(Double.parseDouble(content[4]), Double.parseDouble(content[5])),
                             content[2],

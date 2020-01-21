@@ -11,3 +11,6 @@ login:
 
 -alugar carro
    - +perto
+      -tipo
+      -destino(int,int)
+      

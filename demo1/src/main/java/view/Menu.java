@@ -195,6 +195,7 @@ public class Menu{
         try {
             return new SpecificCar(this.getDest(), carType);
         } catch (InputMismatchException e) {
+            error="Wrong value!!";
             throw new InvalidNewRentalException();
         }
     }
