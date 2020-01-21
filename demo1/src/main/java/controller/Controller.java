@@ -89,7 +89,6 @@ public class Controller {
                     break;
                 default:
                     this.menu.parser();
-                    LOGGER.info("Vou sair");
                     break;
             }
             LOGGER.info(error);

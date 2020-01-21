@@ -10,7 +10,7 @@ public class AutonomyCar {
 
     public AutonomyCar(Point point, int autonomy, String type) throws InvalidNewRentalException {
         try {
-            this.type = CarModel.CarType.valueOf(type.toLowerCase());
+            this.type = CarModel.CarType.valueOf(type.toUpperCase());
         }
         catch (IllegalArgumentException e){
             throw new InvalidNewRentalException();

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  20 JAN 2020 14:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.7)  21 JAN 2020 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -232,6 +232,12 @@ LaTeX Warning: Label `fig27' multiply defined.
 
 
 LaTeX Warning: Label `fig44' multiply defined.
+
+
+LaTeX Warning: Label `fig47' multiply defined.
+
+
+LaTeX Warning: Label `fig48' multiply defined.
 
 
 LaTeX Warning: Label `fig52' multiply defined.
@@ -1021,8 +1027,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 286--287
 
  []
 
-[29]) (./tarefa4.tex
-<images/rapl_inicial.png, id=211, 1857.94125pt x 526.96875pt>
+<./images/lower.png, id=208, 433.62pt x 58.2175pt>
+File: ./images/lower.png Graphic file (type png)
+<use ./images/lower.png>
+Package pdftex.def Info: ./images/lower.png  used on input line 294.
+(pdftex.def)             Requested size: 195.1272pt x 26.19762pt.
+<./images/upper.png, id=209, 433.62pt x 61.22874pt>
+File: ./images/upper.png Graphic file (type png)
+<use ./images/upper.png>
+Package pdftex.def Info: ./images/upper.png  used on input line 303.
+(pdftex.def)             Requested size: 195.1272pt x 27.55266pt.
+[29] [30 <./images/lower.png> <./images/upper.png>]) (./tarefa4.tex
+<images/rapl_inicial.png, id=218, 1857.94125pt x 526.96875pt>
 File: images/rapl_inicial.png Graphic file (type png)
 <use images/rapl_inicial.png>
 Package pdftex.def Info: images/rapl_inicial.png  used on input line 7.
@@ -1032,19 +1048,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-<images/rapl_make.png, id=212, 968.61874pt x 782.925pt>
+<images/rapl_make.png, id=219, 968.61874pt x 782.925pt>
 File: images/rapl_make.png Graphic file (type png)
 <use images/rapl_make.png>
 Package pdftex.def Info: images/rapl_make.png  used on input line 16.
 (pdftex.def)             Requested size: 261.53055pt x 211.39258pt.
-<images/remove_tmp.png, id=213, 1244.65pt x 683.55376pt>
+<images/remove_tmp.png, id=220, 1244.65pt x 683.55376pt>
 File: images/remove_tmp.png Graphic file (type png)
 <use images/remove_tmp.png>
 Package pdftex.def Info: images/remove_tmp.png  used on input line 27.
 (pdftex.def)             Requested size: 416.54718pt x 228.76508pt.
-[30 <./images/rapl_inicial.png> <./images/rapl_make.png>] [31 <./images/remove_
+[31 <./images/rapl_inicial.png> <./images/rapl_make.png>] [32 <./images/remove_
 tmp.png>]
-<images/energycheckutils.png, id=225, 1927.2pt x 985.6825pt>
+<images/energycheckutils.png, id=232, 1927.2pt x 985.6825pt>
 File: images/energycheckutils.png Graphic file (type png)
 <use images/energycheckutils.png>
 Package pdftex.def Info: images/energycheckutils.png  used on input line 38.
@@ -1054,7 +1070,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
-<images/rapl_run.png, id=226, 846.16125pt x 74.2775pt>
+<images/rapl_run.png, id=233, 846.16125pt x 74.2775pt>
 File: images/rapl_run.png Graphic file (type png)
 <use images/rapl_run.png>
 Package pdftex.def Info: images/rapl_run.png  used on input line 54.
@@ -1064,7 +1080,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-[32 <./images/energycheckutils.png> <./images/rapl_run.png>]
+[33 <./images/energycheckutils.png> <./images/rapl_run.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
@@ -1079,23 +1095,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-<images/rapl_5k_v1.png, id=232, 770.88pt x 271.0125pt>
+<images/rapl_5k_v1.png, id=239, 770.88pt x 271.0125pt>
 File: images/rapl_5k_v1.png Graphic file (type png)
 <use images/rapl_5k_v1.png>
 Package pdftex.def Info: images/rapl_5k_v1.png  used on input line 71.
 (pdftex.def)             Requested size: 485.97083pt x 170.84628pt.
-[33 <./images/rapl_5k_v1.png>]
-<images/rapl_10k_v1.png, id=237, 759.83875pt x 262.9825pt>
+[34 <./images/rapl_5k_v1.png>]
+<images/rapl_10k_v1.png, id=244, 759.83875pt x 262.9825pt>
 File: images/rapl_10k_v1.png Graphic file (type png)
 <use images/rapl_10k_v1.png>
 Package pdftex.def Info: images/rapl_10k_v1.png  used on input line 81.
 (pdftex.def)             Requested size: 485.97083pt x 168.19986pt.
-<images/rapl_25k_v1.png, id=238, 759.83875pt x 271.0125pt>
+<images/rapl_25k_v1.png, id=245, 759.83875pt x 271.0125pt>
 File: images/rapl_25k_v1.png Graphic file (type png)
 <use images/rapl_25k_v1.png>
 Package pdftex.def Info: images/rapl_25k_v1.png  used on input line 89.
 (pdftex.def)             Requested size: 485.97083pt x 173.33574pt.
-<images/rapl_50k_v1.png, id=239, 770.88pt x 270.00874pt>
+<images/rapl_50k_v1.png, id=246, 770.88pt x 270.00874pt>
 File: images/rapl_50k_v1.png Graphic file (type png)
 <use images/rapl_50k_v1.png>
 Package pdftex.def Info: images/rapl_50k_v1.png  used on input line 97.
@@ -1103,7 +1119,7 @@ Package pdftex.def Info: images/rapl_50k_v1.png  used on input line 97.
 
 Underfull \vbox (badness 2662) has occurred while \output is active []
 
- [34 <./images/rapl_10k_v1.png> <./images/rapl_25k_v1.png>]
+ [35 <./images/rapl_10k_v1.png> <./images/rapl_25k_v1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
@@ -1118,22 +1134,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-[35 <./images/rapl_50k_v1.png>]
+[36 <./images/rapl_50k_v1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-<images/rapl_5k.png, id=249, 775.89874pt x 269.005pt>
+<images/rapl_5k.png, id=256, 775.89874pt x 269.005pt>
 File: images/rapl_5k.png Graphic file (type png)
 <use images/rapl_5k.png>
 Package pdftex.def Info: images/rapl_5k.png  used on input line 115.
 (pdftex.def)             Requested size: 485.97083pt x 168.4889pt.
-<images/rapl_10k.png, id=250, 782.925pt x 265.99374pt>
+<images/rapl_10k.png, id=257, 782.925pt x 265.99374pt>
 File: images/rapl_10k.png Graphic file (type png)
 <use images/rapl_10k.png>
 Package pdftex.def Info: images/rapl_10k.png  used on input line 123.
 (pdftex.def)             Requested size: 485.97083pt x 165.10516pt.
-<images/rapl_25k.png, id=251, 782.925pt x 268.00125pt>
+<images/rapl_25k.png, id=258, 782.925pt x 268.00125pt>
 File: images/rapl_25k.png Graphic file (type png)
 <use images/rapl_25k.png>
 Package pdftex.def Info: images/rapl_25k.png  used on input line 131.
@@ -1141,17 +1157,17 @@ Package pdftex.def Info: images/rapl_25k.png  used on input line 131.
 
 Underfull \vbox (badness 1939) has occurred while \output is active []
 
- [36 <./images/rapl_5k.png> <./images/rapl_10k.png>]
+ [37 <./images/rapl_5k.png> <./images/rapl_10k.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-<images/rapl_50k.png, id=257, 782.925pt x 271.0125pt>
+<images/rapl_50k.png, id=265, 782.925pt x 271.0125pt>
 File: images/rapl_50k.png Graphic file (type png)
 <use images/rapl_50k.png>
 Package pdftex.def Info: images/rapl_50k.png  used on input line 139.
 (pdftex.def)             Requested size: 485.97083pt x 168.22037pt.
-[37 <./images/rapl_25k.png> <./images/rapl_50k.png>]) (./conclusao.tex
+[38 <./images/rapl_25k.png> <./images/rapl_50k.png>]) (./conclusao.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1171,22 +1187,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) [38]
+) [39]
 Overfull \hbox (71.10287pt too wide) in paragraph at lines 35--36
 []\T1/cmr/m/n/9 https://www.jetbrains.com/idea/?gclid=CjwKCAiA6vXwBRBKEiwAYE7iS
 8pVgLIs1Jm9lD19jIyM-
  []
 
-[39] (./report.aux)
+[40] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4816 strings out of 492616
- 68253 string characters out of 6129481
- 150163 words of memory out of 5000000
- 8603 multiletter control sequences out of 15000+600000
+ 4824 strings out of 492616
+ 68432 string characters out of 6129481
+ 151164 words of memory out of 5000000
+ 8610 multiletter control sequences out of 15000+600000
  12131 words of font info for 26 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,32p,574b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1202,10 +1218,10 @@ exlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/tex
 live/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on report.pdf (39 pages, 2587594 bytes).
+Output written on report.pdf (40 pages, 2597515 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 317 PDF objects out of 1000 (max. 8388607)
+ 126 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -17,7 +17,7 @@ public class RegisterCar {
     public RegisterCar(String numberPlate, String type, double basePrice, double gasMileage, int range, Point pos, String brand) throws InvalidNewRegisterException {
         this.numberPlate = numberPlate;
         try {
-            this.type = CarModel.CarType.valueOf(type.toLowerCase());
+            this.type = CarModel.CarType.valueOf(type.toUpperCase());
         }
         catch (IllegalArgumentException e){
             throw new InvalidNewRegisterException();

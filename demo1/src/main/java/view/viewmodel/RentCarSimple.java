@@ -12,7 +12,7 @@ public class RentCarSimple {
 
         this.point = point;
         try {
-            this.type = CarModel.CarType.valueOf(type.toLowerCase());
+            this.type = CarModel.CarType.valueOf(type.toUpperCase());
         }
         catch (IllegalArgumentException e){
             throw new InvalidNewRentalException();

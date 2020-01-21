@@ -12,7 +12,7 @@ public class CheapestNearCar {
 
         public CheapestNearCar(Point point, int walkDistance, String type) throws InvalidNewRentalException {
             try {
-                this.type = CarModel.CarType.valueOf(type.toLowerCase());
+                this.type = CarModel.CarType.valueOf(type.toUpperCase());
             }
             catch (IllegalArgumentException e){
                 throw new InvalidNewRentalException();

@@ -284,6 +284,31 @@ private String getSeason() {
 }
 \end{lstlisting}
 \hfill\newline
+
+
+\par Adicionalmente foram descobertos erros em todas as classes que processam o aluguer de carros. Nomeadamente erros na verificação do seu tipo (verificado com letras minúsculas em vez de maiúsculas), algo que impedia a realização da operação, em seguida apresenta-se um desse erros e a respetiva correção.
+
+\begin{figure}[H]
+  \centering
+
+  \includegraphics[scale = 0.45]{lower.png}
+
+  \caption {Erro no método .toLowerCase()}
+
+  \label {fig47}
+\end{figure}
+\begin{figure}[H]
+  \centering
+
+  \includegraphics[scale = 0.45]{upper.png}
+
+  \caption {Correção do método para .toUpperCase()}
+
+  \label {fig48}
+\end{figure}
+
+
+
 \newpage
 
 
